@@ -25,7 +25,7 @@ export const CONFIG = {
     DEFAULT_MODELS: ["gemma-3-27b-it", "gemma-3-4b-it", "gemma-3-1b-it"],
     MODEL_CONFIG: {
         ORGANIZER: ["gemini-3-flash-preview"],
-        SUMMARIZER: ["gemma-3-27b-it"],
+        SUMMARIZER: ["gemini-3-flash-preview"],
         SYNTHESIZER: ["gemini-3-flash-preview"],
         PRODUCT_UPDATER: ["gemini-3-flash-preview"]
     },
