@@ -100,6 +100,27 @@
           "sourceCommit": "a79be9b35007b75c8d57ae91b7e9e6002c68e947"
         }
       }
+    },
+    "2026-05": {
+      "items": {
+        "release-notes:2026-05": {
+          "filePath": "drafts/2026-05/release-notes.md",
+          "contentType": "release-note",
+          "slug": "release-notes/2026-05",
+          "contentHash": "40ebb711026af6fd265b4f0376d1f7e3efe32f50bd503995f1e5c3c1f0eb172d",
+          "status": "pending",
+          "hubspotPostId": null,
+          "hubspotUrl": null,
+          "lastAttemptAt": null,
+          "firstPublishedAt": null,
+          "lastPublishedAt": null,
+          "lastAction": null,
+          "replayCount": 0,
+          "lastReplayReason": null,
+          "error": null,
+          "sourceCommit": "999c94bd95c9ea8ae8b201f52e555158b6af6edd"
+        }
+      }
     }
   }
 }
