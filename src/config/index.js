@@ -8,6 +8,7 @@ function loadJsonConfig(relativePath) {
 }
 
 const publishingConfig = loadJsonConfig(path.join("config", "publishing.json"));
+const geminiModels = ["gemini-3-flash-preview", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
 
 export const CONFIG = {
     SOURCE_REPOS: process.env.SOURCE_REPOS,
@@ -24,10 +25,10 @@ export const CONFIG = {
     SYNC_STATE_PATH: path.join("state", "hubspot-sync-state.json"),
     DEFAULT_MODELS: ["gemma-3-27b-it", "gemma-3-4b-it", "gemma-3-1b-it"],
     MODEL_CONFIG: {
-        ORGANIZER: ["gemini-3-flash-preview"],
-        SUMMARIZER: ["gemini-3-flash-preview"],
-        SYNTHESIZER: ["gemini-3-flash-preview"],
-        PRODUCT_UPDATER: ["gemini-3-flash-preview"]
+        ORGANIZER: geminiModels,
+        SUMMARIZER: geminiModels,
+        SYNTHESIZER: geminiModels,
+        PRODUCT_UPDATER: geminiModels
     },
     PRICING: {
         // Cost per 1M tokens (USD) - Approximate for Gemma 3
