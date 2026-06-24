@@ -1,8 +1,8 @@
 {
   "month": "2026-05",
   "mode": "monthly",
-  "generatedAt": "2026-06-24T08:58:23.470Z",
-  "requestedAt": "2026-06-24T08:58:23.471Z",
+  "generatedAt": "2026-06-24T19:28:36.816Z",
+  "requestedAt": "2026-06-24T19:28:36.817Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
@@ -12,11 +12,11 @@
       "title": "May 2026 Release Notes",
       "slug": "release-notes/2026-05",
       "filePath": "drafts/2026-05/release-notes.md",
-      "metaDescription": "May focused on stabilizing order, return, transfer, and integration workflows across HotWax Commerce. The updates improve Shopify order and product synchroniza…",
+      "metaDescription": "May centered on the OMS workflows that sit between customer promises, store execution, carrier services, and ERP reconciliation. The release connected returns,…",
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "40ebb711026af6fd265b4f0376d1f7e3efe32f50bd503995f1e5c3c1f0eb172d"
+      "contentHash": "afac132086770ff53f1ca48239eea126b0bf322f1722b45516b087a24f4815af"
     }
   ]
 }
