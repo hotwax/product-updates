@@ -51,7 +51,12 @@ export async function analyzeWithGemini(prompt, models = CONFIG.DEFAULT_MODELS, 
 
                 return response.text();
             } catch (e) {
-                const isRateLimit = e.message.includes("429") || e.message.includes("Too Many Requests") || e.message.includes("overloaded");
+                const isRateLimit = e.message.includes("429")
+                    || e.message.includes("503")
+                    || e.message.includes("Too Many Requests")
+                    || e.message.includes("Service Unavailable")
+                    || e.message.includes("high demand")
+                    || e.message.includes("overloaded");
                 if (!isRateLimit) {
                     allRateLimited = false;
                     console.warn(`    ⚠️  ${modelName} failed with non-rate-limit error: ${e.message}`);
