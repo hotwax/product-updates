@@ -12,8 +12,6 @@ key: release-notes:2026-05
 
 May is the API and platform release behind the larger app work that follows in June. The month focused on the service contracts, integration payloads, gateway configuration, data models, and operational APIs that let HotWax Commerce connect customer promises, store execution, carrier services, Shopify, NetSuite, and ERP reconciliation.
 
-This note keeps work that genuinely landed in May, even when it has an app-facing shape. For example, the Transfer app refactor and shared transfer order APIs stay in May because they were real May work and are not part of the June Apps release story.
-
 ## Returns, exchanges, and financial reconciliation
 
 ### Return and exchange API foundations

@@ -1,8 +1,8 @@
 {
   "month": "2026-05",
   "mode": "monthly",
-  "generatedAt": "2026-07-06T12:10:35.721Z",
-  "requestedAt": "2026-07-06T12:10:35.722Z",
+  "generatedAt": "2026-07-06T12:13:00.320Z",
+  "requestedAt": "2026-07-06T12:13:00.321Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
@@ -16,7 +16,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "b434cd1dc638482fe5ab3cb4a34b671b1aa7d4beef21a908dc40944feb549ed6"
+      "contentHash": "83e055276c42e4f3d0cf62eb31b4cacc147b7f0e8eea907884f52556b327069a"
     }
   ]
 }
