@@ -1,0 +1,22 @@
+{
+  "month": "2026-06",
+  "mode": "monthly",
+  "generatedAt": "2026-07-06T07:56:20.221Z",
+  "requestedAt": "2026-07-06T07:56:20.222Z",
+  "requestedBy": "local",
+  "replayReason": null,
+  "items": [
+    {
+      "key": "release-notes:2026-06",
+      "contentType": "release-note",
+      "title": "June 2026 Release Notes",
+      "slug": "release-notes/2026-06",
+      "filePath": "drafts/2026-06/release-notes.md",
+      "metaDescription": "June focused on the operating layer around orders, inventory, Shopify, and store execution. HotWax Commerce added more complete order APIs, stronger risk contr…",
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "ffb35d87df40b547367e4b9c533cbbcb3c5500770c622f3197cfaa649eb248be"
+    }
+  ]
+}
