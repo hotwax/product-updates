@@ -49,10 +49,10 @@ import fs from "fs";
     const repos = CONFIG.SOURCE_REPOS.split(",").map(r => r.trim());
 
     const rawContextPath = getRawContextFilePath(targetMonth);
-    const skipFetching = CONFIG.DRY_RUN && fs.existsSync(rawContextPath);
+    const skipFetching = fs.existsSync(rawContextPath) && process.env.REFRESH_RAW_CONTEXT !== "true";
 
     if (skipFetching) {
-        console.log(`📡 [DRY RUN] Raw context found at ${rawContextPath}. Skipping Stage 0 fetching...`);
+        console.log(`📡 Raw context found at ${rawContextPath}. Skipping Stage 0 fetching...`);
         // Reconstruct itemMetadata for Phase 1 from raw context
         const rawData = fs.readFileSync(rawContextPath, 'utf8').split('\n').filter(Boolean).map(JSON.parse);
         for (const item of rawData) {

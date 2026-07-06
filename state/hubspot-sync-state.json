@@ -107,7 +107,7 @@
           "filePath": "drafts/2026-05/release-notes.md",
           "contentType": "release-note",
           "slug": "release-notes/2026-05",
-          "contentHash": "83e055276c42e4f3d0cf62eb31b4cacc147b7f0e8eea907884f52556b327069a",
+          "contentHash": "65530be947e91de0f48179e614cc78147b78c0ad057f814dff51929969ce6822",
           "status": "pending",
           "hubspotPostId": null,
           "hubspotUrl": null,
@@ -118,7 +118,7 @@
           "replayCount": 0,
           "lastReplayReason": null,
           "error": null,
-          "sourceCommit": "manual-may-2026-api-release-reframe-clean-note"
+          "sourceCommit": "manual-may-2026-api-release-pr-code-grounded-return-context"
         }
       }
     }
