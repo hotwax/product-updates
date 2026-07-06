@@ -1,22 +1,22 @@
 {
   "month": "2026-05",
   "mode": "monthly",
-  "generatedAt": "2026-06-24T19:28:36.816Z",
-  "requestedAt": "2026-06-24T19:28:36.817Z",
+  "generatedAt": "2026-07-06T12:10:35.721Z",
+  "requestedAt": "2026-07-06T12:10:35.722Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
     {
       "key": "release-notes:2026-05",
       "contentType": "release-note",
-      "title": "May 2026 Release Notes",
+      "title": "May 2026 API and Platform Release Notes",
       "slug": "release-notes/2026-05",
       "filePath": "drafts/2026-05/release-notes.md",
-      "metaDescription": "May centered on the OMS workflows that sit between customer promises, store execution, carrier services, and ERP reconciliation. The release connected returns,…",
+      "metaDescription": "May is the API and platform release behind the larger app work that follows in June. The month focused on the service contracts, integration payloads, gateway…",
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "afac132086770ff53f1ca48239eea126b0bf322f1722b45516b087a24f4815af"
+      "contentHash": "b434cd1dc638482fe5ab3cb4a34b671b1aa7d4beef21a908dc40944feb549ed6"
     }
   ]
 }
