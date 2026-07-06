@@ -121,6 +121,27 @@
           "sourceCommit": "manual-may-2026-api-log-grouping"
         }
       }
+    },
+    "2026-06": {
+      "items": {
+        "release-notes:2026-06": {
+          "filePath": "drafts/2026-06/release-notes.md",
+          "contentType": "release-note",
+          "slug": "release-notes/2026-06",
+          "contentHash": "c13e7ea4ea9d2241728b23370bd8d08e4ac65b64fa6f3649c249344d533e040d",
+          "status": "pending",
+          "hubspotPostId": null,
+          "hubspotUrl": null,
+          "lastAttemptAt": null,
+          "firstPublishedAt": null,
+          "lastPublishedAt": null,
+          "lastAction": null,
+          "replayCount": 0,
+          "lastReplayReason": null,
+          "error": null,
+          "sourceCommit": "manual-june-2026-apps-release-rewrite"
+        }
+      }
     }
   }
 }
