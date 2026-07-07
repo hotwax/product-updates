@@ -3,28 +3,21 @@ title: HotWax adds purchase order visibility for Preorder management
 slug: product-updates/2026-05/hotwax-adds-purchase-order-visibility-for-preorder-management
 contentType: product-update
 month: 2026-05
-metaDescription: Preorder depends on the purchase orders that will replenish inventory, not only the inventory currently on hand. May added the PO-backed data Preorder needs to…
+metaDescription: Preorder depends on inventory that has not arrived yet. If purchase order quantities, inbound dates, or receipt history are hard to see, teams can approve pre-…
 tagNames: [Product Update]
 key: product-update:2026-05:hotwax-adds-purchase-order-visibility-for-preorder-management
 ---
 
 # HotWax adds purchase order visibility for Preorder management
 
-Preorder depends on the purchase orders that will replenish inventory, not only the inventory currently on hand. May added the PO-backed data Preorder needs to show inbound supply, receipts, and updated available-to-promise quantities.
+Preorder depends on inventory that has not arrived yet. If purchase order quantities, inbound dates, or receipt history are hard to see, teams can approve pre-sell demand against stale supply assumptions or fall back to older purchase order screens outside the Preorder workflow.
 
-The update covers both correctness and app enablement. When a purchase order item quantity changes, HotWax recalculates that item's available-to-promise value so pre-sell decisions do not use the old quantity. Imported pre-order sales orders also create their order index after pre-order item splitting and promise-date assignment, so approved pre-orders appear in indexed order views without manual reindexing.
+HotWax now gives the Preorder app the purchase order data it needs to evaluate inbound supply directly. The app can load purchase order lists, open individual purchase orders, show estimated delivery dates on purchase order item ship-group data, and retrieve receipts tied back to purchase order items. That lets teams review the PO record, expected timing, and received quantity from the same operating context where they manage pre-sell availability.
 
-## What changed
+The update also closes two correctness gaps in the existing flow. When a purchase order item quantity changes, HotWax recalculates the available-to-promise value for that item, so pre-sell eligibility does not keep using the old quantity. Imported pre-order sales orders now create their order index after item splitting and promise-date assignment, so approved pre-orders appear in indexed order views without manual reindexing.
 
-- `GET /purchaseOrders` adds purchase order list access with filters for status, item status, facility, product store, keyword, and pagination.
-- `GET /purchaseOrders/{orderId}` adds single purchase order access for detail views.
-- Purchase order item ship-group data now includes `estimatedDeliveryDate` so Preorder can show inbound timing.
-- `GET /purchaseOrders/{orderId}/receipts` adds receipt lookup from the `PurchaseOrderItemShipmentReceipt` view, tying receipts back to purchase order items.
-- Purchase order item ATP recalculates when the purchase order quantity changes.
-- Imported pre-order sales orders are indexed after pre-order splitting and promise-date assignment.
+The new Preorder-facing purchase order resources include list access with status, item status, facility, product store, keyword, and pagination filters; detail access for a single purchase order; estimated delivery dates on purchase order item ship groups; and receipt lookup through the `PurchaseOrderItemShipmentReceipt` view.
 
-## Customer impact
-
-Merchandising and operations teams can review the purchase orders that support pre-sell inventory, see when inbound inventory is expected, and avoid promising against stale purchase order quantities. The Preorder app gets the list, detail, receipt, and inbound-date data it needs without requiring users to fall back to older purchase order screens.
+For merchandising and operations teams, the result is a cleaner pre-sell decision path. They can see which purchase orders support future availability, when that inventory is expected, and whether receipts have started, while ATP stays aligned with the latest PO quantity edits.
 
 *Sources: [hotwax-oms#505](https://github.com/hotwax/hotwax-oms/pull/505), [hotwax-oms#511](https://github.com/hotwax/hotwax-oms/pull/511), [oms#503](https://github.com/hotwax/oms/pull/503)*

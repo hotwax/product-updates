@@ -3,28 +3,21 @@ title: HotWax expands returns processing with AfterShip and native Shopify retur
 slug: product-updates/2026-05/hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows
 contentType: product-update
 month: 2026-05
-metaDescription: Returns now reach OMS earlier in the customer-service lifecycle. HotWax can import native Shopify and AfterShip returns while they are still in progress, keep…
+metaDescription: Returns often begin before the final refund exists. A customer may open a return in Shopify, start the return through AfterShip, exchange an item, receive an a…
 tagNames: [Product Update]
 key: product-update:2026-05:hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows
 ---
 
 # HotWax expands returns processing with AfterShip and native Shopify return flows
 
-Returns now reach OMS earlier in the customer-service lifecycle. HotWax can import native Shopify and AfterShip returns while they are still in progress, keep completed returns tied to their refund activity, and preserve the return channel that created the request.
+Returns often begin before the final refund exists. A customer may open a return in Shopify, start the return through AfterShip, exchange an item, receive an appeasement, or complete a refund after inventory has already moved. When those paths only show up after settlement, customer service teams lose the context they need while the return is still active.
 
-That matters because returns are not one operational shape. A customer may start a return in Shopify, use AfterShip to initiate the request, receive an admin refund without restocking inventory, or exchange an item for a replacement order with new payment activity. The May returns work lets OMS classify those paths instead of reducing them all to a generic settled refund.
+HotWax now brings native Shopify and AfterShip returns into OMS while they are still in progress, then keeps the completed return connected to refund, exchange, and downstream accounting activity. The return record carries the Shopify return and refund identifiers, return status, processed dates, channel, customer, reason, restock behavior, destination facility, and linked agreement data that explain how the return entered the system and where it is in the lifecycle.
 
-## What changed
+That additional context changes how similar-looking refund outcomes are handled. A return can remain an open customer return until it closes with a refund. A refund with no restocked inventory can be classified as an appeasement instead of a customer return. If Shopify provides a ReturnAgreement instead of a RefundAgreement, HotWax can still preserve the originating app and return channel instead of defaulting the record to the generic admin channel.
 
-- Shopify and AfterShip return records can enter OMS as in-progress or completed returns.
-- Return records carry Shopify return IDs, refund IDs, return status, processed dates, return channel, customer identity, reason data, restock behavior, destination facility, and linked agreements.
-- Refunds without restocked items can be classified as appeasements instead of customer returns.
-- When Shopify provides a ReturnAgreement instead of a RefundAgreement, HotWax keeps the originating app and return channel instead of defaulting to the admin channel.
-- Refund reconciliation now processes every Shopify order adjustment, preserves presentment currency, applies Shopify exchange-rate data correctly, and stores payment-created dates.
-- NetSuite return sync records RMA, item receipt, credit memo, customer refund, invoice, return total, and response history.
+Refund reconciliation also has more complete financial data. HotWax processes each Shopify order adjustment, preserves presentment currency, applies Shopify exchange-rate data in the correct direction, and stores payment-created dates during order, transaction, and refund processing. Those details reduce partial refund records, inflated multi-currency amounts, and missing payment timing when teams review refunds, credit memos, exchange credits, replacement orders, and invoices.
 
-## Customer impact
-
-Customer service teams can see where a return came from, what state it is in, and whether the return is tied to a refund, appeasement, exchange, replacement order, or NetSuite sync step. Accounting and operations teams get fewer partial refund records, fewer incorrect multi-currency payment amounts, and more complete return history for downstream review.
+The return lifecycle now extends beyond Shopify import. NetSuite return sync records RMA, item receipt, credit memo, customer refund, invoice, return total, and response history. OMS shows the NetSuite sync status on the return screen, and Poorti can store the return reference on shipment receipts. Customer service, operations, and accounting teams can follow the return from request through receipt, refund, exchange, and ERP sync without reconstructing the story from disconnected records.
 
 *Sources: [hotwax-shopify-oms-bridge#106](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/106), [hotwax-shopify-oms-bridge#179](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/179), [hotwax-shopify-oms-bridge#205](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/205), [hotwax-shopify-oms-bridge#218](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/218), [hotwax-shopify-oms-bridge#168](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/168), [hotwax-oms#496](https://github.com/hotwax/hotwax-oms/pull/496), [hotwax-oms#456](https://github.com/hotwax/hotwax-oms/pull/456), [hotwax-poorti#231](https://github.com/hotwax/hotwax-poorti/pull/231), [mantle-shopify-connector#280](https://github.com/hotwax/mantle-shopify-connector/pull/280), [mantle-netsuite-connector#213](https://github.com/hotwax/mantle-netsuite-connector/pull/213), [mantle-netsuite-connector#238](https://github.com/hotwax/mantle-netsuite-connector/pull/238), [mantle-netsuite-connector#239](https://github.com/hotwax/mantle-netsuite-connector/pull/239), [mantle-netsuite-connector#242](https://github.com/hotwax/mantle-netsuite-connector/pull/242)*

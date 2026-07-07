@@ -118,13 +118,13 @@
           "replayCount": 0,
           "lastReplayReason": null,
           "error": null,
-          "sourceCommit": "7e64b8f06ea4228fd9c149ae70e6d45d3f561110"
+          "sourceCommit": "13f4659bc5fda9f4988745b67dfd4789d4ee76ec"
         },
         "product-update:2026-05:hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows": {
           "filePath": "drafts/2026-05/product-updates/hotwax_expands_returns_processing_with_aftership_and_native_shopify_return_flows.md",
           "contentType": "product-update",
           "slug": "product-updates/2026-05/hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows",
-          "contentHash": "8dcb583fe0f1f4a8b6f4c05129def860ae4da4ffb49bc8279c9a4d130cc12990",
+          "contentHash": "2d3699060784ae5a8e83c85d3682a70f26b8e7658fcdf2803c219ff8e4989009",
           "status": "pending",
           "hubspotPostId": null,
           "hubspotUrl": null,
@@ -135,13 +135,13 @@
           "replayCount": 0,
           "lastReplayReason": null,
           "error": null,
-          "sourceCommit": "7e64b8f06ea4228fd9c149ae70e6d45d3f561110"
+          "sourceCommit": "13f4659bc5fda9f4988745b67dfd4789d4ee76ec"
         },
         "product-update:2026-05:hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues": {
           "filePath": "drafts/2026-05/product-updates/hotwax_speeds_up_shopify_order_sync_with_separate_create_and_update_queues.md",
           "contentType": "product-update",
           "slug": "product-updates/2026-05/hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues",
-          "contentHash": "c9382f121b739cafc321ae2101c0d0915098f735a74d490189a854c3a35a4f82",
+          "contentHash": "ad53c2a860f03d074f0b84af17f690459619b1caac7511ec243170473603e2a2",
           "status": "pending",
           "hubspotPostId": null,
           "hubspotUrl": null,
@@ -152,13 +152,13 @@
           "replayCount": 0,
           "lastReplayReason": null,
           "error": null,
-          "sourceCommit": "7e64b8f06ea4228fd9c149ae70e6d45d3f561110"
+          "sourceCommit": "13f4659bc5fda9f4988745b67dfd4789d4ee76ec"
         },
         "product-update:2026-05:hotwax-adds-purchase-order-visibility-for-preorder-management": {
           "filePath": "drafts/2026-05/product-updates/hotwax_adds_purchase_order_visibility_for_preorder_management.md",
           "contentType": "product-update",
           "slug": "product-updates/2026-05/hotwax-adds-purchase-order-visibility-for-preorder-management",
-          "contentHash": "5954164d0f74fa8e6e7f996680e5164276051cba2e7d496df114037b046ffe1e",
+          "contentHash": "3ff1480fafb70dce3c3b902f5dc7f9ea2399d8abc5f8cca464a0be1b28c6678a",
           "status": "pending",
           "hubspotPostId": null,
           "hubspotUrl": null,
@@ -169,7 +169,7 @@
           "replayCount": 0,
           "lastReplayReason": null,
           "error": null,
-          "sourceCommit": "7e64b8f06ea4228fd9c149ae70e6d45d3f561110"
+          "sourceCommit": "13f4659bc5fda9f4988745b67dfd4789d4ee76ec"
         }
       }
     },
