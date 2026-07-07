@@ -1,0 +1,36 @@
+{
+  "name": "Order Funnel as the fulfillment operating dashboard",
+  "summary": "Order Funnel gives fulfillment teams one place to see where orders are moving, blocked, and waiting to sync. The dashboard brings together product-store metrics, brokering progress, picked and packed progress, rejected work, open orders, unfillable orders, hold tasks, and facility-level performance.\n\nThe release also adds the backend services needed to make those numbers operational. Facility filtering, oldest-date indicators, open order counts, unfillable metrics, fulfillment progress, and facility rejection APIs let the dashboard become a launch point into the exact queue that needs attention, not just a report that has to be interpreted somewhere else.",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "629",
+      "url": "https://github.com/hotwax/oms/pull/629"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "645",
+      "url": "https://github.com/hotwax/oms/pull/645"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "673",
+      "url": "https://github.com/hotwax/oms/pull/673"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "676",
+      "url": "https://github.com/hotwax/oms/pull/676"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "630",
+      "url": "https://github.com/hotwax/oms/pull/630"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "640",
+      "url": "https://github.com/hotwax/oms/pull/640"
+    }
+  ]
+}

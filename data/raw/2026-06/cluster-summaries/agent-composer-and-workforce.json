@@ -1,0 +1,26 @@
+{
+  "name": "Agent Composer and Workforce",
+  "summary": "Agent Composer introduces a new way to build governed OMS agents from approved HotWax capabilities. Users can define an agent, improve its instructions, select a model, choose tools, decide which actions require approval, preview behavior, and activate the agent for use in Workforce.\n\nThe bigger app direction is that agents are not a sidecar chatbot. They become governed OMS workers that can inspect order, inventory, fulfillment, routing, product, and integration context through approved tools, while sensitive actions remain visible and approval-driven.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "148",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/148"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "102",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/102"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "109",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/109"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "107",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/107"
+    }
+  ]
+}

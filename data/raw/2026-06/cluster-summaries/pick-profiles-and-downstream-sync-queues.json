@@ -1,0 +1,26 @@
+{
+  "name": "Pick profiles and downstream sync queues",
+  "summary": "Pick profiles now become business-controlled queues for downstream fulfillment sync. Poorti adds REST APIs for fulfillment order sync settings, including conditions, filters, customer classification, order priority, rush-order sorting, and batch behavior.\n\nThis turns fulfillment sync from a hidden integration detail into a configuration surface. Operations teams can control how work is selected and released to downstream systems, while implementation teams keep the queue behavior auditable and reusable.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "271",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/271"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "274",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/274"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "262",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/262"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "620",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/620"
+    }
+  ]
+}

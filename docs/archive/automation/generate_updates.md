@@ -19,10 +19,12 @@ The script uses a specialized configuration for different tasks to balance perfo
 
 | Agent | Model(s) | Purpose |
 | :--- | :--- | :--- |
-| **ORGANIZER** | `gemini-3-flash-preview` | High context, logical grouping, and naming. |
-| **SUMMARIZER** | `gemma-3-27b-it` | Efficient summarization of individual clusters. |
-| **SYNTHESIZER** | `gemini-3-flash-preview` | Final document assembly and styling. |
-| **PRODUCT_UPDATER** | `gemini-3-flash-preview` | Matching PR FAQs and generating product updates. |
+| **ORGANIZER** | `gemini-3.5-flash` | High context, logical grouping, and naming. |
+| **SUMMARIZER** | `gemma-4-26b-a4b-it`, then `gemma-4-31b-it` | Efficient summarization of individual clusters. |
+| **SYNTHESIZER** | `gemini-3.5-flash` | Final document assembly and styling. |
+| **PRODUCT_UPDATER** | `gemini-3.5-flash` | Matching PR FAQs and generating product updates. |
+
+Model lists can be overridden with `GEMINI_ORGANIZER_MODELS`, `GEMINI_SUMMARIZER_MODELS`, `GEMINI_SYNTHESIZER_MODELS`, and `GEMINI_PRODUCT_UPDATER_MODELS`. Normal model calls time out after `GEMINI_CALL_TIMEOUT_MS` milliseconds, large prompts time out after `GEMINI_LONG_CALL_TIMEOUT_MS` milliseconds, summarizer retries can be capped with `GEMINI_SUMMARIZER_RETRIES`, and summarizer output is capped with `GEMINI_SUMMARIZER_MAX_OUTPUT_TOKENS`.
 
 ---
 

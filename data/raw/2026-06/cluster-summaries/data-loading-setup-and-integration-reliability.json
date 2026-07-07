@@ -1,0 +1,81 @@
+{
+  "name": "Data loading, setup, and integration reliability",
+  "summary": "A release this large also needs platform cleanup. June includes data-file load ordering, duplicate demo user cleanup, status-flow transition fixes, enum data corrections, product index handling, shared phone utilities, NetSuite credential setup, and removal of fragile transaction boundaries in Shopify order processing.\n\nThese updates are not the headline app features, but they make the app rollout more reliable. Fresh installs load more predictably, integrations have fewer hidden setup traps, and shared utilities reduce drift across Shopify, NetSuite, OMS, and Maarg.",
+  "prReferences": [
+    {
+      "repo": "hotwax/mantle-netsuite-connector",
+      "number": "245",
+      "url": "https://github.com/hotwax/mantle-netsuite-connector/pull/245"
+    },
+    {
+      "repo": "hotwax/mantle-netsuite-connector",
+      "number": "247",
+      "url": "https://github.com/hotwax/mantle-netsuite-connector/pull/247"
+    },
+    {
+      "repo": "hotwax/mantle-netsuite-connector",
+      "number": "249",
+      "url": "https://github.com/hotwax/mantle-netsuite-connector/pull/249"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "252",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/252"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "263",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/263"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "286",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/286"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "635",
+      "url": "https://github.com/hotwax/oms/pull/635"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "637",
+      "url": "https://github.com/hotwax/oms/pull/637"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "652",
+      "url": "https://github.com/hotwax/oms/pull/652"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "683",
+      "url": "https://github.com/hotwax/oms/pull/683"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "706",
+      "url": "https://github.com/hotwax/oms/pull/706"
+    },
+    {
+      "repo": "hotwax/hotwax-ofbiz-oms-usl",
+      "number": "28",
+      "url": "https://github.com/hotwax/hotwax-ofbiz-oms-usl/pull/28"
+    },
+    {
+      "repo": "hotwax/hotwax-ofbiz-oms-usl",
+      "number": "29",
+      "url": "https://github.com/hotwax/hotwax-ofbiz-oms-usl/pull/29"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "603",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/603"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "612",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/612"
+    }
+  ]
+}

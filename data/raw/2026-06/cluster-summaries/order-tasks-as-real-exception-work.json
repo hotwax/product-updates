@@ -1,0 +1,41 @@
+{
+  "name": "Order tasks as real exception work",
+  "summary": "Order Tasks turn stuck orders into assigned work instead of flattening every blocker into one order status. Bad address review, substitution review, fraud review, shipment exceptions, and general hold work can each become a WorkEffort-backed task with ownership, purpose, status, comments, and resolution history.\n\nOrder Manager now has the backend coverage for task queues, task details, task status changes, order-level task visibility, and direct navigation from task cards to the full order. This lets teams keep an order visible to OMS, reserve inventory when appropriate, and still hold it back from unsafe downstream release until the right task is resolved.",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "587",
+      "url": "https://github.com/hotwax/oms/pull/587"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "589",
+      "url": "https://github.com/hotwax/oms/pull/589"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "593",
+      "url": "https://github.com/hotwax/oms/pull/593"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "613",
+      "url": "https://github.com/hotwax/oms/pull/613"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "615",
+      "url": "https://github.com/hotwax/oms/pull/615"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "688",
+      "url": "https://github.com/hotwax/oms/pull/688"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "697",
+      "url": "https://github.com/hotwax/oms/pull/697"
+    }
+  ]
+}

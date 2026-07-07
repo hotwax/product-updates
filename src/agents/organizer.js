@@ -3,7 +3,7 @@ import { fetchRepoReadme } from "../services/github.js";
 import { CONFIG } from "../config/index.js";
 import fs from "fs";
 import path from "path";
-import { saveAgentPrompt, appendToRepoContextCache, saveAgentResponse } from "../storage/index.js";
+import { saveAgentPrompt, appendToRepoContextCache, saveAgentResponse, getMonthStorageDir } from "../storage/index.js";
 
 export async function summarizeReadmesBatched(repoData) {
     if (repoData.length === 0) return {};
@@ -140,8 +140,15 @@ Output ONLY a JSON object in this format:
         return mockResult;
     }
 
-    const result = await analyzeWithGemini(organizerPrompt, CONFIG.MODEL_CONFIG.ORGANIZER);
-    saveAgentResponse("organizer", targetMonth, result);
+    const organizerResponsePath = path.join(getMonthStorageDir(targetMonth), "organizer_response.md");
+    let result;
+    if (CONFIG.REUSE_ORGANIZER_RESPONSE && fs.existsSync(organizerResponsePath)) {
+        console.log(`  Organizer: Reusing saved response from ${organizerResponsePath}`);
+        result = fs.readFileSync(organizerResponsePath, "utf8");
+    } else {
+        result = await analyzeWithGemini(organizerPrompt, CONFIG.MODEL_CONFIG.ORGANIZER);
+        saveAgentResponse("organizer", targetMonth, result);
+    }
     
     const fallback = { repoLogicalNames: {}, clusters: [], noiseItemIds: [], needClarificationItemIds: [] };
     try {

@@ -1,0 +1,56 @@
+{
+  "name": "Products as the operational product data app",
+  "summary": "The Products app now has a stronger backend foundation for managing the product data operations teams actually work with. The June release adds APIs for products, variants, features, good identifications, product associations, Shopify shop products, product facilities, product-facility configuration, and inventory-facing product views.\n\nThis makes Products more than a catalog viewer. It becomes the place where teams can manage dimensions, identifiers, store mappings, facility inventory relationships, and product setup details that affect routing, fulfillment, and integrations.",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "35",
+      "url": "https://github.com/hotwax/oms/pull/35"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "576",
+      "url": "https://github.com/hotwax/oms/pull/576"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "590",
+      "url": "https://github.com/hotwax/oms/pull/590"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "591",
+      "url": "https://github.com/hotwax/oms/pull/591"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "595",
+      "url": "https://github.com/hotwax/oms/pull/595"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "606",
+      "url": "https://github.com/hotwax/oms/pull/606"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "614",
+      "url": "https://github.com/hotwax/oms/pull/614"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "627",
+      "url": "https://github.com/hotwax/oms/pull/627"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "690",
+      "url": "https://github.com/hotwax/oms/pull/690"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "554",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/554"
+    }
+  ]
+}

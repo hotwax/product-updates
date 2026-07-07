@@ -22,11 +22,13 @@ import {
     saveRawContext, 
     saveClusterMatrix,
     getRawContextFilePath,
+    getMonthStorageDir,
     saveReleaseNotes,
     saveProductUpdate
 } from "../src/storage/index.js";
 import { execSync } from "child_process";
 import fs from "fs";
+import path from "path";
 
 function formatMonthLabel(targetMonth) {
     const [year, month] = targetMonth.split("-").map(Number);
@@ -119,6 +121,23 @@ function buildFallbackReleaseNotes(targetMonth, rawItems, error) {
     }
 
     return lines.join("\n").trim() + "\n";
+}
+
+function getClusterSummaryPath(targetMonth, cluster) {
+    const summaryDir = path.join(getMonthStorageDir(targetMonth), "cluster-summaries");
+    if (!fs.existsSync(summaryDir)) fs.mkdirSync(summaryDir, { recursive: true });
+    return path.join(summaryDir, `${normalizeSlugSegment(cluster.name)}.json`);
+}
+
+function buildClusterFallbackSummary(cluster, clusterItems, error) {
+    const selected = clusterItems.slice(0, 5);
+    const titles = selected
+        .map(item => `${item.repo.split("/").pop()}#${item.number}: ${item.title}`)
+        .join("; ");
+    const additional = clusterItems.length > selected.length
+        ? `, plus ${clusterItems.length - selected.length} more related change${clusterItems.length - selected.length === 1 ? "" : "s"}`
+        : "";
+    return `${cluster.name} includes ${titles}${additional}. This section needs editorial review because the cluster summarizer failed: ${error.message}`;
 }
 
 (async () => {
@@ -289,15 +308,36 @@ function buildFallbackReleaseNotes(targetMonth, rawItems, error) {
         const clusterItems = cluster.itemIds.map(id => rawDataMap.get(id)).filter(Boolean);
         if (clusterItems.length === 0) continue;
 
-        const summaryText = await runSummarizer(targetMonth, cluster, clusterItems);
+        const summaryPath = getClusterSummaryPath(targetMonth, cluster);
+        let summaryRecord;
+        if (CONFIG.REUSE_CLUSTER_SUMMARIES && fs.existsSync(summaryPath)) {
+            console.log(`    ↳ Reusing saved cluster summary from ${summaryPath}`);
+            summaryRecord = JSON.parse(fs.readFileSync(summaryPath, "utf8"));
+        } else {
+            let summaryText;
+            try {
+                summaryText = await runSummarizer(targetMonth, cluster, clusterItems);
+            } catch (error) {
+                if (!CONFIG.CONTINUE_ON_SUMMARIZER_ERROR) throw error;
+                console.warn(`    ⚠️  Cluster summarizer failed for ${cluster.name}: ${error.message}`);
+                summaryText = buildClusterFallbackSummary(cluster, clusterItems, error);
+            }
+            summaryRecord = {
+                name: cluster.name,
+                summary: summaryText,
+                prReferences: clusterItems.map(item => ({
+                    repo: item.repo,
+                    number: item.number,
+                    url: `https://github.com/${item.repo}/pull/${item.number}`
+                }))
+            };
+            fs.writeFileSync(summaryPath, JSON.stringify(summaryRecord, null, 2));
+        }
+
         clusterSummaries.push({
             name: cluster.name,
-            summary: summaryText,
-            prReferences: clusterItems.map(item => ({
-                repo: item.repo,
-                number: item.number,
-                url: `https://github.com/${item.repo}/pull/${item.number}`
-            }))
+            summary: summaryRecord.summary,
+            prReferences: summaryRecord.prReferences
         });
     }
 

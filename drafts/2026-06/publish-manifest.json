@@ -1,8 +1,8 @@
 {
   "month": "2026-06",
   "mode": "monthly",
-  "generatedAt": "2026-07-06T11:41:01.401Z",
-  "requestedAt": "2026-07-06T11:41:01.402Z",
+  "generatedAt": "2026-07-07T10:29:07.490Z",
+  "requestedAt": "2026-07-07T10:29:07.495Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
@@ -16,7 +16,176 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "c13e7ea4ea9d2241728b23370bd8d08e4ac65b64fa6f3649c249344d533e040d"
+      "contentHash": "70449beee1700b395fcfe5ead9c51de9cd13b8879e1ef249861eec6aa6c6b7c4"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-introduces-agent-composer-for-building-governed-oms-agents",
+      "contentType": "product-update",
+      "title": "HotWax introduces Agent Composer for building governed OMS agents",
+      "slug": "product-updates/2026-06/hotwax-introduces-agent-composer-for-building-governed-oms-agents",
+      "filePath": "drafts/2026-06/product-updates/hotwax_introduces_agent_composer_for_building_governed_oms_agents.md",
+      "metaDescription": "Retail teams often know which OMS questions they want answered, but turning those ideas into safe automation usually requires a custom project. Agent Composer…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "2243c9addce1c7398e794db99dfcef88823b7bb3b86559e939a0e4ef26e8d5aa",
+      "sourceFaq": "agent-composer-oms-agents.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-turns-datadocuments-into-a-self-service-operational-report-builder",
+      "contentType": "product-update",
+      "title": "HotWax turns DataDocuments into a self-service operational report builder",
+      "slug": "product-updates/2026-06/hotwax-turns-datadocuments-into-a-self-service-operational-report-builder",
+      "filePath": "drafts/2026-06/product-updates/hotwax_turns_datadocuments_into_a_self_service_operational_report_builder.md",
+      "metaDescription": "Operational reports often start as support requests or one-off SQL because the data lives across orders, items, jobs, messages, products, and facilities. That…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "2e4ebe57c8d1fb9df44afac6f3a74a31c5eb8eaf2a4559d70a09636e793f2035",
+      "sourceFaq": "data-document-report-builder.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-launches-job-manager-v2-a-maarg-first-control-plane-for-integration-operations",
+      "contentType": "product-update",
+      "title": "HotWax launches Job Manager V2, a Maarg-first control plane for integration operations",
+      "slug": "product-updates/2026-06/hotwax-launches-job-manager-v2-a-maarg-first-control-plane-for-integration-operations",
+      "filePath": "drafts/2026-06/product-updates/hotwax_launches_job_manager_v2_a_maarg_first_control_plane_for_integration_operations.md",
+      "metaDescription": "Integration operations depend on scheduled jobs, files, system messages, search indexes, and configuration records. When those tools are scattered across gener…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "8e3920f56bece3e8a12e2295f15975deda7432fd91e3dcb34affcba60066bce4",
+      "sourceFaq": "job-manager-v2-overall.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-gives-fulfillment-teams-a-real-time-order-funnel-for-seeing-where-orders-are-moving-blocked-and-waiting-to-sync",
+      "contentType": "product-update",
+      "title": "HotWax gives fulfillment teams a real-time order funnel for seeing where orders are moving, blocked, and waiting to sync",
+      "slug": "product-updates/2026-06/hotwax-gives-fulfillment-teams-a-real-time-order-funnel-for-seeing-where-orders-are-moving-blocked-and-waiting-to-sync",
+      "filePath": "drafts/2026-06/product-updates/hotwax_gives_fulfillment_teams_a_real_time_order_funnel_for_seeing_where_orders_are_moving_blocked_and_waiting_to_sync.md",
+      "metaDescription": "Fulfillment teams need to know where work is building up: open orders, brokering, picking, packing, rejected work, unfillable orders, and held tasks. A report…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "7e0fae001278c120b3c7458166f68935a7a448aa9bfe9f36193d8bfdbba412ea",
+      "sourceFaq": "order-funnel.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-turns-stuck-orders-into-assigned-actionable-work-instead-of-one-status-at-a-time-holds",
+      "contentType": "product-update",
+      "title": "HotWax turns stuck orders into assigned, actionable work instead of one-status-at-a-time holds",
+      "slug": "product-updates/2026-06/hotwax-turns-stuck-orders-into-assigned-actionable-work-instead-of-one-status-at-a-time-holds",
+      "filePath": "drafts/2026-06/product-updates/hotwax_turns_stuck_orders_into_assigned_actionable_work_instead_of_one_status_at_a_time_holds.md",
+      "metaDescription": "A single order status cannot explain every reason an order is stuck. Fraud review, bad address review, substitution work, and shipment exceptions may all need…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "d1e81fca2c498e64aa73410f60a30f0d3be5f6d55a8d64ec77bb7c827614cec9",
+      "sourceFaq": "order-tasks.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-turns-pick-profiles-into-business-controlled-downstream-sync-queues",
+      "contentType": "product-update",
+      "title": "HotWax turns pick profiles into business-controlled downstream sync queues",
+      "slug": "product-updates/2026-06/hotwax-turns-pick-profiles-into-business-controlled-downstream-sync-queues",
+      "filePath": "drafts/2026-06/product-updates/hotwax_turns_pick_profiles_into_business_controlled_downstream_sync_queues.md",
+      "metaDescription": "Downstream fulfillment systems do not always need every eligible order at once. Retailers may need to hold back work by facility, priority, customer segment, d…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "dcde088686d69878179eefc466d6a5ae0a7791452a1a9760ff35f20d7c51a072",
+      "sourceFaq": "pick-profiles-downstream-sync-queuing.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-adds-product-substitution-logic-for-rescuing-sold-out-orders-before-they-become-cancellations",
+      "contentType": "product-update",
+      "title": "HotWax adds product substitution logic for rescuing sold-out orders before they become cancellations",
+      "slug": "product-updates/2026-06/hotwax-adds-product-substitution-logic-for-rescuing-sold-out-orders-before-they-become-cancellations",
+      "filePath": "drafts/2026-06/product-updates/hotwax_adds_product_substitution_logic_for_rescuing_sold_out_orders_before_they_become_cancellations.md",
+      "metaDescription": "A sold-out SKU can make an order look unfillable even when a retailer has an approved substitute in stock. Without structured substitution, teams rely on manua…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "1ee8be6e59b880493ca19bdd3b76139b48582552cd57a7a59a49da7b31588123",
+      "sourceFaq": "product-substitution-logic.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-launches-products-a-dedicated-app-for-operational-product-data-management",
+      "contentType": "product-update",
+      "title": "HotWax launches Products, a dedicated app for operational product data management",
+      "slug": "product-updates/2026-06/hotwax-launches-products-a-dedicated-app-for-operational-product-data-management",
+      "filePath": "drafts/2026-06/product-updates/hotwax_launches_products_a_dedicated_app_for_operational_product_data_management.md",
+      "metaDescription": "OMS product data includes identifiers, variants, facility relationships, dimensions, store mappings, and fulfillment attributes. Those records affect routing a…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "a342dcac21a91f2f456130163260c16537d8264e6e4b8d0170c6730aba61d51b",
+      "sourceFaq": "products-app-overall.md"
+    },
+    {
+      "key": "product-update:2026-06:respecting-shopify-fulfillment-holds",
+      "contentType": "product-update",
+      "title": "Respecting Shopify Fulfillment Holds",
+      "slug": "product-updates/2026-06/respecting-shopify-fulfillment-holds",
+      "filePath": "drafts/2026-06/product-updates/respecting_shopify_fulfillment_holds.md",
+      "metaDescription": "Shopify or third-party apps may place an order on hold for fraud, address, marketplace, or cooling-period reasons. If OMS ignores that signal, risky work can r…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "04220f495af3c4484e6e3a08ae7852b5384cc1a26ae26e88060fcb1d01cd921c",
+      "sourceFaq": "shopify-fulfillment-holds.md"
+    },
+    {
+      "key": "product-update:2026-06:shopify-native-bopis-fulfillment-order-integration",
+      "contentType": "product-update",
+      "title": "Shopify Native BOPIS Fulfillment Order Integration",
+      "slug": "product-updates/2026-06/shopify-native-bopis-fulfillment-order-integration",
+      "filePath": "drafts/2026-06/product-updates/shopify_native_bopis_fulfillment_order_integration.md",
+      "metaDescription": "Shopify native pickup is represented through Fulfillment Orders. Treating pickup as tags, line-item properties, or shipping work makes mixed carts and customer…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "7b77dfd9f9dc4a61a836a1600eb536732f02e082269cd857589a594d5cb3f405",
+      "sourceFaq": "shopify-native-bopis-fulfillment-orders.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-now-uses-shopify-risk-signals-to-hold-review-and-release-suspicious-orders-before-fulfillment",
+      "contentType": "product-update",
+      "title": "HotWax now uses Shopify risk signals to hold, review, and release suspicious orders before fulfillment",
+      "slug": "product-updates/2026-06/hotwax-now-uses-shopify-risk-signals-to-hold-review-and-release-suspicious-orders-before-fulfillment",
+      "filePath": "drafts/2026-06/product-updates/hotwax_now_uses_shopify_risk_signals_to_hold_review_and_release_suspicious_orders_before_fulfillment.md",
+      "metaDescription": "Shopify risk assessments are useful only if they affect the fulfillment decision before warehouse or 3PL release. Notes alone do not stop a suspicious order fr…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "df0b406b4ec3c852520a8ac9212031353ab6c7ae49cf5ff3de325252f02808fa",
+      "sourceFaq": "shopify-risk-assessment-integration.md"
+    },
+    {
+      "key": "product-update:2026-06:managing-third-party-fulfillment-services",
+      "contentType": "product-update",
+      "title": "Managing Third-Party Fulfillment Services",
+      "slug": "product-updates/2026-06/managing-third-party-fulfillment-services",
+      "filePath": "drafts/2026-06/product-updates/managing_third_party_fulfillment_services.md",
+      "metaDescription": "Retailers often use Shopify-native fulfillment services and OMS-routed 3PLs at the same time. If OMS re-routes work Shopify already assigned, the systems can c…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "72759b8d326548ea780ae7f5b9133c2b33aad0b51bcfc3c28b10a628695b3d91",
+      "sourceFaq": "third-party-fulfillment.md"
+    },
+    {
+      "key": "product-update:2026-06:hotwax-brings-atp-routing-facility-groups-and-product-inventory-into-one-sourcing-workspace",
+      "contentType": "product-update",
+      "title": "HotWax brings ATP, routing, facility groups, and product inventory into one sourcing workspace",
+      "slug": "product-updates/2026-06/hotwax-brings-atp-routing-facility-groups-and-product-inventory-into-one-sourcing-workspace",
+      "filePath": "drafts/2026-06/product-updates/hotwax_brings_atp_routing_facility_groups_and_product_inventory_into_one_sourcing_workspace.md",
+      "metaDescription": "Routing decisions depend on ATP rules, facility groups, inventory channels, product-facility settings, and brokering rules. When those controls live in separat…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "fb158b8aee600d711de63f22c2fe286a06d7839f13ff6fbc9a8ee51f20a34820",
+      "sourceFaq": "unified-routing-sourcing-workspace.md"
     }
   ]
 }

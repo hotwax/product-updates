@@ -1,0 +1,36 @@
+{
+  "name": "Shopify fulfillment holds and 3PL routing",
+  "summary": "HotWax now has a clearer app and integration story for Shopify fulfillment holds and third-party fulfillment services. Shopify-assigned fulfillment service work can be respected instead of re-brokered, OMS-assigned 3PL work can still be routed by HotWax, and Shopify fulfillment holds can pause order processing until Shopify releases the work.\n\nThis protects mixed fulfillment models. Retailers can use Shopify-native routing, HotWax brokering, marketplace cooling periods, fraud holds, and 3PL assignments without forcing every line item through the same operational path.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "235",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/235"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "238",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/238"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "245",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/245"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "269",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/269"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "274",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/274"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "276",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/276"
+    }
+  ]
+}

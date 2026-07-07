@@ -1,0 +1,66 @@
+{
+  "name": "Parking, ship groups, and order detail depth",
+  "summary": "Order Manager also gained deeper order-level contracts. Ship group APIs now return the details an operator needs, including addresses and negative reservation context. Shipping information can be updated, ship groups can be parked, full orders can be parked, and safeguards prevent parking after fulfillment has already started.\n\nThese controls matter because exception work often happens after an order has already entered a fulfillment path. The app can now pause work in a more precise way, preserve order detail context, and avoid broad status changes when only a specific ship group or fulfillment path needs attention.",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "579",
+      "url": "https://github.com/hotwax/oms/pull/579"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "580",
+      "url": "https://github.com/hotwax/oms/pull/580"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "582",
+      "url": "https://github.com/hotwax/oms/pull/582"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "596",
+      "url": "https://github.com/hotwax/oms/pull/596"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "597",
+      "url": "https://github.com/hotwax/oms/pull/597"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "598",
+      "url": "https://github.com/hotwax/oms/pull/598"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "608",
+      "url": "https://github.com/hotwax/oms/pull/608"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "609",
+      "url": "https://github.com/hotwax/oms/pull/609"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "616",
+      "url": "https://github.com/hotwax/oms/pull/616"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "617",
+      "url": "https://github.com/hotwax/oms/pull/617"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "618",
+      "url": "https://github.com/hotwax/oms/pull/618"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "633",
+      "url": "https://github.com/hotwax/oms/pull/633"
+    }
+  ]
+}

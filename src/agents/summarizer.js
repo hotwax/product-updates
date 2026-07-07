@@ -33,5 +33,7 @@ Output JUST the summary text.
         return `Mock summary for cluster: ${cluster.name}. This is a cohesive release note entry summarizing the updates in this cluster.`;
     }
 
-    return await analyzeWithGemini(clusterPrompt, CONFIG.MODEL_CONFIG.SUMMARIZER);
+    return await analyzeWithGemini(clusterPrompt, CONFIG.MODEL_CONFIG.SUMMARIZER, CONFIG.GEMINI_SUMMARIZER_RETRIES, {
+        maxOutputTokens: CONFIG.GEMINI_SUMMARIZER_MAX_OUTPUT_TOKENS
+    });
 }

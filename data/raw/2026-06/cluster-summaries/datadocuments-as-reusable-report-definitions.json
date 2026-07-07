@@ -1,0 +1,26 @@
+{
+  "name": "DataDocuments as reusable report definitions",
+  "summary": "The DataDocument report builder gives implementation and operations teams a low-code way to create reusable OMS reports. A DataDocument can define the root entity, related entities, selected fields, aliases, measures, conditions, preview behavior, export behavior, and scheduled delivery.\n\nThat matters because the same definition can support a live preview, a CSV export, a scheduled email, an exception report, or a future data feed. June adds the foundation for treating operational reports as reusable product assets instead of one-off SQL or support requests.\n\n\n\n## Fulfillment and Shopify-connected operations",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "240",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/240"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "279",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/279"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "115",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/115"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "148",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/148"
+    }
+  ]
+}

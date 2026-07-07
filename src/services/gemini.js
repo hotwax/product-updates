@@ -1,15 +1,28 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 import { delay } from "../utils/index.js";
 import { CONFIG } from "../config/index.js";
-import fs from "fs";
-import path from "path";
 
-const genAI = new GoogleGenerativeAI(CONFIG.GEMINI_API_KEY);
+const genAI = new GoogleGenAI({ apiKey: CONFIG.GEMINI_API_KEY });
+const LONG_PROMPT_CHARS = 50000;
+
+function getCallTimeoutMs(prompt) {
+    return prompt.length > LONG_PROMPT_CHARS
+        ? CONFIG.GEMINI_LONG_CALL_TIMEOUT_MS
+        : CONFIG.GEMINI_CALL_TIMEOUT_MS;
+}
+
+function extractResponseText(response) {
+    if (typeof response.text === "string") return response.text;
+    if (typeof response.text === "function") return response.text();
+    const parts = response.candidates?.[0]?.content?.parts || [];
+    return parts.map(part => part.text || "").join("").trim();
+}
 
 function calculateCost(modelName, usage) {
     if (!usage) return 0;
     const modelKey = modelName.replace("models/", "");
-    const pricing = CONFIG.PRICING[modelKey] || CONFIG.PRICING["gemini-1.5-flash"];
+    const pricing = CONFIG.PRICING[modelKey];
+    if (!pricing) return null;
     
     const inputTokens = usage.promptTokenCount || 0;
     const outputTokens = usage.candidatesTokenCount || (usage.totalTokenCount ? usage.totalTokenCount - inputTokens : 0);
@@ -19,47 +32,63 @@ function calculateCost(modelName, usage) {
     return inputCost + outputCost;
 }
 
-export async function analyzeWithGemini(prompt, models = CONFIG.DEFAULT_MODELS, retries = 5) {
+export async function analyzeWithGemini(prompt, models = CONFIG.DEFAULT_MODELS, retries = 5, options = {}) {
     // Proactive delay before call to manage RPM
     await delay(5000);
 
     const startTime = Date.now();
+    const timeoutMs = getCallTimeoutMs(prompt);
 
     for (let attempt = 1; attempt <= retries; attempt++) {
         let allRateLimited = true;
         for (const modelName of models) {
             try {
-                const fullModelName = modelName.startsWith("models/") ? modelName : `models/${modelName}`;
-                console.log(`Trying Gemini model: ${fullModelName} (Attempt ${attempt}/${retries})`);
-                const model = genAI.getGenerativeModel({ model: fullModelName });
+                const fullModelName = modelName.replace(/^models\//, "");
+                console.log(`Trying Gemini model: ${fullModelName} (Attempt ${attempt}/${retries}, timeout ${Math.round(timeoutMs / 1000)}s)`);
                 
-                const result = await model.generateContent({
-                    contents: [{ role: 'user', parts: [{ text: prompt }] }],
+                const response = await genAI.models.generateContent({
+                    model: fullModelName,
+                    contents: prompt,
+                    config: {
+                        ...(options.maxOutputTokens ? { maxOutputTokens: options.maxOutputTokens } : {}),
+                        httpOptions: {
+                            timeout: timeoutMs,
+                        },
+                    },
                 });
 
-                const response = result.response;
                 const duration = ((Date.now() - startTime) / 1000).toFixed(2);
-                const usage = response.usageMetadata;
+                const usage = response.usageMetadata || response.usage_metadata;
                 if (usage) {
                     const inputTokens = usage.promptTokenCount || 0;
                     const outputTokens = usage.candidatesTokenCount || (usage.totalTokenCount ? usage.totalTokenCount - inputTokens : 0);
                     const cost = calculateCost(fullModelName, usage);
-                    console.log(`[COST] ${fullModelName} | Tokens: ${inputTokens} in, ${outputTokens} out | Est. Cost: $${cost.toFixed(6)} | Duration: ${duration}s`);
+                    const costText = cost === null ? "unknown" : `$${cost.toFixed(6)}`;
+                    console.log(`[COST] ${fullModelName} | Tokens: ${inputTokens} in, ${outputTokens} out | Est. Cost: ${costText} | Duration: ${duration}s`);
                 } else {
                     console.log(`[DEBUG] ${fullModelName} call completed in ${duration}s`);
                 }
 
-                return response.text();
+                const text = extractResponseText(response);
+                if (!text) {
+                    throw new Error(`Model ${fullModelName} returned no text`);
+                }
+                return text;
             } catch (e) {
-                const isRateLimit = e.message.includes("429")
-                    || e.message.includes("503")
-                    || e.message.includes("Too Many Requests")
-                    || e.message.includes("Service Unavailable")
-                    || e.message.includes("high demand")
-                    || e.message.includes("overloaded");
+                const message = String(e.message || e);
+                const isRateLimit = message.includes("429")
+                    || message.includes("RESOURCE_EXHAUSTED")
+                    || message.includes("AbortError")
+                    || message.includes("aborted")
+                    || message.includes("timeout")
+                    || message.includes("503")
+                    || message.includes("Too Many Requests")
+                    || message.includes("Service Unavailable")
+                    || message.includes("high demand")
+                    || message.includes("overloaded");
                 if (!isRateLimit) {
                     allRateLimited = false;
-                    console.warn(`    ⚠️  ${modelName} failed with non-rate-limit error: ${e.message}`);
+                    console.warn(`    ⚠️  ${modelName} failed with non-rate-limit error: ${message}`);
                 } else {
                     console.warn(`    ⏳ ${modelName} hit rate limit.`);
                 }

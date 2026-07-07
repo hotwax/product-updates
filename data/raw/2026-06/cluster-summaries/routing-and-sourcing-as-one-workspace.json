@@ -1,0 +1,51 @@
+{
+  "name": "Routing and Sourcing as one workspace",
+  "summary": "Routing, ATP, facility groups, inventory channels, product inventory, and brokering controls are moving into one operating model. The Unified Routing and Sourcing workspace gives teams a single place to understand which inventory can be promised, which facilities participate, which rules protect inventory, and which routing decision should receive the order.\n\nThe implementation foundation supports that app direction. Facility group and facility services are more complete, product-facility and inventory views are richer, and routing can account for substitute inventory when a location does not have the requested product but does have an eligible substitute.\n\n\n\n## Job Manager and integration operations",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "578",
+      "url": "https://github.com/hotwax/oms/pull/578"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "632",
+      "url": "https://github.com/hotwax/oms/pull/632"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "655",
+      "url": "https://github.com/hotwax/oms/pull/655"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "659",
+      "url": "https://github.com/hotwax/oms/pull/659"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "600",
+      "url": "https://github.com/hotwax/oms/pull/600"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "621",
+      "url": "https://github.com/hotwax/oms/pull/621"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "667",
+      "url": "https://github.com/hotwax/oms/pull/667"
+    },
+    {
+      "repo": "hotwax/OrderRouting",
+      "number": "121",
+      "url": "https://github.com/hotwax/OrderRouting/pull/121"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "536",
+      "url": "https://github.com/hotwax/oms/pull/536"
+    }
+  ]
+}

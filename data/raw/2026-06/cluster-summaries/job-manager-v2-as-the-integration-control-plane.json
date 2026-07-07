@@ -1,0 +1,71 @@
+{
+  "name": "Job Manager V2 as the integration control plane",
+  "summary": "Job Manager V2 is becoming the Maarg-first control plane for integration operations. Instead of exposing broad framework administration, the app is focused on the jobs, files, system messages, DataDocuments, search indexes, and health tools that keep OMS integrations moving.\n\nJune adds more of the backend surface for that direction: Data Manager endpoints, system-message ordering, Solr setup and indexing services, admin onboarding endpoints, login/logout support, and job response handling. This turns Job Manager into the operating room for the scheduled and event-driven work behind orders, products, inventory, and fulfillment updates.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "115",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/115"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "116",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/116"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "107",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/107"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "109",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/109"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "114",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/114"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "117",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/117"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "120",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/120"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "121",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/121"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "148",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/148"
+    },
+    {
+      "repo": "hotwax/hotwax-maarg-util",
+      "number": "151",
+      "url": "https://github.com/hotwax/hotwax-maarg-util/pull/151"
+    },
+    {
+      "repo": "hotwax/job-manager",
+      "number": "908",
+      "url": "https://github.com/hotwax/job-manager/pull/908"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "631",
+      "url": "https://github.com/hotwax/oms/pull/631"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "674",
+      "url": "https://github.com/hotwax/oms/pull/674"
+    }
+  ]
+}

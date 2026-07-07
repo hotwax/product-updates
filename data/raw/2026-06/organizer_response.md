@@ -1,4 +1,20 @@
+```json
 {
+  "repoLogicalNames": {
+    "hotwax/receiving": "Receiving",
+    "hotwax/bopis": "Store Pickup",
+    "hotwax/job-manager": "Job Manager",
+    "hotwax/hotwax-maarg-util": "Maarg Utilities",
+    "hotwax/mantle-shopify-connector": "Shopify Connector",
+    "hotwax/oms": "Moqui OMS",
+    "hotwax/hotwax-shopify-oms-bridge": "Shopify OMS Bridge",
+    "hotwax/hotwax-oms": "OFBiz OMS",
+    "hotwax/hotwax-poorti": "Poorti",
+    "hotwax/hotwax-ofbiz-oms-usl": "OFBiz OMS USL",
+    "hotwax/mantle-netsuite-connector": "NetSuite Connector",
+    "hotwax/hotwax-unigate": "Unigate",
+    "hotwax/OrderRouting": "Order Routing"
+  },
   "clusters": [
     {
       "name": "Order tasks as real exception work",
@@ -307,3 +323,4 @@
     "hotwax/hotwax-shopify-oms-bridge#251"
   ]
 }
+```

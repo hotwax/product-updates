@@ -1,0 +1,41 @@
+{
+  "name": "Fraud review powered by Shopify risk",
+  "summary": "Shopify risk assessment is now an OMS workflow instead of disconnected fraud context. The Shopify bridge captures risk recommendation, provider assessments, risk levels, and risk facts, then forwards that payload to OMS. OMS stores the risk rollup, evaluates risk during approval, and creates review work when an order should not move straight to fulfillment.\n\nOrder Manager becomes the daily surface for that control. Fraud task cards and order detail risk context let operations teams review suspicious orders while healthy orders keep moving. Pending risk can defer approval, investigate recommendations can create review work, and cancel recommendations can either create review work or auto-cancel depending on product-store configuration.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "232",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/232"
+    },
+    {
+      "repo": "hotwax/mantle-shopify-connector",
+      "number": "365",
+      "url": "https://github.com/hotwax/mantle-shopify-connector/pull/365"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "601",
+      "url": "https://github.com/hotwax/oms/pull/601"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "615",
+      "url": "https://github.com/hotwax/oms/pull/615"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "699",
+      "url": "https://github.com/hotwax/oms/pull/699"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "702",
+      "url": "https://github.com/hotwax/oms/pull/702"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "600",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/600"
+    }
+  ]
+}

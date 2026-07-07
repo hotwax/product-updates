@@ -1,0 +1,61 @@
+{
+  "name": "Shopify location, inventory, and post-shipment events",
+  "summary": "Shopify store setup now has a clearer operational path. HotWax can fetch Shopify locations, create OMS facilities from those locations, queue order history sync, start initial inventory reset, and prevent reset inventory from being echoed back to the same Shopify store.\n\nThe release also sets up a stronger post-shipment story. Standard tracking sync remains available, while richer carrier or tracking-aggregator events can be normalized and sent back to Shopify as fulfillment events. That keeps the Shopify order status page closer to the true delivery lifecycle.",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "227",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/227"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "255",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/255"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "271",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/271"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "277",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/277"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "278",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/278"
+    },
+    {
+      "repo": "hotwax/hotwax-shopify-oms-bridge",
+      "number": "281",
+      "url": "https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/281"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "238",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/238"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "282",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/282"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "283",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/283"
+    },
+    {
+      "repo": "hotwax/mantle-shopify-connector",
+      "number": "344",
+      "url": "https://github.com/hotwax/mantle-shopify-connector/pull/344"
+    },
+    {
+      "repo": "hotwax/mantle-shopify-connector",
+      "number": "356",
+      "url": "https://github.com/hotwax/mantle-shopify-connector/pull/356"
+    }
+  ]
+}

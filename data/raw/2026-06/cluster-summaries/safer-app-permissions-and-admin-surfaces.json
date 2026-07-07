@@ -1,0 +1,31 @@
+{
+  "name": "Safer app permissions and admin surfaces",
+  "summary": "June also strengthens the permission and admin base for the new apps. OMS adds Order Manager permission seed data, app-view permissions, the COMMERCE_SUPER Administrator group, and cleaner Users app permission categories. Broad generic entity access was removed in favor of bounded endpoints, and Shopify secrets are no longer shown on OMS Shopify configuration screens.\n\nThis is the quiet work that makes the Apps release usable in customer environments. The new surfaces need the right permissions, safer data access, and seed data that works on fresh installs.\n\n\n\n## Platform readiness",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "612",
+      "url": "https://github.com/hotwax/oms/pull/612"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "670",
+      "url": "https://github.com/hotwax/oms/pull/670"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "686",
+      "url": "https://github.com/hotwax/oms/pull/686"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "588",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/588"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "619",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/619"
+    }
+  ]
+}

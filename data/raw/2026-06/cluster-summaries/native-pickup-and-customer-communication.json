@@ -1,0 +1,46 @@
+{
+  "name": "Native pickup and customer communication",
+  "summary": "Shopify native BOPIS fulfillment orders give HotWax a cleaner foundation for pickup demand. The app direction is to use Shopify Fulfillment Orders as the source of truth for pickup work, keep pickup, shipping, and local delivery separated, and let Poorti continue as the store execution surface for ready-for-pickup and handover.\n\nCommunication flows also gained more structure. Shipment completion, order completion, FedEx address validation, return labels, Klaviyo setup, and pooled shipping gateway calls all support the app experience around fulfillment and customer updates.\n\n\n\n## Agent and admin foundations",
+  "prReferences": [
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "259",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/259"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "260",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/260"
+    },
+    {
+      "repo": "hotwax/hotwax-poorti",
+      "number": "265",
+      "url": "https://github.com/hotwax/hotwax-poorti/pull/265"
+    },
+    {
+      "repo": "hotwax/hotwax-unigate",
+      "number": "78",
+      "url": "https://github.com/hotwax/hotwax-unigate/pull/78"
+    },
+    {
+      "repo": "hotwax/hotwax-unigate",
+      "number": "83",
+      "url": "https://github.com/hotwax/hotwax-unigate/pull/83"
+    },
+    {
+      "repo": "hotwax/hotwax-oms",
+      "number": "525",
+      "url": "https://github.com/hotwax/hotwax-oms/pull/525"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "561",
+      "url": "https://github.com/hotwax/oms/pull/561"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "620",
+      "url": "https://github.com/hotwax/oms/pull/620"
+    }
+  ]
+}

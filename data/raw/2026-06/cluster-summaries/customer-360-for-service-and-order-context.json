@@ -1,0 +1,41 @@
+{
+  "name": "Customer 360 for service and order context",
+  "summary": "Order Manager also gained the backend contracts for a new Customer 360 view. The customer profile is intentionally bounded: the primary customer record loads separately from orders, returns, communications, relationships, and open tasks, so the page can show a complete service picture without forcing every history list into one oversized response.\n\nThat gives customer service teams one customer workspace instead of a trail of order-only screens. A rep can start from the customer, review contact and relationship data, see customer-linked hold tasks, and connect the customer back to order detail context such as communications, returns, work efforts, and party information. Customer search also received Solr indexing support, so users can find the customer record before opening the full 360 view.\n\n\n\n## Products and sourcing",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "594",
+      "url": "https://github.com/hotwax/oms/pull/594"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "648",
+      "url": "https://github.com/hotwax/oms/pull/648"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "660",
+      "url": "https://github.com/hotwax/oms/pull/660"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "688",
+      "url": "https://github.com/hotwax/oms/pull/688"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "641",
+      "url": "https://github.com/hotwax/oms/pull/641"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "642",
+      "url": "https://github.com/hotwax/oms/pull/642"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "649",
+      "url": "https://github.com/hotwax/oms/pull/649"
+    }
+  ]
+}
