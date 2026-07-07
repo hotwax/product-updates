@@ -44,6 +44,15 @@ jobs:
           echo "target_month=$TARGET_MONTH" >> "$GITHUB_OUTPUT"
           echo "branch_name=${BRANCH_PREFIX}-${TARGET_MONTH}" >> "$GITHUB_OUTPUT"
 
+      - name: Fetch raw monthly context
+        env:
+          ORG_GIT_API: ${{ secrets.ORG_GIT_API }}
+          SOURCE_REPOS: ${{ vars.SOURCE_REPOS }}
+          PRODUCTION: "true"
+          MONTH: ${{ steps.meta.outputs.target_month }}
+          GENERATION_MODE: "monthly"
+        run: npm run fetch:monthly-raw
+
       - name: Generate monthly drafts
         env:
           ORG_GIT_API: ${{ secrets.ORG_GIT_API }}
@@ -73,6 +82,7 @@ jobs:
             Generated monthly release notes and product updates for `${{ steps.meta.outputs.target_month }}`.
 
             Included artifacts:
+            - `data/raw/${{ steps.meta.outputs.target_month }}/raw_context.jsonl`
             - `drafts/${{ steps.meta.outputs.target_month }}/release-notes.md`
             - `drafts/${{ steps.meta.outputs.target_month }}/product-updates/*`
             - `drafts/${{ steps.meta.outputs.target_month }}/publish-manifest.json`

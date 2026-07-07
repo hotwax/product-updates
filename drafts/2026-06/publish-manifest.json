@@ -1,0 +1,22 @@
+{
+  "month": "2026-06",
+  "mode": "monthly",
+  "generatedAt": "2026-07-06T11:41:01.401Z",
+  "requestedAt": "2026-07-06T11:41:01.402Z",
+  "requestedBy": "local",
+  "replayReason": null,
+  "items": [
+    {
+      "key": "release-notes:2026-06",
+      "contentType": "release-note",
+      "title": "June 2026 Apps Release Notes",
+      "slug": "release-notes/2026-06",
+      "filePath": "drafts/2026-06/release-notes.md",
+      "metaDescription": "June is the Apps release built on top of the API foundation from May. The month brings the operating surfaces for order exceptions, sourcing, product data, int…",
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "c13e7ea4ea9d2241728b23370bd8d08e4ac65b64fa6f3649c249344d533e040d"
+    }
+  ]
+}
