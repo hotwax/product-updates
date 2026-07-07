@@ -1,0 +1,302 @@
+{
+  "clusters": [
+    {
+      "name": "Order tasks as real exception work",
+      "reason": "Items cited in the current 2026-06 release note section \"Order tasks as real exception work\".",
+      "itemIds": [
+        "hotwax/oms#587",
+        "hotwax/oms#589",
+        "hotwax/oms#593",
+        "hotwax/oms#613",
+        "hotwax/oms#615",
+        "hotwax/oms#688",
+        "hotwax/oms#697"
+      ]
+    },
+    {
+      "name": "Fraud review powered by Shopify risk",
+      "reason": "Items cited in the current 2026-06 release note section \"Fraud review powered by Shopify risk\".",
+      "itemIds": [
+        "hotwax/hotwax-shopify-oms-bridge#232",
+        "hotwax/mantle-shopify-connector#365",
+        "hotwax/oms#601",
+        "hotwax/oms#699",
+        "hotwax/oms#702",
+        "hotwax/hotwax-oms#600"
+      ]
+    },
+    {
+      "name": "Order Funnel as the fulfillment operating dashboard",
+      "reason": "Items cited in the current 2026-06 release note section \"Order Funnel as the fulfillment operating dashboard\".",
+      "itemIds": [
+        "hotwax/oms#629",
+        "hotwax/oms#645",
+        "hotwax/oms#673",
+        "hotwax/oms#676",
+        "hotwax/oms#630",
+        "hotwax/oms#640"
+      ]
+    },
+    {
+      "name": "Parking, ship groups, and order detail depth",
+      "reason": "Items cited in the current 2026-06 release note section \"Parking, ship groups, and order detail depth\".",
+      "itemIds": [
+        "hotwax/oms#579",
+        "hotwax/oms#580",
+        "hotwax/oms#582",
+        "hotwax/oms#596",
+        "hotwax/oms#597",
+        "hotwax/oms#598",
+        "hotwax/oms#608",
+        "hotwax/oms#609",
+        "hotwax/oms#616",
+        "hotwax/oms#617",
+        "hotwax/oms#618",
+        "hotwax/oms#633"
+      ]
+    },
+    {
+      "name": "Products as the operational product data app",
+      "reason": "Items cited in the current 2026-06 release note section \"Products as the operational product data app\".",
+      "itemIds": [
+        "hotwax/oms#35",
+        "hotwax/oms#576",
+        "hotwax/oms#590",
+        "hotwax/oms#591",
+        "hotwax/oms#595",
+        "hotwax/oms#606",
+        "hotwax/oms#614",
+        "hotwax/oms#627",
+        "hotwax/oms#690",
+        "hotwax/hotwax-oms#554"
+      ]
+    },
+    {
+      "name": "Routing and Sourcing as one workspace",
+      "reason": "Items cited in the current 2026-06 release note section \"Routing and Sourcing as one workspace\".",
+      "itemIds": [
+        "hotwax/oms#578",
+        "hotwax/oms#632",
+        "hotwax/oms#655",
+        "hotwax/oms#659",
+        "hotwax/oms#600",
+        "hotwax/oms#621",
+        "hotwax/oms#667",
+        "hotwax/OrderRouting#121",
+        "hotwax/oms#536"
+      ]
+    },
+    {
+      "name": "Job Manager V2 as the integration control plane",
+      "reason": "Items cited in the current 2026-06 release note section \"Job Manager V2 as the integration control plane\".",
+      "itemIds": [
+        "hotwax/hotwax-maarg-util#115",
+        "hotwax/hotwax-maarg-util#116",
+        "hotwax/hotwax-maarg-util#107",
+        "hotwax/hotwax-maarg-util#109",
+        "hotwax/hotwax-maarg-util#114",
+        "hotwax/hotwax-maarg-util#117",
+        "hotwax/hotwax-maarg-util#120",
+        "hotwax/hotwax-maarg-util#121",
+        "hotwax/hotwax-maarg-util#148",
+        "hotwax/hotwax-maarg-util#151",
+        "hotwax/job-manager#908",
+        "hotwax/oms#631",
+        "hotwax/oms#674"
+      ]
+    },
+    {
+      "name": "DataDocuments as reusable report definitions",
+      "reason": "Items cited in the current 2026-06 release note section \"DataDocuments as reusable report definitions\".",
+      "itemIds": [
+        "hotwax/hotwax-poorti#240",
+        "hotwax/hotwax-poorti#279"
+      ]
+    },
+    {
+      "name": "Pick profiles and downstream sync queues",
+      "reason": "Items cited in the current 2026-06 release note section \"Pick profiles and downstream sync queues\".",
+      "itemIds": [
+        "hotwax/hotwax-poorti#271",
+        "hotwax/hotwax-poorti#274",
+        "hotwax/hotwax-poorti#262",
+        "hotwax/hotwax-oms#620"
+      ]
+    },
+    {
+      "name": "Shopify fulfillment holds and 3PL routing",
+      "reason": "Items cited in the current 2026-06 release note section \"Shopify fulfillment holds and 3PL routing\".",
+      "itemIds": [
+        "hotwax/hotwax-shopify-oms-bridge#235",
+        "hotwax/hotwax-shopify-oms-bridge#238",
+        "hotwax/hotwax-shopify-oms-bridge#245",
+        "hotwax/hotwax-shopify-oms-bridge#269",
+        "hotwax/hotwax-shopify-oms-bridge#274",
+        "hotwax/hotwax-shopify-oms-bridge#276"
+      ]
+    },
+    {
+      "name": "Shopify location, inventory, and post-shipment events",
+      "reason": "Items cited in the current 2026-06 release note section \"Shopify location, inventory, and post-shipment events\".",
+      "itemIds": [
+        "hotwax/hotwax-shopify-oms-bridge#227",
+        "hotwax/hotwax-shopify-oms-bridge#255",
+        "hotwax/hotwax-shopify-oms-bridge#271",
+        "hotwax/hotwax-shopify-oms-bridge#277",
+        "hotwax/hotwax-shopify-oms-bridge#278",
+        "hotwax/hotwax-shopify-oms-bridge#281",
+        "hotwax/hotwax-poorti#238",
+        "hotwax/hotwax-poorti#282",
+        "hotwax/hotwax-poorti#283",
+        "hotwax/mantle-shopify-connector#344",
+        "hotwax/mantle-shopify-connector#356"
+      ]
+    },
+    {
+      "name": "Native pickup and customer communication",
+      "reason": "Items cited in the current 2026-06 release note section \"Native pickup and customer communication\".",
+      "itemIds": [
+        "hotwax/hotwax-poorti#259",
+        "hotwax/hotwax-poorti#260",
+        "hotwax/hotwax-poorti#265",
+        "hotwax/hotwax-unigate#78",
+        "hotwax/hotwax-unigate#83",
+        "hotwax/hotwax-oms#525",
+        "hotwax/oms#561",
+        "hotwax/oms#620"
+      ]
+    },
+    {
+      "name": "Agent Composer and Workforce",
+      "reason": "Items cited in the current 2026-06 release note section \"Agent Composer and Workforce\".",
+      "itemIds": [
+        "hotwax/hotwax-maarg-util#102"
+      ]
+    },
+    {
+      "name": "Safer app permissions and admin surfaces",
+      "reason": "Items cited in the current 2026-06 release note section \"Safer app permissions and admin surfaces\".",
+      "itemIds": [
+        "hotwax/oms#612",
+        "hotwax/oms#670",
+        "hotwax/oms#686",
+        "hotwax/hotwax-oms#588",
+        "hotwax/hotwax-oms#619"
+      ]
+    },
+    {
+      "name": "Data loading, setup, and integration reliability",
+      "reason": "Items cited in the current 2026-06 release note section \"Data loading, setup, and integration reliability\".",
+      "itemIds": [
+        "hotwax/mantle-netsuite-connector#245",
+        "hotwax/mantle-netsuite-connector#247",
+        "hotwax/mantle-netsuite-connector#249",
+        "hotwax/hotwax-shopify-oms-bridge#252",
+        "hotwax/hotwax-shopify-oms-bridge#263",
+        "hotwax/hotwax-shopify-oms-bridge#286",
+        "hotwax/oms#635",
+        "hotwax/oms#637",
+        "hotwax/oms#652",
+        "hotwax/oms#683",
+        "hotwax/oms#706",
+        "hotwax/hotwax-ofbiz-oms-usl#28",
+        "hotwax/hotwax-ofbiz-oms-usl#29",
+        "hotwax/hotwax-oms#603",
+        "hotwax/hotwax-oms#612"
+      ]
+    }
+  ],
+  "noiseItemIds": [],
+  "needClarificationItemIds": [
+    "hotwax/OrderRouting#119",
+    "hotwax/OrderRouting#120",
+    "hotwax/OrderRouting#122",
+    "hotwax/bopis#790",
+    "hotwax/hotwax-maarg-util#101",
+    "hotwax/hotwax-maarg-util#110",
+    "hotwax/hotwax-maarg-util#111",
+    "hotwax/hotwax-maarg-util#118",
+    "hotwax/hotwax-maarg-util#119",
+    "hotwax/hotwax-maarg-util#152",
+    "hotwax/hotwax-maarg-util#157",
+    "hotwax/hotwax-maarg-util#158",
+    "hotwax/hotwax-maarg-util#160",
+    "hotwax/hotwax-maarg-util#161",
+    "hotwax/hotwax-maarg-util#88",
+    "hotwax/hotwax-ofbiz-oms-usl#27",
+    "hotwax/hotwax-oms#574",
+    "hotwax/hotwax-oms#584",
+    "hotwax/hotwax-oms#586",
+    "hotwax/hotwax-oms#592",
+    "hotwax/hotwax-oms#598",
+    "hotwax/hotwax-oms#599",
+    "hotwax/hotwax-oms#613",
+    "hotwax/hotwax-poorti#142",
+    "hotwax/hotwax-poorti#263",
+    "hotwax/hotwax-poorti#268",
+    "hotwax/hotwax-poorti#280",
+    "hotwax/hotwax-poorti#287",
+    "hotwax/hotwax-shopify-oms-bridge#171",
+    "hotwax/hotwax-shopify-oms-bridge#220",
+    "hotwax/hotwax-shopify-oms-bridge#243",
+    "hotwax/hotwax-shopify-oms-bridge#249",
+    "hotwax/hotwax-shopify-oms-bridge#251",
+    "hotwax/hotwax-shopify-oms-bridge#259",
+    "hotwax/hotwax-shopify-oms-bridge#262",
+    "hotwax/hotwax-shopify-oms-bridge#268",
+    "hotwax/hotwax-shopify-oms-bridge#275",
+    "hotwax/hotwax-shopify-oms-bridge#279",
+    "hotwax/hotwax-shopify-oms-bridge#280",
+    "hotwax/hotwax-shopify-oms-bridge#282",
+    "hotwax/hotwax-shopify-oms-bridge#283",
+    "hotwax/hotwax-shopify-oms-bridge#287",
+    "hotwax/hotwax-unigate#84",
+    "hotwax/hotwax-unigate#88",
+    "hotwax/hotwax-unigate#89",
+    "hotwax/mantle-netsuite-connector#243",
+    "hotwax/mantle-netsuite-connector#246",
+    "hotwax/mantle-netsuite-connector#248",
+    "hotwax/mantle-shopify-connector#342",
+    "hotwax/mantle-shopify-connector#361",
+    "hotwax/mantle-shopify-connector#366",
+    "hotwax/mantle-shopify-connector#367",
+    "hotwax/oms#516",
+    "hotwax/oms#556",
+    "hotwax/oms#566",
+    "hotwax/oms#567",
+    "hotwax/oms#581",
+    "hotwax/oms#583",
+    "hotwax/oms#584",
+    "hotwax/oms#594",
+    "hotwax/oms#604",
+    "hotwax/oms#607",
+    "hotwax/oms#625",
+    "hotwax/oms#626",
+    "hotwax/oms#638",
+    "hotwax/oms#641",
+    "hotwax/oms#642",
+    "hotwax/oms#644",
+    "hotwax/oms#646",
+    "hotwax/oms#648",
+    "hotwax/oms#649",
+    "hotwax/oms#654",
+    "hotwax/oms#657",
+    "hotwax/oms#660",
+    "hotwax/oms#661",
+    "hotwax/oms#663",
+    "hotwax/oms#664",
+    "hotwax/oms#668",
+    "hotwax/oms#677",
+    "hotwax/oms#678",
+    "hotwax/oms#679",
+    "hotwax/oms#680",
+    "hotwax/oms#682",
+    "hotwax/oms#685",
+    "hotwax/oms#689",
+    "hotwax/oms#691",
+    "hotwax/oms#692",
+    "hotwax/oms#693",
+    "hotwax/oms#694",
+    "hotwax/receiving#676"
+  ]
+}
