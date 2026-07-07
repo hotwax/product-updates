@@ -1,22 +1,22 @@
 {
   "month": "2026-05",
   "mode": "monthly",
-  "generatedAt": "2026-07-06T12:18:24.047Z",
-  "requestedAt": "2026-07-06T12:18:24.048Z",
+  "generatedAt": "2026-07-07T00:47:19.825Z",
+  "requestedAt": "2026-07-07T00:47:19.826Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
     {
       "key": "release-notes:2026-05",
       "contentType": "release-note",
-      "title": "May 2026 API and Platform Release Notes",
+      "title": "May 2026 Product Update",
       "slug": "release-notes/2026-05",
       "filePath": "drafts/2026-05/release-notes.md",
-      "metaDescription": "May is the API and platform release behind the larger app work that follows in June. The month focused on the service contracts, integration payloads, gateway…",
+      "metaDescription": "This update covers integration and service changes across five operating areas: AfterShip and native Shopify returns, PO-backed pre-order data, Shopify order a…",
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "65530be947e91de0f48179e614cc78147b78c0ad057f814dff51929969ce6822"
+      "contentHash": "9b279a4470ad4870d82d49adf503a08070320de0b1cd6f78bc8c75a1428196c1"
     }
   ]
 }
