@@ -1,8 +1,8 @@
 {
   "month": "2026-05",
   "mode": "monthly",
-  "generatedAt": "2026-07-07T00:47:19.825Z",
-  "requestedAt": "2026-07-07T00:47:19.826Z",
+  "generatedAt": "2026-07-07T11:08:40.560Z",
+  "requestedAt": "2026-07-07T11:08:40.561Z",
   "requestedBy": "local",
   "replayReason": null,
   "items": [
@@ -16,7 +16,43 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "9b279a4470ad4870d82d49adf503a08070320de0b1cd6f78bc8c75a1428196c1"
+      "contentHash": "a744d93de17ea02cb9c43e0e98b1cc5b62466133a3853f603a711fb76574b73f"
+    },
+    {
+      "key": "product-update:2026-05:hotwax-adds-purchase-order-visibility-for-preorder-management",
+      "contentType": "product-update",
+      "title": "HotWax adds purchase order visibility for Preorder management",
+      "slug": "product-updates/2026-05/hotwax-adds-purchase-order-visibility-for-preorder-management",
+      "filePath": "drafts/2026-05/product-updates/hotwax_adds_purchase_order_visibility_for_preorder_management.md",
+      "metaDescription": "Preorder depends on the purchase orders that will replenish inventory, not only the inventory currently on hand. May added the PO-backed data Preorder needs to…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "5954164d0f74fa8e6e7f996680e5164276051cba2e7d496df114037b046ffe1e"
+    },
+    {
+      "key": "product-update:2026-05:hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows",
+      "contentType": "product-update",
+      "title": "HotWax expands returns processing with AfterShip and native Shopify return flows",
+      "slug": "product-updates/2026-05/hotwax-expands-returns-processing-with-aftership-and-native-shopify-return-flows",
+      "filePath": "drafts/2026-05/product-updates/hotwax_expands_returns_processing_with_aftership_and_native_shopify_return_flows.md",
+      "metaDescription": "Returns now reach OMS earlier in the customer-service lifecycle. HotWax can import native Shopify and AfterShip returns while they are still in progress, keep…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "8dcb583fe0f1f4a8b6f4c05129def860ae4da4ffb49bc8279c9a4d130cc12990"
+    },
+    {
+      "key": "product-update:2026-05:hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues",
+      "contentType": "product-update",
+      "title": "HotWax speeds up Shopify order sync with separate create and update queues",
+      "slug": "product-updates/2026-05/hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues",
+      "filePath": "drafts/2026-05/product-updates/hotwax_speeds_up_shopify_order_sync_with_separate_create_and_update_queues.md",
+      "metaDescription": "Shopify order creation and order updates now have separate sync paths. New orders no longer need to wait behind a backlog of update jobs, while update-only pro…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "c9382f121b739cafc321ae2101c0d0915098f735a74d490189a854c3a35a4f82"
     }
   ]
 }
