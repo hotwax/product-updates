@@ -100,6 +100,27 @@
           "sourceCommit": "a79be9b35007b75c8d57ae91b7e9e6002c68e947"
         }
       }
+    },
+    "2026-05": {
+      "items": {
+        "release-notes:2026-05": {
+          "filePath": "drafts/2026-05/release-notes.md",
+          "contentType": "release-note",
+          "slug": "release-notes/2026-05",
+          "contentHash": "9b279a4470ad4870d82d49adf503a08070320de0b1cd6f78bc8c75a1428196c1",
+          "status": "pending",
+          "hubspotPostId": null,
+          "hubspotUrl": null,
+          "lastAttemptAt": null,
+          "firstPublishedAt": null,
+          "lastPublishedAt": null,
+          "lastAction": null,
+          "replayCount": 0,
+          "lastReplayReason": null,
+          "error": null,
+          "sourceCommit": "manual-may-2026-api-log-grouping"
+        }
+      }
     }
   }
 }
