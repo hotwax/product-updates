@@ -27,5 +27,3 @@ Bringing purchase orders into that workspace puts inbound supply next to the dec
 Two existing-flow fixes keep that app surface aligned with OMS behavior. When a purchase order item quantity changes, HotWax recalculates available-to-promise for that item, so users do not review stale inbound availability. Imported pre-order sales orders now create their order index after item splitting and promise-date assignment, so approved pre-orders appear in indexed order views without manual reindexing.
 
 For merchandising and operations teams, the pre-order app becomes the single home for the operational work around pre-orders and the inbound purchase orders that support them. Users can review demand, manage release decisions, update promise data, and check purchase order supply without jumping back to the legacy purchase order screens.
-
-*Sources: [hotwax-oms#505](https://github.com/hotwax/hotwax-oms/pull/505), [hotwax-oms#511](https://github.com/hotwax/hotwax-oms/pull/511), [oms#503](https://github.com/hotwax/oms/pull/503)*

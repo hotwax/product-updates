@@ -25,7 +25,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.merge_commit_sha || 'main' }}
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.merge_commit_sha || github.ref }}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -73,6 +73,13 @@ jobs:
           echo "manifest_path=$MANIFEST_PATH" >> "$GITHUB_OUTPUT"
           echo "month=$MONTH" >> "$GITHUB_OUTPUT"
 
+      - name: Prepare publish content
+        if: steps.guard.outputs.should_publish == 'true'
+        env:
+          MANIFEST_PATH: ${{ steps.manifest.outputs.manifest_path }}
+          PRODUCTION: "true"
+        run: npm run prepublish:monthly
+
       - name: Validate publish manifest
         if: steps.guard.outputs.should_publish == 'true'
         env:
@@ -90,14 +97,14 @@ jobs:
           HUBSPOT_PRIVATE_APP_TOKEN: ${{ secrets.HUBSPOT_PRIVATE_APP_TOKEN }}
           PRODUCTION: "true"
           SOURCE_REPOS: ${{ vars.SOURCE_REPOS }}
-        run: npm run publish:monthly
+        run: npm --ignore-scripts run publish:monthly
 
       - name: Create or update sync state PR
         if: steps.guard.outputs.should_publish == 'true' && steps.publish.outcome == 'success' && steps.publish.outputs.release_notes_url != ''
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
+          base: ${{ github.event_name == 'workflow_dispatch' && github.ref_name || 'main' }}
           branch: automation/publish-sync-${{ steps.manifest.outputs.month }}
           commit-message: "chore(sync): update HubSpot state for ${{ steps.manifest.outputs.month }}"
           title: "chore(sync): update HubSpot publish state for ${{ steps.manifest.outputs.month }}"

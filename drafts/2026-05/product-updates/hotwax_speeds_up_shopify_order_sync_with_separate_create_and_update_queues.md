@@ -3,7 +3,7 @@ title: HotWax speeds up Shopify order sync with separate create and update queue
 slug: product-updates/2026-05/hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues
 contentType: product-update
 month: 2026-05
-metaDescription: The unified Shopify order sync was designed to make setup simple. Before the mega-query flow, retailers had separate jobs for new orders, cancellations, return…
+metaDescription: The unified Shopify order sync was designed to make setup simple. Before the recent migration to Shopify GraphQL, retailers had separate jobs for new orders, c…
 tagNames: [Product Update]
 key: product-update:2026-05:hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues
 ---
@@ -19,5 +19,3 @@ HotWax now supports splitting Shopify order creation from order update processin
 The sync path also checks whether an order has actually changed before writing it to MDM. HotWax compares the order data that affects OMS, including customer details, payment terms, outstanding amount, fulfillment, refunds, and risk. If Shopify sends a payload that does not materially change the OMS record, the bridge can avoid unnecessary MDM work.
 
 For retailers, the practical outcome is faster first-time order import during heavy update periods and less integration work for unchanged orders. New orders can keep moving toward routing and fulfillment, while refund, fulfillment, risk, payment, and cancellation updates continue to flow for orders that already exist in OMS.
-
-*Sources: [hotwax-shopify-oms-bridge#186](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/186), [hotwax-shopify-oms-bridge#199](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/199), [hotwax-shopify-oms-bridge#153](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/153), [hotwax-shopify-oms-bridge#149](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/149), [hotwax-shopify-oms-bridge#181](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/181), [hotwax-shopify-oms-bridge#130](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/130), [hotwax-shopify-oms-bridge#155](https://github.com/hotwax/hotwax-shopify-oms-bridge/pull/155), [mantle-shopify-connector#326](https://github.com/hotwax/mantle-shopify-connector/pull/326), [mantle-shopify-connector#328](https://github.com/hotwax/mantle-shopify-connector/pull/328), [mantle-shopify-connector#329](https://github.com/hotwax/mantle-shopify-connector/pull/329), [oms#479](https://github.com/hotwax/oms/pull/479)*
