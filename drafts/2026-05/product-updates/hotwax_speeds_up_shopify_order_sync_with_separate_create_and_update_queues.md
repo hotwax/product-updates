@@ -3,20 +3,20 @@ title: HotWax speeds up Shopify order sync with separate create and update queue
 slug: product-updates/2026-05/hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues
 contentType: product-update
 month: 2026-05
-metaDescription: Shopify sends both new orders and updates to existing orders through the same integration surface, but those two jobs have different operational urgency. A new…
+metaDescription: The unified Shopify order sync was designed to make setup simple. Before the mega-query flow, retailers had separate jobs for new orders, cancellations, return…
 tagNames: [Product Update]
 key: product-update:2026-05:hotwax-speeds-up-shopify-order-sync-with-separate-create-and-update-queues
 ---
 
 # HotWax speeds up Shopify order sync with separate create and update queues
 
-Shopify sends both new orders and updates to existing orders through the same integration surface, but those two jobs have different operational urgency. A new order needs to reach OMS quickly so routing and fulfillment can start. An update to an existing order may still matter, but it should not hold back brand-new demand when update volume spikes.
+The unified Shopify order sync was designed to make setup simple. Before the recent migration to Shopify GraphQL, retailers had separate jobs for new orders, cancellations, returns, blind refunds, and updates. The newer sync path intentionally brought creation and all updates into one job pointed at recently updated Shopify orders, giving retailers broad coverage without asking them to manage a long list of scheduled jobs.
 
-HotWax now separates Shopify order creation from order update processing. The create queue is responsible for importing new orders into OMS. The update queue can run with creation disabled, so if it sees a Shopify order that does not exist in OMS yet, it skips that order and leaves creation to the create queue. Existing callers keep the default create-and-update behavior, which keeps the change bounded while allowing high-volume stores to split the work.
+That one-job model is still the easiest operating mode for many stores, but it creates a throughput tradeoff for high-volume retailers. A brand-new order needs to reach OMS quickly so routing and fulfillment can start. An update to an existing order still matters, but it should not make new demand wait behind a large backlog of refund, fulfillment, payment, risk, or cancellation updates.
+
+HotWax now supports splitting Shopify order creation from order update processing. The create queue is responsible for importing new orders into OMS. The update queue can run with creation disabled, so if it sees a Shopify order that does not exist in OMS yet, it skips that order and leaves creation to the create queue. Existing callers keep the default create-and-update behavior, while high-volume stores can accept a two-job setup when faster first-time order import matters more than keeping all Shopify order sync work in one job.
 
 The sync path also checks whether an order has actually changed before writing it to MDM. HotWax compares the order data that affects OMS, including customer details, payment terms, outstanding amount, fulfillment, refunds, and risk. If Shopify sends a payload that does not materially change the OMS record, the bridge can avoid unnecessary MDM work.
-
-Several related fixes make the separated flow safer in day-to-day order handling. Shop context and product store ID are carried through the sync flow, duplicate shipping contact records are skipped during updates, cancelled unfulfilled Shopify orders are no longer marked completed, and mixed POS or Shipsi carts keep their pre-selected fulfillment facilities instead of being overwritten by defaults.
 
 For retailers, the practical outcome is faster first-time order import during heavy update periods and less integration work for unchanged orders. New orders can keep moving toward routing and fulfillment, while refund, fulfillment, risk, payment, and cancellation updates continue to flow for orders that already exist in OMS.
 

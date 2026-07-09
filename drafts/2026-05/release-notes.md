@@ -22,10 +22,10 @@ Return and refund reconciliation also became more precise. HotWax now distinguis
 
 ## Pre-order
 
-### Purchase order visibility for Preorder management
-Preorder now has stronger purchase-order data for inbound inventory planning. Editing a purchase order item quantity recalculates that item's available-to-promise value, imported pre-order sales orders index after pre-order splitting and promise-date assignment, and the Preorder app can load purchase order list, detail, receipt, and estimated delivery date data.
+### Purchase order management in the Preorder app
+Purchase order management moved out of the legacy purchase order screens and into the Preorder app, where users already manage pre-order availability. The app can now load purchase order lists, open purchase order details, show estimated delivery dates, and review receipts tied back to purchase order items.
 
-That gives teams a cleaner way to evaluate pre-sell inventory against the purchase orders that will replenish stock, not only inventory on hand today. [Read the full Preorder update](https://www.hotwax.co/product-updates/2026-05/hotwax-adds-purchase-order-visibility-for-preorder-management).
+That puts inbound supply next to the app's existing demand tools: grouped product and order search, variant-level release decisions, warehouse allocation, cancellations, and promise-date edits. PO ATP recalculates after quantity edits, and imported pre-order sales orders index after splitting and promise-date assignment. [Read the full Preorder update](https://www.hotwax.co/product-updates/2026-05/hotwax-adds-purchase-order-visibility-for-preorder-management).
 
 *Sources: [hotwax-oms#505](https://github.com/hotwax/hotwax-oms/pull/505), [hotwax-oms#511](https://github.com/hotwax/hotwax-oms/pull/511), [oms#503](https://github.com/hotwax/oms/pull/503)*
 
