@@ -119,14 +119,6 @@ HotWax Commerce Job Manager App. Uses Ionic framework.
 ### Relations
 Uses Ionic framework. Likely manages asynchronous tasks or background processes.
 
-## hotwax/hotwax-ofbiz-oms-usl
-
-### Description
-Apache OFBiz data model as per Moqui entity definition for HotWax generated Feeds.
-
-### Relations
-Related to OFBiz and Moqui, providing data models for integration.
-
 ## hotwax/mantle-netsuite-connector
 
 ### Description

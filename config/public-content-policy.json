@@ -1,0 +1,43 @@
+{
+  "blockedClientNameHashes": [
+    "2e1d590be7f99244561dfa53ce67ec545b89102e3d1c5ccdd7c65f2615fe36e7",
+    "274017d320313341cb8fbd3fee778f6d3cab64d4507389b8fcd965c57be0eb71",
+    "382d000c8e3a29d4a683fd3d5f2e73331913eb204829189550031b68474e6e77",
+    "1f25987a806a8e8143d84900215c630c27bce552c1dfb3ddd224e1ebc38cf38a",
+    "612876684b3b6afd202c6e83d852d36e5d421388a3d9cac8e7a45bcf875d4cf2",
+    "39ee525d34bc86469f963ebf594cf3ca600e826f32a709defc9e36e0c66fae32",
+    "15729ee54e0feabdedfca79afbe38c11c71f6500fd8b5b593cd50c29899ed333",
+    "9b130321b261a6ce8250be9ea994584127a2677e28300d00fc65c3c6a89d17c7"
+  ],
+  "blockedClientNameMaxWords": 2,
+  "blockedRepositoryHashes": [
+    "571b958a3ff8310bcc7e5750a62b3cfa35771995ab38034c0f86c91243e1735d",
+    "a6c139f729f01dbc5a7dcdbc82320f3751df7467aa77d9e6503967c885f32abc"
+  ],
+  "allowedSourceRepositories": [
+    "hotwax/OrderRouting",
+    "hotwax/accxui",
+    "hotwax/bopis",
+    "hotwax/company",
+    "hotwax/dxp-components",
+    "hotwax/facilities",
+    "hotwax/fulfillment",
+    "hotwax/hotwax-maarg-util",
+    "hotwax/hotwax-oms",
+    "hotwax/hotwax-poorti",
+    "hotwax/hotwax-shopify-oms-bridge",
+    "hotwax/hotwax-unigate",
+    "hotwax/inventory-count",
+    "hotwax/job-manager",
+    "hotwax/mantle-netsuite-connector",
+    "hotwax/mantle-shopify-connector",
+    "hotwax/oms",
+    "hotwax/order-manager",
+    "hotwax/order-routing",
+    "hotwax/preorder",
+    "hotwax/press-release-faq",
+    "hotwax/products",
+    "hotwax/receiving",
+    "hotwax/transfers"
+  ]
+}

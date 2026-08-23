@@ -55,7 +55,9 @@ jobs:
       - name: Validate replay manifest and state
         env:
           MONTH: ${{ inputs.month }}
+          MANIFEST_PATH: drafts/${{ inputs.month }}/publish-manifest.json
         run: |
+          npm run validate:public-content
           npm run validate:manifest
           npm run validate:state
 
