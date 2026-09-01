@@ -1,11 +1,10 @@
 {
   "month": "2026-08",
   "mode": "monthly",
-  "generatedAt": "2026-08-23T18:55:58.880Z",
-  "requestedAt": "2026-08-23T18:55:58.880Z",
-  "requestedBy": "local",
+  "generatedAt": "2026-09-01T09:10:45.346Z",
+  "requestedAt": "2026-09-01T09:10:45.346Z",
+  "requestedBy": "finish-august-product-updates",
   "replayReason": null,
-  "publicationStatus": "draft",
   "items": [
     {
       "key": "release-notes:2026-08",
@@ -14,9 +13,10 @@
       "slug": "release-notes/2026-08",
       "filePath": "drafts/2026-08/release-notes.md",
       "metaDescription": "August connects inventory, transfers, integrations, and exception work across HotWax Commerce, with clearer controls and stronger operational visibility.",
-      "tagNames": ["Release Note"],
-      "contentHash": "209193783f6278603d61a58b99baca188fb3c6eb1f5e7f78a9435ce443e8df3f",
-      "releaseStatus": "draft"
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "d503283401301a2860260ac7fce7c11a73b80c2c8438fba7c22c36436deed2d1"
     },
     {
       "key": "product-update:2026-08:company-integration-control-center",
@@ -25,9 +25,10 @@
       "slug": "product-updates/2026-08/company-integration-control-center",
       "filePath": "drafts/2026-08/product-updates/company_integration_control_center.md",
       "metaDescription": "Company brings Shopify, NetSuite, carrier, Unigate, app-version, and batch-order controls into one HotWax Commerce administration workspace.",
-      "tagNames": ["Product Update"],
-      "contentHash": "9262d22b65535f6cf248d028afcf07389149aac907bff471278ab4de8d2d7b2d",
-      "releaseStatus": "released"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "d44de5645991b3d9d48638980434cd68db0280c7160e8703c8c907e2dd4f7528"
     },
     {
       "key": "product-update:2026-08:connected-transfer-order-workflow",
@@ -36,9 +37,10 @@
       "slug": "product-updates/2026-08/connected-transfer-order-workflow",
       "filePath": "drafts/2026-08/product-updates/connected_transfer_order_workflow.md",
       "metaDescription": "HotWax Commerce connects transfer-order creation in Receiving with OMS reservation, fulfillment permissions, and NetSuite receipt imports.",
-      "tagNames": ["Product Update"],
-      "contentHash": "391885d531aafb5c3e1e96cf11aeaa2962c0f2ac9610bdbfd125d26a9e0cecce",
-      "releaseStatus": "released"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "ae7d40c156131a21a142e78fd19748a9fb605fb689361058fcd5c48af60f81fb"
     },
     {
       "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
@@ -47,9 +49,10 @@
       "slug": "product-updates/2026-08/cycle-count-creation-and-variance-decisions",
       "filePath": "drafts/2026-08/product-updates/cycle_count_creation_and_variance_decisions.md",
       "metaDescription": "Cycle Count adds count creation for store and admin teams, better review search, and a reusable history of inventory variance decisions.",
-      "tagNames": ["Product Update"],
-      "contentHash": "284a27a97700a1ccd5dadd6c4f311e19a6ba9433929209411fe3c8d2e6d5a4e6",
-      "releaseStatus": "released"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "284a27a97700a1ccd5dadd6c4f311e19a6ba9433929209411fe3c8d2e6d5a4e6"
     },
     {
       "key": "product-update:2026-08:event-driven-shopify-inventory-publishing",
@@ -58,20 +61,10 @@
       "slug": "product-updates/2026-08/event-driven-shopify-inventory-publishing",
       "filePath": "drafts/2026-08/product-updates/event_driven_shopify_inventory_publishing.md",
       "metaDescription": "HotWax Commerce records inventory events in a durable ledger, batches Shopify updates safely, and exposes the publishing flow in Company.",
-      "tagNames": ["Product Update"],
-      "contentHash": "dfc1afd525256ea59d44bbdbb465dfb6ca14f54ddb98375fd322c552ecae0d53",
-      "releaseStatus": "released"
-    },
-    {
-      "key": "product-update:2026-08:job-manager-dashboard-drilldowns-and-shopify-bulk-operations",
-      "contentType": "product-update",
-      "title": "HotWax turns Job Manager metrics into investigation paths",
-      "slug": "product-updates/2026-08/job-manager-dashboard-drilldowns-and-shopify-bulk-operations",
-      "filePath": "drafts/2026-08/product-updates/job_manager_dashboard_drilldowns_and_shopify_bulk_operations.md",
-      "metaDescription": "Job Manager turns dashboard metrics into exact drilldowns and compares Shopify Bulk Operations with their related HotWax processing state.",
-      "tagNames": ["Product Update"],
-      "contentHash": "f2774956d597d152fe8f68d02cbc8a5dd1cfd096b77525e7ea3cfaca69a1fc9a",
-      "releaseStatus": "expected"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "dfc1afd525256ea59d44bbdbb465dfb6ca14f54ddb98375fd322c552ecae0d53"
     },
     {
       "key": "product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping",
@@ -80,31 +73,10 @@
       "slug": "product-updates/2026-08/multi-company-oms-and-netsuite-subsidiary-mapping",
       "filePath": "drafts/2026-08/product-updates/multi_company_oms_and_netsuite_subsidiary_mapping.md",
       "metaDescription": "HotWax Commerce manages internal company hierarchies and maps company external IDs to NetSuite subsidiaries in the current order export flow.",
-      "tagNames": ["Product Update"],
-      "contentHash": "d9724ea9ec8f2d13975133f0b918bec8d8d3a334bccff8978ea213962b794d81",
-      "releaseStatus": "released"
-    },
-    {
-      "key": "product-update:2026-08:order-manager-funnel-accuracy-navigation-and-accessibility",
-      "contentType": "product-update",
-      "title": "HotWax keeps the Order Manager Funnel accurate as its scope changes",
-      "slug": "product-updates/2026-08/order-manager-funnel-accuracy-navigation-and-accessibility",
-      "filePath": "drafts/2026-08/product-updates/order_manager_funnel_accuracy_navigation_and_accessibility.md",
-      "metaDescription": "The Order Manager Funnel protects live scope changes from stale data and improves time, links, and progress indicators for daily operations.",
-      "tagNames": ["Product Update"],
-      "contentHash": "984cb8e61df26616925a1650a1c2fd07d15ecef4ba1006633bcb90d52aaf5200",
-      "releaseStatus": "expected"
-    },
-    {
-      "key": "product-update:2026-08:order-manager-returns-and-hold-management",
-      "contentType": "product-update",
-      "title": "HotWax brings returns and every non-dedicated hold into Order Manager",
-      "slug": "product-updates/2026-08/order-manager-returns-and-hold-management",
-      "filePath": "drafts/2026-08/product-updates/order_manager_returns_and_hold_management.md",
-      "metaDescription": "Order Manager adds return queues and details while making every hold outside dedicated Bad Address, Swap, and Fraud queues visible and actionable.",
-      "tagNames": ["Product Update"],
-      "contentHash": "fbb1f26c102c67c58fdf2ccde7eae313ea1c226b4c17f58ba7ecee76758db9c6",
-      "releaseStatus": "expected"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "d9724ea9ec8f2d13975133f0b918bec8d8d3a334bccff8978ea213962b794d81"
     },
     {
       "key": "product-update:2026-08:order-routing-inventory-monitoring-and-schedules",
@@ -113,9 +85,10 @@
       "slug": "product-updates/2026-08/order-routing-inventory-monitoring-and-schedules",
       "filePath": "drafts/2026-08/product-updates/order_routing_inventory_monitoring_and_schedules.md",
       "metaDescription": "Order Routing explains how Online ATP is computed and adds schedules, queue state, Data Manager files, and run controls for inventory updates.",
-      "tagNames": ["Product Update"],
-      "contentHash": "155a85e0e124a8df6fb70ea01cc98d6a94bac7cadb06b6498bc8dd2b095f5eeb",
-      "releaseStatus": "released"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "155a85e0e124a8df6fb70ea01cc98d6a94bac7cadb06b6498bc8dd2b095f5eeb"
     },
     {
       "key": "product-update:2026-08:shopify-fulfillment-location-reconciliation",
@@ -124,9 +97,10 @@
       "slug": "product-updates/2026-08/shopify-fulfillment-location-reconciliation",
       "filePath": "drafts/2026-08/product-updates/shopify_fulfillment_location_reconciliation.md",
       "metaDescription": "HotWax Commerce reconciles Shopify fulfillment-location changes with OMS allocations while protecting inventory accuracy and preventing sync loops.",
-      "tagNames": ["Product Update"],
-      "contentHash": "0658189bb3abe9fec4b2e22757da3bf0f645b63a99d968f5f196997d0443d57d",
-      "releaseStatus": "released"
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "1f2c954e24763459727282b9ff94b50d20bb6fcdfaf77ebd81414eaa4f5cd89b"
     }
   ]
 }

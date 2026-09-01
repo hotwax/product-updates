@@ -1,52 +1,54 @@
 # August 2026 release gates
 
-Status checked on August 23, 2026. This file is an internal publishing control and is not HubSpot content.
+Status checked on September 1, 2026. This file is an internal publishing control and is not HubSpot content.
 
-## Publishable from released evidence
+## Final August publication set
 
-The following drafts are backed by an August application or component release. Their source links and exact claims still need the normal editorial read-through, but they do not depend on an open pull request.
+The release note and these seven product updates are backed by August application or component releases:
 
 - Shopify fulfillment-location reconciliation
-- Event-driven Shopify inventory publishing, excluding the Data Manager batch path from `mantle-shopify-connector#591`
-- Company integration control center, excluding the expanded job controls from `company#364`
+- Event-driven Shopify inventory publishing
+- Company integration control center
 - Multi-company OMS management and NetSuite subsidiary mapping
 - Connected transfer-order workflow
 - Cycle Count creation and variance decisions
 - Order Routing inventory monitoring and schedules
 
-## Release-gated content
+The month-end sweep confirmed that every pull request cited by these seven posts is merged. Every cited release is published, is not a draft or prerelease, and has an August 2026 publication date.
+
+Two changes that were gated on August 23 are now included:
+
+- `company#364` is part of Company `v2.2.2`. The Company update now covers every job in the Shopify inventory publishing workflow and editable job parameters.
+- `mantle-shopify-connector#620` is part of `v4.1.8`. The fulfillment-location update now cites the release that makes the scheduled missed-fulfillment sweep executable without an interactive user.
+
+## Deferred from August
+
+These posts were removed from the August publication manifest because their release gates did not clear by August 31. Their draft text remains recoverable from commit `8983a17d`.
 
 ### Job Manager dashboard drilldowns and Shopify Bulk Operations
 
-- Required pull requests: `job-manager#1071` and the dependent Bulk Operations stack beginning with `job-manager#1073`
-- Current evidence: both pull requests are open and mergeable, but GitHub reports them as blocked
-- Publish gate: all required changes merged into `main`, included in a Job Manager release tag, and the released app verified against the intended backend
-- Screenshot gate: capture only from the released build, with a dashboard metric opening its exact drilldown and a Bulk Operation showing both Shopify and HotWax state
+- `job-manager#1071`, `#1077`, `#1078`, `#1079`, and `#1081` remain open and blocked.
+- `job-manager#1073`, `#1075`, `#1076`, and `#1080` closed without merging.
+- The latest Job Manager release is still `v3.3.0`, published on August 14.
+- Result: defer the complete post until a released implementation can be verified.
 
 ### Order Manager returns and hold management
 
-- Required pull requests: `order-manager#486`, `order-manager#488`, and `order-manager#492`
-- Current evidence: the changes are merged, but the latest Order Manager release remains `v1.2.0` from August 14, before `#486` merged on August 18
-- Publish gate: a new Order Manager release tag contains the merged work and the Returns and Holds routes are verified in that released build
-- Screenshot gate: capture the Returns list and a Holds view that demonstrates a non-dedicated purpose without exposing customer data
+- `order-manager#486`, `#488`, and `#492` merged on August 18.
+- The latest Order Manager release is still `v1.2.0`, published on August 14.
+- Result: defer the post until a later Order Manager release contains the merged work.
 
 ### Order Manager Funnel accuracy, navigation, and accessibility
 
-- Required pull requests: the linear stack `order-manager#500` through `order-manager#504`
-- Current evidence: the first and last pull requests are open and mergeable; GitHub reports the stack as unstable pending its required checks or reviews
-- Publish gate: the complete stack merged into `main`, included in an Order Manager release tag, and verified while switching product stores rapidly enough to exercise stale-response protection
-- Screenshot gate: capture the selected store, timezone-aware clock, and an order link from the released build; accessibility behavior should be verified separately because it cannot be proven by a screenshot
+- `order-manager#501`, `#502`, and `#503` merged on August 24, and `#504` merged on August 25.
+- `order-manager#500` closed without merging.
+- The latest Order Manager release is still `v1.2.0`, published on August 14.
+- Result: defer the post because the original stack is incomplete and none of the merged changes has an application release.
 
-## Merged after the latest release
+## Excluded changes
 
-These changes can become short additions to an existing update after a containing release is published. They are excluded from current public claims.
-
-- `mantle-shopify-connector#591`: moves absolute inventory publication through Data Manager. It merged after connector `v4.1.7` was published.
-- `company#364`: adds deeper inventory-sync job visibility and controls. It merged after Company `v2.2.1` was published.
-
-## Explicit exclusions
-
-- Product Store onboarding is removed from the August content plan.
-- `company#368` is excluded because its Fulfillment Sync Health view is backed by fixture data rather than live operational data.
-- `company#367` is excluded while it remains open and stacked on the removed Product Store onboarding branch.
-- Backend or API pull requests are not presented as user-facing releases unless a released application or documented integration path consumes them.
+- `mantle-shopify-connector#591` remains excluded. The `v4.1.8` release branch does not contain its merge commit, and the release changelog does not list it.
+- Product Store onboarding remains outside the August content plan.
+- `company#368` remains excluded because its Fulfillment Sync Health view uses fixture data rather than live operational data.
+- `company#367` remains excluded because it is stacked on the removed Product Store onboarding work.
+- Backend or API pull requests are not presented as user-facing launches unless a released application or documented integration path consumes them.

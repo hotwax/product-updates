@@ -13,8 +13,6 @@ releaseStatus: draft
 
 August connects more of the retail operating day across HotWax Commerce. Retailers can reconcile Shopify fulfillment locations without losing inventory accuracy, publish inventory from a durable event ledger, manage integrations from Company, create transfer orders from Receiving, and investigate inventory movement from new Cycle Count and Order Routing views.
 
-This draft also includes three release candidates expected before the month closes. They remain clearly separated at the end and must pass their release gates before publication.
-
 ## Shopify order and fulfillment synchronization
 
 ### Keep Shopify fulfillment locations and OMS allocations aligned
@@ -45,7 +43,9 @@ Company adds an Inventory Sync workspace for monitoring waiting events, batches,
 
 Company now brings Shopify inventory monitoring, batch order sync, app-version controls, carrier setup, Unigate configuration, and NetSuite order-push monitoring into one administration app.
 
-Teams can inspect backlogs and recent runs, schedule or run supported jobs, pause and resume processing, and replay eligible errors from the same surface that holds the connection configuration. Carrier setup includes methods, mappings, billing details, and a readiness checklist so configuration and operating status remain visible together. [Read the full integration control center update](https://www.hotwax.co/product-updates/2026-08/company-integration-control-center).
+Teams can inspect backlogs and recent runs, schedule or run supported jobs, pause and resume processing, and replay eligible errors from the same surface that holds the connection configuration. The Inventory Sync workspace now shows every job involved in publishing, including one publisher per inventory channel, the system-message sender, the manual discard tool, and the retention purge. Administrators can edit supported job parameters while app-created jobs remain paused until they are reviewed and activated.
+
+Carrier setup includes methods, mappings, billing details, and a readiness checklist so configuration and operating status remain visible together. [Read the full integration control center update](https://www.hotwax.co/product-updates/2026-08/company-integration-control-center).
 
 ### Manage company structure and NetSuite subsidiary mappings
 
@@ -61,7 +61,7 @@ Receiving now includes a transfer-order creation flow for selecting the source, 
 
 Permission and navigation fixes connect the flow to Transfers and Fulfillment. NetSuite transfer-order receipts can be imported through Data Manager and delegated to the same receiving service used by HotWax Commerce, reducing the need for a separate receipt path. [Read the full transfer-order update](https://www.hotwax.co/product-updates/2026-08/connected-transfer-order-workflow).
 
-Receiving also corrects force-scan behavior, transfer-detail redirects, and purchase-order sorting.
+Receiving also corrects force-scan behavior, transfer-detail redirects, and purchase-order sorting. Products without an inventory record at the receiving facility now show zero on hand without repeatedly requesting the same quantity.
 
 ## Cycle Count
 
@@ -83,7 +83,7 @@ The new Inventory Updates page brings rule runs, queued and failed Data Manager 
 
 ### Make daily queues more dependable
 
-BOPIS corrects loading behavior on Ready for Pickup and Completed pages, validates pickup-notification responses before showing success, and preserves the selected locale. Fulfillment improves picker search, order counts, transfer-shipment permissions, carrier updates, and locale persistence.
+BOPIS corrects loading behavior on Ready for Pickup and Completed pages, validates pickup-notification responses before showing success, and preserves the selected locale. Order details now show the next cancelled-order synchronization time from the job's actual runtime field. Fulfillment improves picker search, order counts, transfer-shipment permissions, carrier updates, and locale persistence.
 
 Receiving, BOPIS, Fulfillment, Cycle Count, and Transfers continue the move to centralized application permissions and installable progressive web app support where included in their August releases.
 
@@ -93,20 +93,4 @@ Receiving, BOPIS, Fulfillment, Cycle Count, and Transfers continue the move to c
 
 OMS updates add customer and order context to assigned tasks, expand order audit history, improve task transitions, and correct negative reservation cases. Inventory details retain more movement reasons, including point-of-sale issuance corrections, while fulfillment records can carry estimated ship and delivery dates.
 
-NetSuite connector and OMS updates add transfer-order receipt imports, pending order-push counts, more detailed inventory movement reasons, and estimated ship and delivery dates. These changes keep integration status and operating context visible at each boundary.
-
-## Release candidates pending final validation
-
-The following updates are drafted because their active pull requests are expected to land in August. They are not publish-ready until the listed app has a release tag containing the required changes.
-
-### Turn Job Manager metrics into investigation paths
-
-The Job Manager release candidate makes dashboard counts and status chips open the exact jobs, runs, messages, or imports behind them. It also adds a Shopify Bulk Operations page that compares Shopify's operation state with the related HotWax system message, result file, counts, query, job, and run. [Read the draft Job Manager update](https://www.hotwax.co/product-updates/2026-08/job-manager-dashboard-drilldowns-and-shopify-bulk-operations).
-
-### Bring returns and every non-dedicated hold into Order Manager
-
-The Order Manager release candidate adds return queues and details, makes the general hold queue the complement of dedicated Bad Address, Swap, and Fraud queues, and exposes other hold purposes such as Shopify synchronization errors. Its merged changes are awaiting an Order Manager app release. [Read the draft Order Manager update](https://www.hotwax.co/product-updates/2026-08/order-manager-returns-and-hold-management).
-
-### Keep the Funnel accurate while its scope changes
-
-The Funnel release candidate protects live product-store changes from stale responses, carries the selected store consistently through its requests, displays a timezone-aware clock, restores standard link behavior, and gives progress indicators accessible names. [Read the draft Funnel update](https://www.hotwax.co/product-updates/2026-08/order-manager-funnel-accuracy-navigation-and-accessibility).
+NetSuite connector and OMS updates add transfer-order receipt imports, pending order-push counts, more detailed inventory movement reasons, and estimated ship and delivery dates. NetSuite configuration also uses the current RESTlet URL, and product identification reuses the resolved HotWax product ID throughout the export flow. These changes keep integration status and operating context visible at each boundary.

@@ -1,48 +1,54 @@
 # August 2026 screenshot brief
 
-This is an internal capture plan. Product screenshots should come from the released app version using a safe demonstration tenant with no customer personal information.
+Status checked on September 1, 2026. No approved screenshot assets are attached to this branch.
 
-## Use application screenshots
+The final August package has five user-interface stories that benefit from application screenshots and two backend-heavy stories that are clearer as diagrams. Capture images only from the released versions listed below, using a safe demonstration tenant with no customer personal information.
+
+## Application screenshots
 
 ### Company integration control center
 
-- Primary image: Company connection overview with the integration workspaces visible
-- Supporting image: Shopify Inventory Sync showing waiting events, batches, jobs, and recent reset activity
+- Released build: Company `v2.2.2`
+- Primary image: Shopify Inventory Sync with the per-channel publishers, sender, discard tool, and retention purge visible
+- Supporting image: connection overview with the Shopify, NetSuite, carrier, Unigate, and app-version workspaces visible
 - Optional image: carrier and Unigate readiness checklist or NetSuite order-push backlog and schedule
-- Avoid: combining unrelated pages into one dense collage
 
 ### Multi-company management
 
+- Released build: Company `v2.2.2`
 - Primary image: internal company hierarchy with parent and child organizations
 - Supporting image: company detail with facility membership and the external ID helper text
 - Avoid: presenting the generic external ID as a NetSuite-only field
 
 ### Connected transfer-order workflow
 
-- Primary image: Receiving transfer-order creation with source, destination, and product selection
+- Released build: Receiving `v4.2.1`
+- Primary image: transfer-order creation with source, destination, and product selection
 - Supporting image: created transfer detail after approval
 - Avoid: a NetSuite screen unless the exact import file and completed receipt have been validated end to end
 
 ### Cycle Count
 
+- Released build: Cycle Count `v5.2.0`
 - Primary image: create count page in the store operating view
 - Supporting image: Pending Review results with a safe count name or Work Effort ID
 - Optional image: inventory history showing the related variance reason and outcome
 
 ### Order Routing inventory monitoring
 
+- Released build: Order Routing `v2.2.0`
 - Primary image: Online ATP calculation walkthrough for one safe product and channel
 - Supporting image: Inventory Updates schedules and Data Manager queue states
 - Optional image: OMS and Shopify reconciliation view
 
-## Use diagrams for backend-heavy flows
+## Diagrams for backend-heavy flows
 
 ### Shopify fulfillment-location reconciliation
 
-Create a simple two-direction flow diagram:
+Use the released Shopify connector `v4.1.8` as the implementation baseline. Create a simple two-direction flow diagram:
 
-1. Shopify fulfillment location changes and HotWax moves the OMS allocation.
-2. HotWax reallocates fulfillment and the scheduled synchronizer moves Shopify.
+1. Shopify changes a fulfillment location, and HotWax moves the OMS allocation.
+2. HotWax reallocates fulfillment, and the scheduled synchronizer moves Shopify.
 3. The fulfillment-order hash and task lifecycle prevent stale reversals and duplicate exceptions.
 4. Aggregate inventory correction runs beside the move, with the absolute publisher as the recovery path.
 
@@ -50,35 +56,22 @@ Do not invent a management screen that does not exist.
 
 ### Event-driven Shopify inventory publishing
 
-Create a compact pipeline diagram:
+Use Shopify connector `v4.1.2` and Company `v2.2.2` as the implementation baseline. Show this pipeline:
 
-Inventory event to ledger decision to Shopify batch to system message to Shopify, with the Company monitor reading each stage. Show absolute reset as a recovery path that supersedes obsolete pending deltas.
+Inventory event to ledger decision to Shopify batch to system message to Shopify.
 
-## Capture only after release gates clear
+Show Company reading each stage, and show an absolute reset superseding obsolete pending deltas as the recovery path.
 
-### Job Manager
+## Deferred screenshots
 
-- Dashboard count opening the exact filtered list
-- Job detail with a pinned run selected from the URL
-- Shopify Bulk Operation with Shopify state and related HotWax state visible together
-
-### Order Manager returns and holds
-
-- Returns list and one return detail with safe product data
-- General Holds page filtered to a non-dedicated purpose
-- Do not use a screenshot where a customer's name, address, email, or phone number is visible
-
-### Order Manager Funnel
-
-- Selected product store and timezone-aware clock
-- Metric or order link with a real destination
-- Verify accessible progress names with browser accessibility tools; do not treat a screenshot as accessibility proof
+Do not capture Job Manager drilldowns, Order Manager returns and holds, or the Order Manager Funnel as August assets. Those posts were deferred because their release gates did not clear by August 31.
 
 ## Capture standards
 
-- Use the exact released app version named in the release gate.
+- Use the exact released app version named above.
 - Prefer one clear workflow per image.
-- Crop browser chrome only when the app version and environment have been recorded elsewhere in the capture notes.
-- Use a 16:9 or 3:2 landscape crop for article headers and retain a full-resolution source.
+- Use descriptive lowercase file names with hyphens.
+- Crop browser chrome only when the app version and environment are recorded in the capture notes.
+- Use a 16:9 or 3:2 landscape crop for article headers, and retain a full-resolution source.
 - Add concise alt text that states what the interface shows and why it matters.
 - Record the app, tag, environment, page, and capture date beside each source image.
