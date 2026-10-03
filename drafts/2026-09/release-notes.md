@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: September connects order investigation, product calendar dates, replenishment planning, and Shopify inventory and transfer operations across HotWax Commerce.
 tagNames: [Release Note]
 key: release-notes:2026-09
-releaseStatus: ready
+releaseStatus: published
 ---
 
 # September 2026 apps release notes

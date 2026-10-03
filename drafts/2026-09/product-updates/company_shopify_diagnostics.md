@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Company connects Shopify inventory events, delivery timing, batch details, transfer sync health, and mapping conflicts in one operating workspace.
 tagNames: [Product Update]
 key: product-update:2026-09:company-shopify-diagnostics
-releaseStatus: ready
+releaseStatus: published
 ---
 
 When Shopify inventory or a transfer stops updating, the next step depends on where the work stopped. HotWax Commerce's Company app gives operations teams more context around the inventory events, delivery batches, and transfer sync jobs behind a Shopify connection. You can move from a summary to the affected records and review the evidence before taking action.

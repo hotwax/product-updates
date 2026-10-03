@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: HotWax Commerce helps retailers manage operating companies and maintain subsidiary IDs for configured NetSuite order exports in Company.
 tagNames: [Product Update]
 key: product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Retailers running a multi-subsidiary NetSuite account need orders to reach the right legal entity. Stores and warehouses may belong to different operating companies, and that ownership can determine the subsidiary used when an order is exported.

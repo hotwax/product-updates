@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: HotWax Commerce connects approved transfer orders, including NetSuite imports, with Shopify native transfers and two-way shipping and receiving updates.
 tagNames: [Product Update]
 key: product-update:2026-09:shopify-native-transfer-sync
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Moving stock between locations can involve a transfer planned in NetSuite, fulfillment managed in the order management system, and store teams working in Shopify. HotWax Commerce now connects approved transfer orders with Shopify's native inventory transfers so supported shipping and receiving actions can flow between the two systems.

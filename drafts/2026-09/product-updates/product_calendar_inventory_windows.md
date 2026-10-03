@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Map Shopify lifecycle dates in Company, review them in Products, and use scheduled date conditions in HotWax Commerce inventory rules.
 tagNames: [Product Update]
 key: product-update:2026-09:product-calendar-inventory-windows
-releaseStatus: ready
+releaseStatus: published
 ---
 
 HotWax Commerce connects product launch dates with the inventory rules that decide how much stock retailers offer for shipping and store pickup. Teams can map lifecycle dates from Shopify, review those dates in Products, and use them in Order Routing without maintaining a separate list of products for each launch window.

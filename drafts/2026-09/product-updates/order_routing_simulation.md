@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: A preview of guided Routing Simulation setup connects data-copy preparation, saved policy variations, and order-level results for routing review.
 tagNames: [Product Update]
 key: product-update:2026-09:order-routing-simulation
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Changing a routing rule can move work from warehouses to stores, protect more stock for walk-in customers, or leave more orders waiting. A single order rarely shows the whole trade-off. HotWax Commerce's Routing Simulation gives teams a place to compare proposed policies against the same copied orders and inventory before deciding what to change in live fulfillment.

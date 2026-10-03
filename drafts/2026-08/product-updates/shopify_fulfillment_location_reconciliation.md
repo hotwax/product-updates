@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: HotWax Commerce reconciles Shopify fulfillment-location changes with OMS allocations while protecting inventory accuracy and preventing sync loops.
 tagNames: [Product Update]
 key: product-update:2026-08:shopify-fulfillment-location-reconciliation
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Retailers use Shopify fulfillment locations to decide where an order should be fulfilled, but the final allocation can change after the order reaches the order management system. A store may reject an order, a routing rule may select a better facility, or an operator may move fulfillment to protect a service promise. If Shopify and the OMS do not follow that move together, the customer sees the wrong fulfillment location and inventory can be reduced from the wrong pool.

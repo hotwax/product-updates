@@ -4,7 +4,7 @@ Release status checked on September 1, 2026; editorial review completed on Octob
 
 ## Final August publication set
 
-The release note and these six product updates are approved for publication after review:
+The release note and these six product updates were published to HubSpot on October 3, 2026, after review. All seven public pages were checked against the reviewed copy; `publication-record.md` records the URLs and post IDs.
 
 - Shopify fulfillment-location reconciliation
 - Event-driven Shopify inventory publishing

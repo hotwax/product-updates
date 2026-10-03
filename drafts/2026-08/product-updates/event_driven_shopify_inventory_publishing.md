@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: HotWax Commerce records inventory events in a durable ledger, batches Shopify updates safely, and exposes the publishing flow in Company.
 tagNames: [Product Update]
 key: product-update:2026-08:event-driven-shopify-inventory-publishing
-releaseStatus: ready
+releaseStatus: published
 ---
 
 HotWax Commerce now records the changes behind Shopify inventory updates in a durable event ledger. Retailers can follow a receipt, return, or reservation from its source through the quantity calculation and the message sent to Shopify. If delivery needs a retry, HotWax keeps the original publishing decision attached to that message.

@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Order Routing connects multi-facility inventory searches, movement history, demand, incoming stock, and editable replenishment settings.
 tagNames: [Product Update]
 key: product-update:2026-09:order-routing-inventory-replenishment
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Finding a stock problem is only the first step. Retail teams also need to understand the movements behind the balance, what is already on the way, and whether the location's stock settings match demand. HotWax Commerce's Order Routing app brings these questions into Inventory Find and Inventory Detail.

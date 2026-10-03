@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Shopify physical-location events, available-to-promise resets, and facility-level kit calculations keep availability tied to stock retailers can fulfill.
 tagNames: [Product Update]
 key: product-update:2026-09:shopify-location-and-kit-inventory
-releaseStatus: ready
+releaseStatus: published
 ---
 
 HotWax Commerce now gives retailers more ways to keep Shopify availability aligned with the stock they can sell. September adds inventory events for physical Shopify locations, resets based on available inventory at each facility, and dedicated inventory publishing for kits assembled from component products.

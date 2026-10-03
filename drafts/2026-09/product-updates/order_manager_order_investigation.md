@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Order Manager connects a readable order timeline with item status, scoped actions, inventory transfer requests, and staged order attribute changes.
 tagNames: [Product Update]
 key: product-update:2026-09:order-manager-order-investigation
-releaseStatus: ready
+releaseStatus: published
 ---
 
 An order can be waiting for stock, partly fulfilled, moved between locations, or already canceled in Shopify. HotWax Commerce's Order Manager brings those details into a clearer `Order Detail` page, with an order history you can follow and inventory transfer controls beside the items that need them.

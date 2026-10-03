@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: Company brings Shopify, NetSuite, carrier, Unigate, app-version, and batch-order controls into one HotWax Commerce administration workspace.
 tagNames: [Product Update]
 key: product-update:2026-08:company-integration-control-center
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Integration setup and integration operations are usually treated as separate concerns. One screen stores credentials and mappings, while another job, log, or support request reveals whether the connection is actually working. That separation makes routine questions harder than they need to be: Is the job scheduled? How much work is waiting? Which run failed? Can the team replay it safely?

@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: August connects inventory, transfers, integrations, and exception work across HotWax Commerce, with clearer controls and stronger operational visibility.
 tagNames: [Release Note]
 key: release-notes:2026-08
-releaseStatus: ready
+releaseStatus: published
 ---
 
 # August 2026 apps release notes

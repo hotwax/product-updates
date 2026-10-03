@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: HotWax Commerce connects transfer creation, warehouse inventory commitments, and NetSuite lifecycle imports to keep transfer stock out of online availability.
 tagNames: [Product Update]
 key: product-update:2026-08:connected-transfer-order-workflow
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Stock committed to a warehouse transfer should no longer be offered for online sale, even if the warehouse has not shipped it yet. Retailers also need transfer records to stay current when warehouse teams fulfill or receive the stock in NetSuite rather than HotWax.

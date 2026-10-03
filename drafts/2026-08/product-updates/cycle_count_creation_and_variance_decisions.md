@@ -6,7 +6,7 @@ month: 2026-08
 metaDescription: Cycle Count adds count creation for store and admin teams, better review search, and a reusable history of inventory variance decisions.
 tagNames: [Product Update]
 key: product-update:2026-08:cycle-count-creation-and-variance-decisions
-releaseStatus: ready
+releaseStatus: published
 ---
 
 Cycle counting is more than entering a number. A team needs to define the work, assign it to the right facility, find it again during review, and preserve what happened when a counted quantity disagrees with the inventory on record.

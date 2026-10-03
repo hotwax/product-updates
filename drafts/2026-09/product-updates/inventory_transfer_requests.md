@@ -6,7 +6,7 @@ month: 2026-09
 metaDescription: Request a one-product movement between facilities, review its order context, and execute paired inventory adjustments or cancel without changing stock.
 tagNames: [Product Update]
 key: product-update:2026-09:inventory-transfer-requests
-releaseStatus: ready
+releaseStatus: published
 ---
 
 HotWax Commerce adds an `Inventory transfers` view to the Transfers app so operations teams can manage stock movements recorded directly between facilities. Create a request for a product and quantity, review the source and destination, and decide when to execute or cancel it. The request stays visible through `Requested`, `Complete`, and `Cancelled` statuses.
