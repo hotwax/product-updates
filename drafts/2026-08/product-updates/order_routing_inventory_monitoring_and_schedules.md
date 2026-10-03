@@ -39,4 +39,4 @@ Dashboard queue metrics now use a backend-aware adapter and show Unavailable whe
 
 The combined release gives inventory teams a continuous path: explain the number, compare it with the channel, inspect the publishing queue, and act on the schedule that moves it.
 
-*Sources: [order-routing#504](https://github.com/hotwax/order-routing/pull/504), [order-routing#547](https://github.com/hotwax/order-routing/pull/547), [order-routing#549](https://github.com/hotwax/order-routing/pull/549), [order-routing v2.2.0](https://github.com/hotwax/order-routing/releases/tag/v2.2.0)*
+*Sources: [order-routing#504](https://github.com/hotwax/order-routing/pull/504), [Inventory update monitoring](https://github.com/hotwax/order-routing/blob/v2.2.0/src/views/InventoryUpdates.vue), [Inventory job scheduling](https://github.com/hotwax/order-routing/blob/v2.2.0/src/components/InventoryUpdateJobModal.vue), [Queue metric availability](https://github.com/hotwax/order-routing/blob/v2.2.0/src/store/dashboardStore.ts), [order-routing v2.2.0](https://github.com/hotwax/order-routing/releases/tag/v2.2.0)*

@@ -28,7 +28,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "d44de5645991b3d9d48638980434cd68db0280c7160e8703c8c907e2dd4f7528"
+      "contentHash": "49c0d1c92fd86b8d2602035b4f74efe21a5dc53809cdecfecb1f5812e1a263c1"
     },
     {
       "key": "product-update:2026-08:connected-transfer-order-workflow",
@@ -40,7 +40,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "ae7d40c156131a21a142e78fd19748a9fb605fb689361058fcd5c48af60f81fb"
+      "contentHash": "e591ac9f1fc717b29ebb28c7be56af94e85c748d18277821a001711ae1bc9ed0"
     },
     {
       "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
@@ -88,7 +88,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "155a85e0e124a8df6fb70ea01cc98d6a94bac7cadb06b6498bc8dd2b095f5eeb"
+      "contentHash": "12b2acc18192e0dc189c68f6d27f5a426ebdc9a9743d5b1a3a2ab055bc161b63"
     },
     {
       "key": "product-update:2026-08:shopify-fulfillment-location-reconciliation",
