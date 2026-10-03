@@ -19,7 +19,7 @@ Receiving now includes a page for creating a transfer order. Operators can choos
 
 The entry point works with the Transfers app, which continues to show the order as it progresses. Creating a transfer order does not itself move stock between locations.
 
-![Receiving lists existing demo replenishment transfers with item counts and package tracking numbers](assets/product-updates/screenshots/2026-10-03/receiving-populated-transfers-ipad.png)
+![Receiving lists existing demo replenishment transfers with item counts and package tracking numbers](assets/product-updates/screenshots/2026-10-03/receiving-populated-transfers-ipad-clean.png)
 
 *Existing demo replenishment transfers with item counts and package tracking. Current development UI, captured October 3, 2026. Select the image to enlarge it.*
 
@@ -37,7 +37,7 @@ NetSuite transfer integration now runs through HotWax's master data management l
 
 This lets warehouse teams continue working in NetSuite while HotWax records the corresponding transfer activity and inventory changes. The transfer can follow the same operating path without requiring every step to begin in a HotWax app.
 
-![Receiving opens an existing demo transfer to a tracked shipment box with product details and pending quantities](assets/product-updates/screenshots/2026-10-03/receiving-shipment-box-ipad.png)
+![Receiving opens an existing demo transfer to a tracked shipment box with product details and pending quantities](assets/product-updates/screenshots/2026-10-03/receiving-shipment-box-ipad-clean.png)
 
 *An existing demo transfer opened to a shipment box in Receiving, before receipt. Current development UI, captured October 3, 2026. Select the image to enlarge it.*
 

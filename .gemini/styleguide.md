@@ -201,6 +201,13 @@ These profiles preserve the display proportions of Apple's [11-inch iPad](https:
 - Use a focused detail crop only as a supplementary image after a full device-framed screenshot. Do not turn the primary screenshot into a square panel crop or use a full-page scroll capture as a device-sized image.
 - Restore temporary viewport overrides after capture. Do not imply Safari, touch, or physical-device validation when only a desktop browser at the reference viewport was used.
 
+### Cursor-free capture
+
+- Product screenshots must not contain a mouse pointer, cursor halo, click ring, automation target outline, or capture-tool overlay. These are capture artifacts, not product UI.
+- Before capture, move the pointer outside the content viewport and disable capture-tool cursor effects. If native browser inspection confirms an injected automation overlay, temporarily hide only that verified overlay. Do not remove application elements or change product data, recorded activity, or workflow state to improve the picture.
+- Retake the screenshot from the real app. Do not erase the pointer or overlay with AI editing, inpainting, retouching, or pixel replacement. Keep superseded captures recoverable and save the clean retake under a distinct filename.
+- Inspect the actual saved pixels at full size for pointers and overlays as well as privacy and layout. A privacy-safe frame is still unsuitable when capture artifacts remain. Restore temporary overlay and viewport changes after capture, and record how the clean capture was obtained.
+
 ### Data quality and safety
 
 - Choose meaningful, populated records from the authorized real demo backend. Show readable product names, useful quantities, completed activity, or configured workflows that illustrate the feature being discussed.

@@ -37,7 +37,7 @@ The controller recomputes aggregate available-to-promise inventory from committe
 
 Company adds an `Inventory Sync` workspace for monitoring waiting events, batches, jobs, recent resets, and feed mode. Absolute resets can supersede obsolete pending changes, giving the system a clear path back to authoritative inventory when a delta stream needs correction. [Read the full event-driven inventory publishing update](https://www.hotwax.co/product-updates/2026-08/event-driven-shopify-inventory-publishing).
 
-![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air.png)
+![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air-clean.png)
 
 *Current development UI, captured October 3 with demo data. Counts and schedules describe the existing demo connection. Select any screenshot to enlarge it.*
 
@@ -67,7 +67,7 @@ The flow connects Receiving with Transfers and Fulfillment. NetSuite transfer li
 
 Receiving also corrects force-scan behavior, transfer-detail redirects, and purchase-order sorting. Products without an inventory record at the receiving facility now show zero on hand without repeatedly requesting the same quantity.
 
-![Receiving lists existing demo replenishment transfers with item counts and package tracking numbers](assets/product-updates/screenshots/2026-10-03/receiving-populated-transfers-ipad.png)
+![Receiving lists existing demo replenishment transfers with item counts and package tracking numbers](assets/product-updates/screenshots/2026-10-03/receiving-populated-transfers-ipad-clean.png)
 
 *Existing demo replenishment transfers with item counts and package tracking. Current development UI, captured October 3, 2026.*
 
@@ -79,7 +79,7 @@ Cycle Count adds a creation page for both administrator and store views. Teams c
 
 The `Pending Review` search now accepts a count name or work effort ID. A new variance-decision view connects each decision to its count, facility, product, reason, outcome, and the person who made it. Other inventory views can use that record to explain a stock change. [Read the full Cycle Count update](https://www.hotwax.co/product-updates/2026-08/cycle-count-creation-and-variance-decisions).
 
-![Cycle Count planning form with existing Brooklyn facility, a due date, and selected demo catalog variants](assets/product-updates/screenshots/2026-10-03/cycle-count-populated-plan-ipad.png)
+![Cycle Count planning form with existing Brooklyn facility, a due date, and selected demo catalog variants](assets/product-updates/screenshots/2026-10-03/cycle-count-populated-plan-ipad-clean.png)
 
 *An unsaved count plan using the demo's existing Brooklyn facility and catalog. Current development UI, captured October 3, 2026; no count was submitted or inventory changed.*
 

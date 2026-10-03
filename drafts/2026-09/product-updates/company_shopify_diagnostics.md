@@ -21,7 +21,7 @@ The history loads the newest 500 events first. An earlier date can load older ev
 
 Open an event or batch to inspect its source context, combined quantity changes, delivery errors, and saved message. `Resend` retries the original batch instead of creating a new one.
 
-![Company channel inventory history with the Sent filter, recorded demo inventory changes, and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-delivered-inventory-events-macbook-air.png)
+![Company channel inventory history with the Sent filter, recorded demo inventory changes, and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-delivered-inventory-events-macbook-air-clean.png)
 
 *Recorded demo inventory changes, filtered to `Sent`. Current development UI, captured October 3, 2026; sample delivery times are not a performance guarantee. Select the image to enlarge it.*
 

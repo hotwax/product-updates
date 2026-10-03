@@ -67,7 +67,7 @@ For example, Shopify might apply an adjustment of two units before the connectio
 
 ## Monitor the flow from Company
 
-![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air.png)
+![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air-clean.png)
 
 *Current development UI, captured October 3 with demo data. The existing inventory channel shows delivery activity and publishing and reset jobs; counts and schedules describe this demo connection. Select the image to enlarge it.*
 

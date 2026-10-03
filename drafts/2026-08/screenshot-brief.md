@@ -78,7 +78,7 @@ Do not capture Job Manager drilldowns, Order Manager returns and holds, or the O
 - Follow `.gemini/styleguide.md` and its product screenshot standard.
 - Use the intended operator's full reference viewport, not a square crop or incidental browser-window size.
 - Capture the actual development UI at 2× with native Chrome DevTools, retaining the original proportions, navigation, useful controls, and populated demo context.
-- Keep the observed application halo and layout intact; do not retouch, pad, stretch, replace DOM text, or intercept API responses. The separately authorized September customer-summary illustration is a documented, narrow exception, not a general capture policy.
+- Preserve application layout and genuine data. The previously described halo is a Codex capture overlay, not application UI; hide only the verified tooling overlay and retake a cursor-free image. Do not retouch, pad, stretch, replace DOM text, or intercept API responses. The separately authorized September customer-summary illustration is a documented, narrow exception, not a general capture policy.
 - Record current development/demo provenance and mark the deployed revision unknown when not verified.
 - Add short alt text and a caption that describes the visible workflow without claiming historical-device testing, completed processing, or performance guarantees.
 - Restore temporary viewport overrides after capture.

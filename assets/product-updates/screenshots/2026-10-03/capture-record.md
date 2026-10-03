@@ -4,7 +4,9 @@ Updated October 3, 2026. This is an internal provenance record. The seven-image 
 
 The captures use current development apps against demo OMS and its paired demo Maarg backend. All deployed app source commits are unknown. The images illustrate current demo UI, not historical August or September builds, production deployments, Safari, touch behavior, or physical-device testing. Exact replacement capture timestamps were not retained; the capture date is October 3, 2026.
 
-## Current capture set
+## Previously published capture set
+
+A subsequent October 3 visual review identified the pointer and blue halo as Codex capture artifacts. Native browser inspection identified the injected `codex-agent-overlay-root`; the halo is not an application feature. The seven PNGs below are superseded for presentation and must not be reused in a new publication pass. Their earlier publication and verification history is retained, and the original files remain recoverable. The cursor-free retakes passed saved-pixel review; their public replacement remains pending verification.
 
 | File | Source page and view | Audience and reference viewport | Saved pixels | Workflow shown | Publication state |
 | --- | --- | --- | --- | --- | --- |
@@ -16,7 +18,15 @@ The captures use current development apps against demo OMS and its paired demo M
 | `cycle-count-populated-plan-ipad.png` | https://inventorycount-dev.hotwax.io/tabs/create-cycle-count | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Unsaved directed-count plan for existing Brooklyn and 15 catalog variants | Live in verified batch |
 | `order-manager-fulfillment-timeline-macbook-air.png` | https://order-manager-dev.hotwax.io/orders/M103648; order reference `HC#2760` | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Genuine recorded fulfillment timeline with a fictional display-only customer-summary illustration | Published; CMS, public image, disclosure caption, and full-size view verified |
 
-All seven current-set dimensions were checked from the saved PNG files. Capture used native Chrome DevTools full reference viewports at 2×. The observed application halo and layout remain intact. No image resizing, padding, stretching, retouching, square cropping, fixture API responses, or API interception was used. The six unchanged captures also used no DOM text replacement. The seventh illustration has the narrow customer-summary presentation substitution documented below; do not describe it as an untouched customer record. Each current-set image passed actual-pixel privacy review. After the Order Manager capture, a reload restored the actual customer display and missing-contact presentation; device override `0` and closed DevTools were verified.
+All seven previously published dimensions were checked from the saved PNG files. Capture used native Chrome DevTools full reference viewports at 2×. These frames retain the Codex pointer/halo overlay, which the earlier record incorrectly described as an application halo. No image resizing, padding, stretching, retouching, square cropping, fixture API responses, or API interception was used. The six unchanged captures also used no DOM text replacement. The seventh illustration has the narrow customer-summary presentation substitution documented below; do not describe it as an untouched customer record. Each image passed the earlier actual-pixel privacy review, but the capture overlay makes it unsuitable for the replacement presentation pass. After the Order Manager capture, a reload restored the actual customer display and missing-contact presentation; device override `0` and closed DevTools were verified.
+
+### Cursor-free replacement pass: captures approved, publication pending
+
+The nine affected public Markdown sources reference corresponding `-clean.png` filenames. All seven new PNGs were captured on October 3 using native Chrome DevTools from the same genuine demo workflows and reference viewports. The verified `codex-agent-overlay-root` alone was temporarily hidden before capture. The images were not retouched, inpainted, cropped, resized, padded, or pixel-replaced. No operational data or activity was changed. The existing Order Manager timeline retains the same disclosed, specifically authorized customer-summary illustration.
+
+Root and an independent reviewer inspected all seven final saved PNGs. None contains a pointer, cursor halo, client identifiers, private contacts, secrets, or API payloads. The four administrator images are 2560 × 1664 pixels; the three store-operator images are 2360 × 1640 pixels. The calendar frame includes the existing Aeon and Antonia dates, the Receiving detail has the first box selected with zero received, and Cycle Count remains an unsaved 15-variant directed plan. Reload restored the Order Manager customer presentation. Reload also discarded the Cycle Count form, confirming an empty count name and zero selected items; device override was disabled and DevTools closed. The original seven PNGs remain unchanged and recoverable.
+
+Public replacement, exact CMS bodies and protected metadata, unchanged disclosure captions, public image pixels, and enlargement links still require verification before recording publication completion.
 
 ## Data provenance and limits
 

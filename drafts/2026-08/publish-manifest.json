@@ -16,7 +16,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "617173ca4ddccb004adcd6b74ff067f41df135343c7fe6f600a3f0701d90f142"
+      "contentHash": "c335cc6b1010a70cb191f392a4812281ee8081e2f318cf55bd0bcf7d06f75a15"
     },
     {
       "key": "product-update:2026-08:company-integration-control-center",
@@ -28,7 +28,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "fcc0eb87deb3d9965e430891610c1db0c594da6ab3f5a252d81778800a2f04e4"
+      "contentHash": "c55c5c385761bb033c0590ab754bf3a76e188991a306bba93dc003efd5262d0a"
     },
     {
       "key": "product-update:2026-08:connected-transfer-order-workflow",
@@ -40,7 +40,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "268ab70d4d455412edd48134321b2232ef39a740ee30dbaf56a08ab756ef7cee"
+      "contentHash": "fcde5b48c02ef3389ffa63ca6964e4a25f670b64f0a8dce19a7109edb42e7a35"
     },
     {
       "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
@@ -52,7 +52,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "eca004dea78216ab71c0cb6a8122cf42b81d81ca0327fc0a999e2b0c92717242"
+      "contentHash": "0e72daf0924bd0bdc2fd246f2f53514351bfb41da2b0b028b40338302c0d126c"
     },
     {
       "key": "product-update:2026-08:event-driven-shopify-inventory-publishing",
@@ -64,7 +64,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "1ed478faea26b3d77b7e66ff7b3035c792f2500301552101e04c60d0d516e668"
+      "contentHash": "c1c2a39217ed0d1d257c9b988bafc8eb53726275bd6cdbc4c9ca28b98d301f5a"
     },
     {
       "key": "product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping",
