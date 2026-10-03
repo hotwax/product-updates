@@ -29,7 +29,7 @@ Both the product-update Gemini guide and the OMS documentation Gemini guide info
 - Products displays calendar dates. Company manages Shopify mappings. Existing products need product-sync backfill after mapping setup. Inventory rules evaluate whole-day conditions on their configured schedule.
 - Direct InventoryTransfer requests apply source and destination inventory adjustments together. They do not create a shipped transfer order, shipment, or receiving event.
 - Company inventory metrics describe the loaded and filtered retained history. Live-change detection needs a compatible connector; older connections expose last-read time and manual refresh.
-- Company notification monitoring reports stored subscriptions. Backend scope limitations remain visible; the page is not a delivery confirmation surface.
+- Company notification monitoring reports stored subscriptions. When all returned records belong to the signed-in user, the page warns of possible limited scope. It does not report successful notification delivery.
 - Replenishment shows recorded demand and bounded incoming-work reads. The current card edits stock settings and has no Restock action.
 - Shopify native transfer jobs and kit reset jobs need shop configuration and activation. Kit jobs ship paused with an empty shop scope. Pickup-ready synchronization is opt-in and defaults off.
 - Cancelling Data Manager processing stops remaining work at checkpoints. It does not undo records already imported.

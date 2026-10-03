@@ -1,8 +1,8 @@
 {
   "month": "2026-09",
   "mode": "monthly",
-  "generatedAt": "2026-10-03T02:30:13.586Z",
-  "requestedAt": "2026-10-03T02:30:13.587Z",
+  "generatedAt": "2026-10-03T02:38:07.616Z",
+  "requestedAt": "2026-10-03T02:38:07.621Z",
   "requestedBy": "dt2patel",
   "replayReason": null,
   "publicationStatus": "awaiting-review",
@@ -18,7 +18,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "6bc8497b250e955568655ee7228662dca07a2d22c9d23acbe64e7dc2c223305a"
+      "contentHash": "f831459302cd6f3596e686e6514142e47d7013d6bc2e88ea27e41547a31e425a"
     },
     {
       "key": "product-update:2026-09:company-shopify-diagnostics",

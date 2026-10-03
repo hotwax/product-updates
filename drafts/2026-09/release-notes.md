@@ -43,7 +43,7 @@ Transfer sync brings jobs, webhook health, shipment stages, receipts, and outsta
 
 ### Review notification subscriptions and connect external assistants
 
-Administrators can inspect stored BOPIS, Fulfillment, and Receiving notification subscriptions, filter by facility or user, and find events with no subscribers. The page identifies when the connected backend limits the records to the signed-in user.
+Administrators can inspect stored BOPIS, Fulfillment, and Receiving notification subscriptions, filter by facility or user, and find events with no subscribers. When every returned record belongs to the signed-in user, the page warns that the results may be limited to that user.
 
 Company also adds an OMS Model Context Protocol (MCP) setup guide with a connection URL, instructions for Codex, Claude, and Antigravity, and a read-only verification prompt. The guide points administrators to the existing OMS access-token settings when needed.
 
