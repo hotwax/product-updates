@@ -4,12 +4,16 @@ Updated October 3, 2026. This is an internal capture plan, not public article co
 
 Aditya authorized current development apps against demo OMS. The deployed app revisions are unknown; these captures do not prove that `main` is deployed or reproduce historical August release builds. Released tags below are editorial baselines only. No companies, subsidiaries, facilities, or mappings may be invented to fill a screenshot gap. Integration jobs must not be activated for a capture.
 
+## Current cursor-free pass: published and verified
+
+The publication history above describes the earlier passes, now superseded for capture quality. All seven cursor-free `-clean.png` retakes from source `e9006f0cb14d346703a10e55091d3cf9233a8597` replaced the earlier images in nine existing posts from `2026-10-03T19:46:00.610Z` through `2026-10-03T19:46:16.354Z`. Prose, captions, alt text, and protected metadata remained unchanged. All 16 normal public URLs passed HTTP 200, text, image, and enlargement-URL verification: 15 placements and eight distinct images, including the unchanged diagram. Native inspection verified the September clean timeline, disclosure caption, and full-size 2560 × 1664 image. Only the verified Codex tooling overlay was temporarily hidden; no backend records or jobs were changed. Temporary overlay, viewport, customer-profile illustration, and unsaved-form changes were restored. Original and rejected captures remain recoverable and must not be reused.
+
 ## Application screenshots
 
 ### Company integration control center
 
 - Released build: Company `v2.2.2`
-- Published image: `company-populated-inventory-channel-macbook-air.png`
+- Published image: `company-populated-inventory-channel-macbook-air-clean.png`
 - Source: https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync, scrolled to the populated inventory-channel card
 - Audience and framing: administrator; 13-inch MacBook Air with a 13.6-inch display reference, 1280 × 832 CSS pixels, saved at 2560 × 1664 pixels
 - Caption scope: configured demo inventory channel and its publishing context, not an unconfigured connection or a completed end-to-end Shopify claim
@@ -26,7 +30,7 @@ Aditya authorized current development apps against demo OMS. The deployed app re
 ### Connected transfer-order workflow
 
 - Released build: Receiving `v4.2.1`
-- Published images: `receiving-populated-transfers-ipad.png` and `receiving-shipment-box-ipad.png`
+- Published images: `receiving-populated-transfers-ipad-clean.png` and `receiving-shipment-box-ipad-clean.png`
 - Source: Receiving `/transfer-orders`, filtered by `RCV-OCT01`, and `/transfer-order-detail/M103573`
 - Audience and framing: store operator; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
 - Workflow shown: existing transfer orders and receiving context, with a populated transfer list and shipment-box product detail
@@ -36,7 +40,7 @@ Aditya authorized current development apps against demo OMS. The deployed app re
 ### Cycle Count
 
 - Released build: Cycle Count `v5.2.0`
-- Published image: `cycle-count-populated-plan-ipad.png`, a populated unsaved directed-count plan for existing Brooklyn and 15 catalog variants
+- Published image: `cycle-count-populated-plan-ipad-clean.png`, a populated unsaved directed-count plan for existing Brooklyn and 15 catalog variants
 - Source: https://inventorycount-dev.hotwax.io/tabs/create-cycle-count; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
 - Caption scope: unsaved local planning only; the create button was not pressed and no count, schedule, or stock adjustment was submitted
 - A variance-history image requires an actual recorded decision; do not invent a successful review or stock adjustment
@@ -67,7 +71,7 @@ Inventory event to ledger decision to Shopify batch to system message to Shopify
 
 Show Company reading each stage, and show an absolute reset superseding obsolete pending deltas as the recovery path.
 
-The published `company-populated-inventory-channel-macbook-air.png` accompanies the monitoring section. It illustrates the current demo administration view; it does not replace the flow diagram or prove every publishing stage ran during capture.
+The published `company-populated-inventory-channel-macbook-air-clean.png` accompanies the monitoring section. It illustrates the current demo administration view; it does not replace the flow diagram or prove every publishing stage ran during capture.
 
 ## Deferred screenshots
 
