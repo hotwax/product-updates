@@ -38,6 +38,7 @@
     "hotwax/press-release-faq",
     "hotwax/products",
     "hotwax/receiving",
+    "hotwax/sim-routing",
     "hotwax/transfers"
   ]
 }

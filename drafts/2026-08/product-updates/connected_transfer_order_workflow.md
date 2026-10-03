@@ -1,42 +1,36 @@
 ---
-title: HotWax connects transfer-order creation, reservation, fulfillment, and receipt
+title: HotWax Commerce connects transfer-order creation, reservation, fulfillment, and receipt
 slug: product-updates/2026-08/connected-transfer-order-workflow
 contentType: product-update
 month: 2026-08
-metaDescription: HotWax Commerce connects transfer-order creation in Receiving with OMS reservation, fulfillment permissions, and NetSuite receipt imports.
+metaDescription: HotWax Commerce connects transfer creation, warehouse inventory commitments, and NetSuite lifecycle imports to keep transfer stock out of online availability.
 tagNames: [Product Update]
 key: product-update:2026-08:connected-transfer-order-workflow
-releaseStatus: released
+releaseStatus: ready
 ---
 
-An inventory transfer crosses several operational boundaries. Someone decides what should move, the source warehouse reserves and ships it, the destination receives it, and connected financial systems need the same transfer to reach the correct state. When each step uses a different entry point, even a simple replenishment move can become a collection of manual handoffs.
+Stock committed to a warehouse transfer should no longer be offered for online sale, even if the warehouse has not shipped it yet. Retailers also need transfer records to stay current when warehouse teams fulfill or receive the stock in NetSuite rather than HotWax.
 
-The August HotWax Commerce releases connect those steps into a clearer transfer-order workflow.
+The August HotWax Commerce releases connect transfer creation, source inventory reservation, and NetSuite transfer updates across those steps.
 
-### Create a transfer where receiving teams already work
+## Create a transfer where receiving teams already work
 
-Receiving now includes a page for creating a transfer order. An operator can choose the source and destination facilities, select products and quantities, and create the inventory movement without leaving the store and warehouse application set.
+Receiving now includes a page for creating a transfer order. Operators can choose the source and destination facilities, select products and quantities, and plan the move from the same app they use to receive stock.
 
-The entry point works with the Transfers app rather than replacing it. Navigation fixes return an operator to the correct transfer detail after creation, while the existing transfer workspace continues to show the order as it progresses.
+The entry point works with the Transfers app, which continues to show the order as it progresses. Creating a transfer order does not itself move stock between locations.
 
-### Reserve the source inventory on approval
+## Keep warehouse commitments out of Shopify availability
 
-Creating the document is only the first step. When a warehouse transfer order is approved, the OMS moves its items into the valid state and reserves the requested inventory from the source warehouse.
+When a warehouse transfer order is approved, the order management system (OMS) reserves the requested inventory at the source warehouse. The reservation reduces what is available to promise before fulfillment begins.
 
-This makes the inventory commitment part of the transfer lifecycle. The source does not have to wait for a separate allocation action before fulfillment can begin, and other availability calculations can see that the quantity has already been promised to the transfer.
+With inventory event feeds and Shopify publishing enabled, this supports close-to-real-time reductions in the warehouse inventory offered for sale on Shopify as stock is committed to a transfer. Retailers do not have to wait for the transfer to ship before accounting for that commitment online.
 
-Fulfillment also corrects the permission needed to create a shipment for a transfer order. The change removes a role-level break between the order being valid in the OMS and the warehouse being able to act on it.
+Warehouse teams can then create the transfer shipment in Fulfillment with the appropriate transfer-order permission.
 
-### Receive NetSuite transfer activity through the same service
+## Bring NetSuite transfer events into the same workflow
 
-The NetSuite connector can import transfer-order receipt files through Data Manager. It resolves the related transfer and product identifiers, then delegates the receipt to the same HotWax Commerce transfer-receiving service used by the application flow.
+NetSuite transfer integration now runs through HotWax's master data management layer. It supports transfer lifecycle events that happen outside the OMS, including fulfillment, cancellation, and receipt in NetSuite.
 
-Using one receiving service matters because it keeps inventory and item status behavior consistent. The connector is not maintaining a second interpretation of what it means to receive a transfer simply because the event arrived through an integration.
+This lets warehouse teams continue working in NetSuite while HotWax records the corresponding transfer activity and inventory changes. The transfer can follow the same operating path without requiring every step to begin in a HotWax app.
 
-Scheduled polling can pick up files from the configured secure file transfer location. Processing is serialized where needed, and terminal transfer items or receipt-only requests are guarded so a replay does not push a completed item back into an active state.
-
-The connector change shipped with its service path and scheduling support, but the source pull request did not record a completed sample-payload integration test. Retailers should still validate their NetSuite file contract and facility identifiers during rollout.
-
-The complete operating path is now easier to follow: create the transfer, reserve its source inventory, fulfill it with the right permissions, and receive it through one shared inventory service whether the receipt begins in HotWax or NetSuite.
-
-*Sources: [receiving#721](https://github.com/hotwax/receiving/pull/721), [receiving#722](https://github.com/hotwax/receiving/pull/722), [oms#896](https://github.com/hotwax/oms/pull/896), [fulfillment#1682](https://github.com/hotwax/fulfillment/pull/1682), [NetSuite transfer receipt services](https://github.com/hotwax/mantle-netsuite-connector/blob/v3.1.0/service/co/hotwax/netsuite/TransferOrderServices.xml), [hotwax-poorti#293](https://github.com/hotwax/hotwax-poorti/pull/293), [hotwax-poorti#303](https://github.com/hotwax/hotwax-poorti/pull/303), [receiving v4.2.0](https://github.com/hotwax/receiving/releases/tag/v4.2.0), [oms v3.1.0](https://github.com/hotwax/oms/releases/tag/v3.1.0), [fulfillment v4.2.1](https://github.com/hotwax/fulfillment/releases/tag/v4.2.1), [hotwax-poorti v3.1.0](https://github.com/hotwax/hotwax-poorti/releases/tag/v3.1.0), [mantle-netsuite-connector v3.1.0](https://github.com/hotwax/mantle-netsuite-connector/releases/tag/v3.1.0)*
+*Sources: [receiving#721](https://github.com/hotwax/receiving/pull/721), [receiving#722](https://github.com/hotwax/receiving/pull/722), [OMS warehouse transfer approval](https://github.com/hotwax/oms/blob/v3.1.0/service/co/hotwax/orderledger/order/TransferOrderServices.xml), [fulfillment#1682](https://github.com/hotwax/fulfillment/pull/1682), [NetSuite transfer lifecycle services](https://github.com/hotwax/mantle-netsuite-connector/blob/v3.1.0/service/co/hotwax/netsuite/TransferOrderServices.xml), [NetSuite transfer Data Manager feeds](https://github.com/hotwax/mantle-netsuite-connector/blob/v3.1.0/data/DA_ExtSeed_NetsuiteMDMData.xml), [Shopify available inventory publishing](https://github.com/hotwax/mantle-shopify-connector/blob/v4.1.8/script/co/hotwax/sob/product/createShopifyInventoryAdjustmentSystemMessage.groovy)*

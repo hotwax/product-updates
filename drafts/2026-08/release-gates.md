@@ -1,10 +1,10 @@
 # August 2026 release gates
 
-Status checked on September 1, 2026. This file is an internal publishing control and is not HubSpot content.
+Release status checked on September 1, 2026; editorial review completed on October 3, 2026. This file is an internal publishing control and is not HubSpot content.
 
 ## Final August publication set
 
-The release note and these seven product updates are backed by August application or component releases:
+The release note and these six product updates are approved for publication after review:
 
 - Shopify fulfillment-location reconciliation
 - Event-driven Shopify inventory publishing
@@ -12,9 +12,8 @@ The release note and these seven product updates are backed by August applicatio
 - Multi-company OMS management and NetSuite subsidiary mapping
 - Connected transfer-order workflow
 - Cycle Count creation and variance decisions
-- Order Routing inventory monitoring and schedules
 
-The month-end sweep confirmed that every pull request cited by these seven posts is merged. Every cited release is published, is not a draft or prerelease, and has an August 2026 publication date.
+The month-end sweep confirmed the released implementation behind the package. The October review simplified NetSuite transfer and subsidiary coverage, added a concrete inventory-event example and flow diagram, and clarified Shopify retry protection. Public source links use shared product repositories rather than customer-specific implementation references.
 
 Two changes that were gated on August 23 are now included:
 
@@ -22,6 +21,10 @@ Two changes that were gated on August 23 are now included:
 - `mantle-shopify-connector#620` is part of `v4.1.8`. The fulfillment-location update now cites the release that makes the scheduled missed-fulfillment sweep executable without an interactive user.
 
 ## Deferred from August
+
+### Order Routing inventory monitoring and schedules
+
+Aditya held this feature for a future release because it is not fully ready. The complete draft is preserved at `drafts/deferred/product-updates/order_routing_inventory_monitoring_and_schedules.md`; it is excluded from both publication manifests and from the August release notes. No future month is assigned.
 
 These posts were removed from the August publication manifest because their release gates did not clear by August 31. Their draft text remains recoverable from commit `8983a17d`.
 

@@ -6,7 +6,9 @@ month: 2026-08
 metaDescription: Order Routing explains how Online ATP is computed and adds schedules, queue state, Data Manager files, and run controls for inventory updates.
 tagNames: [Product Update]
 key: product-update:2026-08:order-routing-inventory-monitoring-and-schedules
-releaseStatus: released
+releaseStatus: deferred
+deferredFrom: 2026-08
+deferredReason: Held for a future release after Aditya's review on October 2, 2026.
 ---
 
 When an online inventory number looks wrong, the useful question is not only what the number is. Teams need to know which facilities contributed to it, which rules reduced it, whether queued demand was included, and whether the resulting update has reached the sales channel.

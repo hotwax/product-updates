@@ -1,12 +1,12 @@
 ---
-title: HotWax brings Shopify inventory and transfer diagnostics into Company
+title: HotWax Commerce brings Shopify inventory and transfer diagnostics into Company
 slug: product-updates/2026-09/company-shopify-diagnostics
 contentType: product-update
 month: 2026-09
 metaDescription: Company connects Shopify inventory events, delivery timing, batch details, transfer sync health, and mapping conflicts in one operating workspace.
 tagNames: [Product Update]
 key: product-update:2026-09:company-shopify-diagnostics
-releaseStatus: draft
+releaseStatus: ready
 ---
 
 When Shopify inventory or a transfer stops updating, the next step depends on where the work stopped. HotWax Commerce's Company app gives operations teams more context around the inventory events, delivery batches, and transfer sync jobs behind a Shopify connection. You can move from a summary to the affected records and review the evidence before taking action.
@@ -19,7 +19,7 @@ Summary cards measure the events in that view. They show how many changes are wa
 
 The history loads the newest 500 events first. An earlier date can load older events still retained by the connector. On connections that cannot report event changes, the page identifies the last read time and provides a manual refresh.
 
-Open an event or batch to inspect its source context, combined quantity changes, delivery errors, and saved message. `Resend` retries that saved batch, retaining its original payload and request identity.
+Open an event or batch to inspect its source context, combined quantity changes, delivery errors, and saved message. `Resend` retries the original batch instead of creating a new one.
 
 ## Follow a transfer through its sync stages
 
@@ -29,7 +29,7 @@ The `Issues` and `Working` sections separate reported blockers from checks that 
 
 ## Resolve product mapping conflicts with the product in view
 
-When one OMS product maps to several Shopify variants, the resolution screen shows each variant's name, SKU, barcode, image, and status. You can select the intended variant, confirm the change, and recheck the remaining mapping.
+When one product in the order management system (OMS) maps to several Shopify variants, the resolution screen shows each variant's name, SKU, barcode, image, and status. You can select the intended variant, confirm the change, and recheck the remaining mapping.
 
 The confirmation explains that retaining one mapping affects syncs for that product in the selected shop. The action removes the other OMS mappings while keeping the Shopify products. Missing Shopify transfer lines have a separate comparison view with affected shipment items and dependent receipts, plus details to share for repair and a recheck action.
 

@@ -1,12 +1,12 @@
 ---
-title: HotWax connects product calendar dates to inventory selling windows
+title: HotWax Commerce connects product calendar dates to inventory selling windows
 slug: product-updates/2026-09/product-calendar-inventory-windows
 contentType: product-update
 month: 2026-09
 metaDescription: Map Shopify lifecycle dates in Company, review them in Products, and use scheduled date conditions in HotWax Commerce inventory rules.
 tagNames: [Product Update]
 key: product-update:2026-09:product-calendar-inventory-windows
-releaseStatus: draft
+releaseStatus: ready
 ---
 
 HotWax Commerce connects product launch dates with the inventory rules that decide how much stock retailers offer for shipping and store pickup. Teams can map lifecycle dates from Shopify, review those dates in Products, and use them in Order Routing without maintaining a separate list of products for each launch window.
@@ -17,7 +17,7 @@ For retailers with frequent launches, the same SKU can need different inventory 
 
 The Company app's Shopify Product Sync page includes a `Product calendar mappings` card for four dates: introduction, launch, support discontinuation, and sales discontinuation. Each mapping connects a HotWax calendar field with the Shopify metafield that supplies its date.
 
-The picker lists date and date-time metafield definitions from Shopify products and variants. Teams can search those definitions or enter a namespace and key, then check that choice against Shopify before saving. Existing mappings can be removed when a shop's catalog setup changes.
+The picker lists date and date-time fields from Shopify products and variants. Teams can find the field that holds the date and check that choice against Shopify before saving. Existing mappings can be removed when a shop's catalog setup changes.
 
 Product sync writes the mapped values to the calendar for the shop's product store. A variant's date takes precedence when present; otherwise, that variant inherits the product's date for the same field. This happens independently for each date, so a variant can have its own launch date while keeping the product's sales end date.
 

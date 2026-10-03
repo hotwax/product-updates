@@ -1,32 +1,30 @@
 ---
-title: HotWax adds multi-company management and NetSuite subsidiary mapping
+title: HotWax Commerce brings NetSuite subsidiary mapping into Company
 slug: product-updates/2026-08/multi-company-oms-and-netsuite-subsidiary-mapping
 contentType: product-update
 month: 2026-08
-metaDescription: HotWax Commerce manages internal company hierarchies and maps company external IDs to NetSuite subsidiaries in the current order export flow.
+metaDescription: HotWax Commerce helps retailers manage operating companies and maintain subsidiary IDs for configured NetSuite order exports in Company.
 tagNames: [Product Update]
 key: product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping
-releaseStatus: released
+releaseStatus: ready
 ---
 
-Retail operating networks are rarely represented by one legal entity. A retailer may run stores through multiple subsidiaries, assign facilities to different operating companies, and export orders into a NetSuite account that expects the correct subsidiary, customer, and department on every transaction.
+Retailers running a multi-subsidiary NetSuite account need orders to reach the right legal entity. Stores and warehouses may belong to different operating companies, and that ownership can determine the subsidiary used when an order is exported.
 
-HotWax Commerce now gives that structure an explicit home in Company and connects it to the current NetSuite order-export flow.
+HotWax Commerce brings company management and subsidiary mapping into the Company app. Administrators can maintain the operating companies behind their NetSuite setup and the subsidiary IDs used by their configured order exports.
 
-### Manage the organization as a hierarchy
+## Represent the companies behind the NetSuite account
 
-Company lists the internal organizations maintained in the OMS and shows how they relate to one another. Administrators can create a company, rename it, or move it beneath a different parent without going back to a generic party-management screen.
+Company shows operating companies in a parent-and-subsidiary hierarchy. Administrators can create a company, rename it, or move it beneath a different parent as the retail business changes.
 
-Hierarchy validation prevents a company from being placed beneath itself or one of its descendants. The app can also report malformed relationships that already exist, giving teams a way to find organization data that cannot be drawn as a valid tree.
+Each company's detail page also lists its stores and warehouses. This gives teams a way to check which company owns a location before reviewing its NetSuite mapping.
 
-Facility visibility brings the operating model into the same view. Teams can see which stores and warehouses belong to an organization rather than inferring ownership from a separate configuration export.
+## Maintain each company's subsidiary ID
 
-### Maintain the identifier used by NetSuite
+For NetSuite deployments that derive an order's subsidiary from the facility's owning company, administrators can maintain that company's NetSuite subsidiary ID in the `External ID` field. They can add, correct, or clear the value without recreating the company.
 
-Each company can carry an external ID. In the current NetSuite order-export flow, that value is used as the subsidiary ID sent with the order.
+Company keeps this mapping beside the company record, so teams have one place to review the subsidiary ID behind their order exports. A hierarchy change does not automatically change facility ownership or rewrite earlier transactions.
 
-This is intentionally a precise mapping, not a claim that every use of an OMS party external ID is now NetSuite-specific. The field remains a general party attribute. Company explains the behavior so an administrator understands the consequence of changing or clearing it, while a typed integration identifier remains the safer long-term model for retailers with several external systems.
+For multi-subsidiary retailers, the result is a clearer connection between the companies that run the retail network and the NetSuite subsidiaries that receive its orders.
 
-For multi-company retailers, the product-wide change establishes a clear foundation: the OMS can represent the company hierarchy, show its related facilities, and give the current NetSuite order-export flow an explicit subsidiary value to use.
-
-*Sources: [company#290](https://github.com/hotwax/company/pull/290), [company#323](https://github.com/hotwax/company/pull/323), [company v2.2.0](https://github.com/hotwax/company/releases/tag/v2.2.0)*
+*Sources: [Company organization list](https://github.com/hotwax/company/blob/v2.2.0/src/views/Organizations.vue), [Company organization details](https://github.com/hotwax/company/blob/v2.2.0/src/views/OrganizationDetails.vue), [Company hierarchy and mapping actions](https://github.com/hotwax/company/blob/v2.2.0/src/composables/useOrganizations.ts), [company v2.2.0](https://github.com/hotwax/company/releases/tag/v2.2.0)*

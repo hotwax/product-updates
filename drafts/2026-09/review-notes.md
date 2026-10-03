@@ -2,7 +2,7 @@
 
 Prepared on October 2, 2026, for review beside August on `codex/product-updates-2026-08-draft`.
 
-The September package contains one release note and seven dedicated product updates. All items are drafts. HubSpot publication requires Aditya's review and instruction to publish.
+The September package contains one release note and eight dedicated product updates. Aditya reviewed PR #15 and instructed publication after the comments are addressed. The new Routing Simulation article labels the guided app setup as a preview and retains its connection-service prerequisites.
 
 ## Evidence and eligibility
 
@@ -23,6 +23,7 @@ Both the product-update Gemini guide and the OMS documentation Gemini guide info
 - Inventory transfer requests: request, execute paired facility adjustments, or cancel without changing stock
 - Shopify location and kit inventory: physical inventory events, ATP resets, activation, and derived kit quantities
 - Shopify native transfer synchronization: approved transfer orders, shipments, receipts, and added items
+- Routing Simulation: copied operating data, baseline and variations, comparable runs, item outcomes, and saved-run history, with the guided setup labeled preview
 
 ## Boundaries retained in the copy
 
@@ -36,7 +37,7 @@ Both the product-update Gemini guide and the OMS documentation Gemini guide info
 
 ## App work with deployment gates
 
-The simulation setup wizard is included as merged app UI. The checked app calls an OMS simulation proxy path that does not appear in the reviewed OMS, Maarg utilities, or routing component sources. An implementation team must provide and validate the matching gateway and simulation environment before the full workflow can be announced as operational.
+The simulation setup wizard is included as merged app UI. The separate `sim-routing` service has a September `v1.0.0` release. The app's matching OMS facade is still in an unmerged draft PR and is absent from the standard September backend releases. The full article describes the configured workflow, marks guided setup as a preview, and does not claim a working end-to-end deployment on every retailer instance.
 
 The Company MCP setup guide is included. Inline token issuance depends on an endpoint absent from the checked backend sources, so the copy points to the existing OMS access-token settings rather than promising inline issuance.
 
@@ -50,8 +51,8 @@ Shopify outbound cancellation has a missing upgrade-path prerequisite in the rev
 
 ## Privacy and visuals
 
-Public prose uses shared product behavior and generic examples. Client-associated PR and changelog links have been replaced with clean, pinned shared source files where needed. Four such source links were also replaced in August; its narrative and feature eligibility were preserved, and its manifest hashes were refreshed.
+Public prose uses shared product behavior and generic examples. Client-associated PR and changelog links have been replaced with clean, pinned shared source files where needed. The October review also removed the unfinished August Order Routing monitoring article from publication, preserved it as a deferred draft, and simplified the remaining August narratives. Manifest hashes reflect the reviewed copy.
 
 No screenshot assets are attached. The strongest screenshot candidates are Company inventory event history and transfer detail, Order Manager timeline and item transfers, Products calendar, Order Routing Replenishment, and the Transfers request view. Capture from the reviewed app revision on a safe demonstration environment, record the revision and date, and verify that the image contains no customer or client-identifying data before adding it.
 
-The publish manifest is prepared for review and marked `awaiting-review`. No HubSpot publishing action has been performed.
+The publish manifest will include only the reviewed public items. Routine authentication, version-parser, and thumbnail implementation notes remain in the source inventory but are not promoted as launch copy. Publication state is recorded separately after the live HubSpot pages are verified.

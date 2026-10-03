@@ -1,46 +1,63 @@
 ---
-title: HotWax connects transfer orders to Shopify's native transfer workflow
+title: HotWax Commerce connects transfer orders to Shopify's native transfer workflow
 slug: product-updates/2026-09/shopify-native-transfer-sync
 contentType: product-update
 month: 2026-09
-metaDescription: HotWax Commerce connects approved transfer orders with Shopify native transfers, linked shipments and receipts, and updates to transfer line items.
+metaDescription: HotWax Commerce connects approved transfer orders, including NetSuite imports, with Shopify native transfers and two-way shipping and receiving updates.
 tagNames: [Product Update]
 key: product-update:2026-09:shopify-native-transfer-sync
-releaseStatus: draft
+releaseStatus: ready
 ---
 
-HotWax Commerce now connects approved transfer orders with Shopify's native inventory transfers and shipments. Retailers can carry the same stock movement from the approved order through shipment and receiving, including activity completed in Shopify, while retaining the connection to the corresponding HotWax records.
+Moving stock between locations can involve a transfer planned in NetSuite, fulfillment managed in the order management system, and store teams working in Shopify. HotWax Commerce now connects approved transfer orders with Shopify's native inventory transfers so supported shipping and receiving actions can flow between the two systems.
 
-This workflow starts with an approved transfer order and follows its shipments and receipts in Shopify.
+This is the transfer order workflow for shipping and receiving stock. Direct inventory transfer requests, which move inventory balances between facilities without a shipment, remain a separate workflow.
 
 ## Create a Shopify transfer for the approved order
 
-When both transfer endpoints map to locations in one Shopify shop, HotWax can create a corresponding native Shopify transfer and leave it ready to ship. The complete order is staged through Data Manager, giving teams a record of the items submitted and any errors that need attention.
+When the origin and destination map to locations in exactly one Shopify shop, HotWax creates the matching Shopify transfer and leaves it ready to ship. Data Manager retains the complete order submitted and any errors that need attention.
 
 An order with incomplete or ambiguous mappings remains visible for correction before it is sent. HotWax does not create a partial transfer from only the items that happen to have valid mappings.
 
-Each Shopify shop has its own staging scope. Retailers operating multiple shops can process their transfers independently while keeping activity for the same transfer in order.
+Transfer creation runs from HotWax to Shopify only. A transfer created independently in Shopify does not create a transfer order in HotWax.
 
-## Keep shipments and receipts connected
+## Know which changes sync in each direction
 
-HotWax sends transfer shipment, receiving, and cancelled-quantity activity to the existing Shopify transfer. For linked transfers, incoming Shopify shipment and receiving events can also create or update the corresponding HotWax records.
+The integration is bidirectional for shipping and receiving on linked transfers. That does not mean every transfer field syncs both ways.
 
-The integration retains the relationship between each event and its order, item, shipment, or receipt. Replayed callbacks reuse that relationship rather than recording another inventory movement, and changes already represented by the native transfer are excluded from generic inventory adjustments for its owning shop.
+| Change | Direction | What syncs |
+| --- | --- | --- |
+| Transfer creation and approval | HotWax to Shopify only | An approved HotWax order creates a Shopify transfer ready to ship. Shopify does not approve or create the HotWax order. |
+| New product lines | Both directions | HotWax adds missing products to the linked Shopify transfer. Shopify additions can create HotWax order items before fulfillment or receiving starts. |
+| Existing-line reductions and removals | Both directions | HotWax sends reductions in open quantity. Shopify changes can update the HotWax order before fulfillment or receiving starts. Allocated or shipped quantity is not erased. |
+| Existing-line increases | Shopify to HotWax only | Shopify quantity increases can update HotWax before fulfillment or receiving starts. Increases made to an already mapped line in HotWax are not sent to Shopify by this update flow. |
+| Shipping and shipment-backed receiving | Both directions | HotWax sends shipped quantities and receipts to Shopify. Shopify shipment and receipt events create or update the linked HotWax records. |
+| Draft shipment edits and deletion | Shopify to HotWax only | Shopify line edits and deletion can update or cancel the HotWax shipment before inventory has been issued or received. |
+| Tracking changes | Shopify to HotWax only | Shopify tracking-number changes update HotWax. Carrier names and tracking URLs are not applied as shipment fields. |
+| Whole-transfer cancellation | Both directions | Cancellation syncs while the transfer has not started fulfillment or receiving. A later cancellation is reported for review. |
 
-Receipt handling also covers over-received or mis-shipped products that have no normal shipment link. Those receipts can publish their inventory effect to Shopify without changing the existing treatment of shipment-linked receipts.
+## Keep shipping and receiving connected
+
+Teams can ship and receive a linked transfer in HotWax or Shopify. Receipts need the corresponding shipment and line mappings. A missing mapping or conflicting quantity remains visible for correction rather than creating a second stock movement.
+
+Repeated notifications reuse the existing order, shipment, and receipt links. Transfer movements already represented in Shopify are not sent again as separate inventory adjustments for that shop. Stock-on-hand resets also defer affected products and locations while shipment or receipt actions remain unconfirmed; unrelated inventory can still publish.
 
 ## Add items to a transfer already in progress
 
 Transfer plans can change after the first order reaches Shopify. When a new item is added in HotWax, the update workflow adds the missing Shopify transfer line first and confirms its mapping. Later runs can then send that item's shipment and receipt activity alongside the original items.
 
-Existing line identities and shipments stay connected to the same transfer. This addition covers new items; quantity increases on an already mapped line retain their existing handling.
+Existing lines and shipments stay connected to the same transfer. The new-item flow preserves those records instead of replacing the transfer.
 
-Physical stock-on-hand resets also defer affected product and location pairs while matching transfer actions remain unconfirmed. Unrelated inventory can still publish, while the deferred work remains available for retry.
+## Carry NetSuite transfer orders through the same workflow
+
+NetSuite transfer orders are compatible with this integration through HotWax. After import and approval in HotWax, a NetSuite-origin order can create the Shopify transfer and use the same shipment and receipt sync described above. The transfer keeps its NetSuite order and item relationships.
+
+Retailers do not need a separate Shopify transfer flow for NetSuite-origin orders. They do need the configured NetSuite integration, product mappings, and both locations mapped to the same Shopify shop. The sync directions and quantity limits still apply, including the limit on increases to an existing line.
 
 ## Enable the workflow per Shopify shop
 
-The create and update jobs ship as paused templates. Your implementation team confirms product and endpoint mappings, clones the jobs for each Shopify shop, and sets the shop scope before enabling them. Enable the create flow first, confirm its round trip, and then enable updates.
+The create and update jobs ship as paused templates. Your implementation team confirms product and location mappings and whole-number quantities, clones the jobs for each Shopify shop, and sets the shop scope before enabling them. Enable creation first, confirm the transfer appears in Shopify, and then enable updates.
 
-Shopify's transfer lifecycle continues to govern its status as items are added, shipped, and received. The integration records those changes across the two systems so teams can follow the transfer through execution.
+Each shop runs independently. Shopify's transfer lifecycle continues to govern its status as items are added, shipped, and received.
 
-*Sources: [Shopify transfer services in v4.2.0](https://github.com/hotwax/mantle-shopify-connector/blob/v4.2.0/service/co/hotwax/shopify/transfer/ShopifyInventoryTransferServices.xml), [Shopify connector v4.3.0](https://github.com/hotwax/mantle-shopify-connector/releases/tag/v4.3.0), [v4.3.2](https://github.com/hotwax/mantle-shopify-connector/releases/tag/v4.3.2).*
+*Sources: [Shopify transfer creation services](https://github.com/hotwax/mantle-shopify-connector/blob/v4.3.2/service/co/hotwax/shopify/transfer/ShopifyInventoryTransferServices.xml), [Outbound transfer updates](https://github.com/hotwax/mantle-shopify-connector/blob/v4.3.2/script/co/hotwax/shopify/transfer/stageShopifyInventoryTransferUpdates.groovy), [Incoming transfer events](https://github.com/hotwax/mantle-shopify-connector/blob/v4.3.2/script/co/hotwax/shopify/transfer/webhookApplyTransferEvent.groovy), [Incoming shipment events](https://github.com/hotwax/mantle-shopify-connector/blob/v4.3.2/script/co/hotwax/shopify/transfer/webhookApplyShipmentEvent.groovy), [NetSuite transfer order services](https://github.com/hotwax/mantle-netsuite-connector/blob/v3.2.0/service/co/hotwax/netsuite/TransferOrderServices.xml).*

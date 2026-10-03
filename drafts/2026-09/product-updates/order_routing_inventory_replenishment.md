@@ -1,12 +1,12 @@
 ---
-title: HotWax brings inventory history and replenishment planning into Order Routing
+title: HotWax Commerce brings inventory history and replenishment planning into Order Routing
 slug: product-updates/2026-09/order-routing-inventory-replenishment
 contentType: product-update
 month: 2026-09
 metaDescription: Order Routing connects multi-facility inventory searches, movement history, demand, incoming stock, and editable replenishment settings.
 tagNames: [Product Update]
 key: product-update:2026-09:order-routing-inventory-replenishment
-releaseStatus: draft
+releaseStatus: ready
 ---
 
 Finding a stock problem is only the first step. Retail teams also need to understand the movements behind the balance, what is already on the way, and whether the location's stock settings match demand. HotWax Commerce's Order Routing app brings these questions into Inventory Find and Inventory Detail.
@@ -15,7 +15,7 @@ Finding a stock problem is only the first step. Retail teams also need to unders
 
 Inventory Find starts with the product's facility inventory records and adds product names, images, and your chosen identifiers. You can select several facilities, narrow the product scope, and filter by positive or negative available to promise (ATP), quantity on hand, safety stock, pickup eligibility, or brokering eligibility.
 
-Filters and sorting stay in the URL, so you can bookmark a view or send a colleague the same inventory scope. Product searches page through matching styles, and variant selection loads the available pages before offering `Select all`. A failed search or inventory request displays an error and a retry path instead of reading as an empty result.
+Filters and sorting stay in the URL, so you can bookmark a view or send a colleague the same inventory scope. Product searches page through matching styles, and variant selection loads the available pages before offering `Select all`.
 
 For a single facility, you can also add configuration to selected products that do not yet have it. Configuration checks use the underlying facility records rather than just the current filtered page.
 
