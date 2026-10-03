@@ -16,7 +16,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "c384d106fdd71abd2cea39803562b5e94c7d58c5c11504e4be25592ab58a7921"
+      "contentHash": "617173ca4ddccb004adcd6b74ff067f41df135343c7fe6f600a3f0701d90f142"
     },
     {
       "key": "product-update:2026-08:company-integration-control-center",
@@ -28,7 +28,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "ca3a84856b1e2e707e7535e2bd9d482b7432a32fb98779f5ca61435be49e9d22"
+      "contentHash": "fcc0eb87deb3d9965e430891610c1db0c594da6ab3f5a252d81778800a2f04e4"
     },
     {
       "key": "product-update:2026-08:connected-transfer-order-workflow",
@@ -40,7 +40,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "88f6b4bf22b2f0d1fb590b46144527bed2aac99609e2e2f042e27c15309de438"
+      "contentHash": "268ab70d4d455412edd48134321b2232ef39a740ee30dbaf56a08ab756ef7cee"
     },
     {
       "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
@@ -52,7 +52,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "354f7af974bbab3703e12af3f29f288d8cb1f2a062af83c759602b1f6d83eb75"
+      "contentHash": "eca004dea78216ab71c0cb6a8122cf42b81d81ca0327fc0a999e2b0c92717242"
     },
     {
       "key": "product-update:2026-08:event-driven-shopify-inventory-publishing",
@@ -64,7 +64,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "50b03ee831044f1933c202f0121e886c9080b0b391c29a0096162f4d7df0409a"
+      "contentHash": "1ed478faea26b3d77b7e66ff7b3035c792f2500301552101e04c60d0d516e668"
     },
     {
       "key": "product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping",
@@ -76,7 +76,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "7e3ebf01d1cf0a653289a14851e126c594b29bad8af6b60c2a6db83439a86835"
+      "contentHash": "332e35566de27e353c4661c95e4d7d29a35f0399f6ec080befade97da3eea841"
     },
     {
       "key": "product-update:2026-08:shopify-fulfillment-location-reconciliation",

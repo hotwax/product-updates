@@ -23,9 +23,9 @@ Each failed run keeps its error details available, so teams can review the cause
 
 The latest August release makes every participating inventory job visible. Company shows one publisher for each inventory channel, the system-message sender, the manual discard tool, and the retention purge that explains how long completed event history remains available. Administrators can edit the parameters a job accepts, while app-created jobs begin paused so their scope and schedule can be reviewed before activation.
 
-![Company inventory sync workspace with channel and physical inventory queues and publishing jobs](assets/product-updates/screenshots/2026-10-03/company-shopify-inventory-sync.jpg)
+![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air.png)
 
-*Inventory queues and job status in the current development UI with demo data. Select the image to enlarge it.*
+*Current development UI, captured October 3 with demo data. The existing inventory channel shows delivery activity and publishing and reset jobs; counts and schedules describe this demo connection. Select the image to enlarge it.*
 
 ## Configure carriers and Unigate together
 

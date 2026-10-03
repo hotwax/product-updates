@@ -18,7 +18,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "b332a6711485b9137e489ad29ecc517241f7033e347db1151d1d12311e9d5461"
+      "contentHash": "89cadd387d2d980aaf37fe42d11555294dee5fa5f1918c5134f7372614996e34"
     },
     {
       "key": "product-update:2026-09:company-shopify-diagnostics",
@@ -30,7 +30,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "eb2774fcb9e5354073ac546adfa4fdffddf27ddb06287963cdf52478c941b4f4"
+      "contentHash": "76e537e9be2623e345d8fe1398f717bb07c30ae80a75be3c2ce960fccd59d710"
     },
     {
       "key": "product-update:2026-09:inventory-transfer-requests",
@@ -54,7 +54,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "85f5ebc087730acd971fe2fab944ad7c290154c09f4f4e0633cef160707af4c4"
+      "contentHash": "79b6ee4941a938c26af5250c13a4c3a9061ded4019bbca81ea007b22fbdec3be"
     },
     {
       "key": "product-update:2026-09:order-routing-inventory-replenishment",
@@ -90,7 +90,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "cd0e0bf7b11f1e6ca678e540a12fb2bcc6a12b0cf96ec5d08c481ff5e84132f7"
+      "contentHash": "d7eb23f18df542c07291aae875971801cf710c46fc98542b53aaceac59a6a057"
     },
     {
       "key": "product-update:2026-09:shopify-location-and-kit-inventory",
@@ -114,7 +114,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "6fb1975a85d3cac9c4eef6a92c42d7e41bd3607b418d0a8a5eec8bc733e90b9c"
+      "contentHash": "424a8eb9fd6c342520b11caf2f21d42cccbeccf25f6698fc3bffa6cb557dd124"
     }
   ],
   "approvedBy": "dt2patel",

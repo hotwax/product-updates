@@ -23,9 +23,9 @@ For an eligible open item, an operator can request inventory from another facili
 
 *Sources: [Order Manager timeline](https://github.com/hotwax/order-manager/blob/v1.3.0/src/utils/orderTimeline/transactions.ts), [Item transfer controls](https://github.com/hotwax/order-manager/blob/v1.3.0/src/components/orders/OrderItemTransfersModal.vue), [Selected-item actions](https://github.com/hotwax/order-manager/blob/v1.3.0/src/composables/useOrderActions.ts)*
 
-![Order Manager timeline showing placement, import, approval, picking, and packing milestones](assets/product-updates/screenshots/2026-10-03/order-manager-order-timeline.jpg)
+![Order Manager showing a held sample order, fictional customer contact details, and its timeline](assets/product-updates/screenshots/2026-10-03/order-manager-populated-order-macbook-air.png)
 
-*An existing demo order's timeline in the current development UI. Select any screenshot to enlarge it.*
+*A held sample order with fictional customer details, shown in the current development UI on October 3, 2026. No fulfillment milestones were added for the screenshot. Select any screenshot to enlarge it.*
 
 ### Keep queue counts, product identifiers, and form choices consistent
 
@@ -45,9 +45,9 @@ Transfer sync brings jobs, webhook health, shipment stages, receipts, and outsta
 
 *Sources: [Inventory event history](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/views/ShopifyInventoryEventHistory.vue), [Batch details](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/components/shopify/InventoryEventBatchModal.vue), [Transfer sync detail](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/views/ShopifyTransferSyncDetail.vue)*
 
-![Company inventory history showing event filters and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-inventory-event-history.jpg)
+![Company channel inventory history with the Sent filter, recorded demo inventory changes, and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-delivered-inventory-events-macbook-air.png)
 
-*Current development UI with demo data. Delivery times describe this sample, not a performance guarantee.*
+*Recorded demo inventory changes, filtered to `Sent`. Current development UI, captured October 3, 2026; sample delivery times are not a performance guarantee.*
 
 ### Review notification subscriptions and connect external assistants
 
@@ -75,9 +75,9 @@ Order Routing can use days since or days until a selected date in threshold, saf
 
 *Sources: [Products calendar](https://github.com/hotwax/products/blob/b6699142b88364a8aa14e0c7ca16e8d442ff0431/src/views/ProductCalendar.vue), [Company calendar mappings](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/components/shopify-product-sync/ProductCalendarMappingsCard.vue), [OMS calendar support](https://github.com/hotwax/oms/releases/tag/v3.3.1), [Shopify date sync](https://github.com/hotwax/mantle-shopify-connector/releases/tag/v4.3.2)*
 
-![Products calendar listing product and variant lifecycle dates](assets/product-updates/screenshots/2026-10-03/products-product-calendar.jpg)
+![Products calendar with stored demo introduction and launch dates for products and variants](assets/product-updates/screenshots/2026-10-03/products-populated-calendar-macbook-air.png)
 
-*Stored demo lifecycle dates in the current development UI; no active Shopify calendar mappings are configured on this connection.*
+*Stored demo introduction and launch dates. Current development UI, captured October 3, 2026; the image shows saved dates, not an active Shopify calendar sync.*
 
 ## Order Routing
 

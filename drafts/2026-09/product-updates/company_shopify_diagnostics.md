@@ -21,19 +21,15 @@ The history loads the newest 500 events first. An earlier date can load older ev
 
 Open an event or batch to inspect its source context, combined quantity changes, delivery errors, and saved message. `Resend` retries the original batch instead of creating a new one.
 
-![Company inventory history with delivery metrics, event filters, and recorded inventory changes](assets/product-updates/screenshots/2026-10-03/company-inventory-event-history.jpg)
+![Company channel inventory history with the Sent filter, recorded demo inventory changes, and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-delivered-inventory-events-macbook-air.png)
 
-*Inventory history in the current development UI. Counts and delivery times are from demo data, not a performance guarantee. Select the image to enlarge it.*
+*Recorded demo inventory changes, filtered to `Sent`. Current development UI, captured October 3, 2026; sample delivery times are not a performance guarantee. Select the image to enlarge it.*
 
 ## Follow a transfer through its sync stages
 
 The transfer sync workspace brings the connection's jobs, webhook health, outstanding transfers, and shipment and receipt stages together. A transfer detail page shows its source and destination, dates, and links to the corresponding records in Shopify and the Transfers app.
 
 The `Issues` and `Working` sections separate reported blockers from checks that have succeeded. Job details and the latest completed staging result remain available alongside the affected item, helping you decide whether to correct a mapping, review delivery, or investigate a missing transfer line.
-
-![Company transfer sync workspace with outstanding changes, webhook and job status, and shipment and receipt tabs](assets/product-updates/screenshots/2026-10-03/company-shopify-transfer-sync.jpg)
-
-*Transfer monitoring in the current development UI with demo data. Job and subscription status reflects this demo connection's configuration.*
 
 ## Resolve product mapping conflicts with the product in view
 

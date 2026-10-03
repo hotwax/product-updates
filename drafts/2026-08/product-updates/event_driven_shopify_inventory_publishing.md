@@ -67,9 +67,9 @@ For example, Shopify might apply an adjustment of two units before the connectio
 
 ## Monitor the flow from Company
 
-![Company inventory sync monitoring with event queues, batch queues, and job status](assets/product-updates/screenshots/2026-10-03/company-shopify-inventory-sync.jpg)
+![Company inventory sync showing a mapped demo channel, delivery activity, and active publishing and reset jobs](assets/product-updates/screenshots/2026-10-03/company-populated-inventory-channel-macbook-air.png)
 
-*The current development UI shows the demo connection's queues and publishing jobs. Select the image to enlarge it.*
+*Current development UI, captured October 3 with demo data. The existing inventory channel shows delivery activity and publishing and reset jobs; counts and schedules describe this demo connection. Select the image to enlarge it.*
 
 The `Inventory Sync` workspace in Company shows waiting events, batches, jobs, recent reset runs, and event history for each Shopify connection. Teams can see whether inventory is waiting to be batched, in flight, failed, or delivered, then follow the message back to the source events behind it.
 

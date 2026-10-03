@@ -42,10 +42,6 @@ Teams can ship and receive a linked transfer in HotWax or Shopify. Receipts need
 
 Repeated notifications reuse the existing order, shipment, and receipt links. Transfer movements already represented in Shopify are not sent again as separate inventory adjustments for that shop. Stock-on-hand resets also defer affected products and locations while shipment or receipt actions remain unconfirmed; unrelated inventory can still publish.
 
-![Company transfer synchronization monitoring with creation, shipment, receipt, cancellation, and error stages](assets/product-updates/screenshots/2026-10-03/company-shopify-transfer-sync.jpg)
-
-*Company's transfer monitoring workspace in the current development UI with demo data; job status reflects the demo connection's configuration.*
-
 ## Add items to a transfer already in progress
 
 Transfer plans can change after the first order reaches Shopify. When a new item is added in HotWax, the update workflow adds the missing Shopify transfer line first and confirms its mapping. Later runs can then send that item's shipment and receipt activity alongside the original items.

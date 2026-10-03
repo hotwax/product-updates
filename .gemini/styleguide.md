@@ -179,3 +179,41 @@ Readers expect HotWax content to be direct and actionable.
 * Single spaces only: Never leave two spaces between words or after punctuation.
 * No leading spaces: Ensure paragraphs and bullets align properly without extra tabs or spaces.
 * Recheck after edits: When changing content, ensure no accidental double spaces or missing punctuation were introduced.
+
+---
+
+## Product screenshot standard
+
+Screenshots should show how the intended operator uses the app, on the device they would use. Select the audience before capture; do not use the browser's incidental window size or a square crop as the primary image.
+
+### Device profiles and framing
+
+| Audience | Default device | Reference page viewport | Orientation |
+| --- | --- | --- | --- |
+| Store operators | 11-inch iPad (A16) | 1180 × 820 CSS pixels | Landscape |
+| Administrators and central operations | 13-inch MacBook Air with a 13.6-inch display | 1280 × 832 CSS pixels | Landscape |
+
+These profiles preserve the display proportions of Apple's [11-inch iPad](https://www.apple.com/ipad-11/specs/) (2360 × 1640 native pixels) and [13-inch MacBook Air](https://www.apple.com/macbook-air/specs/) (2560 × 1664 native pixels). They are repeatable page-viewport references, not claims of physical-device testing. Browser chrome, display scaling, and actual models can change the available page area.
+
+- Use the actual device model and content viewport when known. An older 13-inch MacBook Air with a 2560 × 1600 display uses a 16:10 reference, such as 1280 × 800; a 4:3 iPad uses a matching reference, such as 1024 × 768. Record the selected model and dimensions instead of treating every iPad or laptop as the same ratio.
+- Receiving, store Cycle Count, BOPIS, and store Fulfillment use the iPad profile. Company, Order Manager, Products, Order Routing, Job Manager, and central administration views use the MacBook Air profile. Choose by workflow when an app has both store and administrator views.
+- Set the capture viewport before navigating or reviewing layout. Capture the full viewport with the app heading, navigation, relevant controls, and operational context visible. Reflow and review the UI at that size; do not resize, stretch, pad, or crop a finished screenshot to imitate a device.
+- Use a focused detail crop only as a supplementary image after a full device-framed screenshot. Do not turn the primary screenshot into a square panel crop or use a full-page scroll capture as a device-sized image.
+- Restore temporary viewport overrides after capture. Do not imply Safari, touch, or physical-device validation when only a desktop browser at the reference viewport was used.
+
+### Data quality and safety
+
+- Choose meaningful, populated records from the authorized real demo backend. Show readable product names, useful quantities, completed activity, or configured workflows that illustrate the feature being discussed.
+- For company hierarchy and subsidiary mapping, prefer an actual populated parent/child structure with mapped IDs. For integration operations, prefer a configured demo connection with recorded runs, queue activity, or events. Do not publish an empty hierarchy or a page dominated by `Not configured` as the launch's showcase image.
+- A healthy empty queue can be useful when completed runs and configuration explain it. An empty setup form is suitable only when the feature being shown is that creation form; its caption must not imply a completed workflow.
+- Never alter DOM text, intercept APIs, use fixture responses, or invent successful processing to improve a picture. Do not activate integration jobs, change mappings, submit orders, or move stock solely for screenshots. If meaningful demo setup requires data changes, explain the exact changes and obtain authorization first.
+- Use realistic fictional customer names, emails, and addresses on verified demo orders. Prefer complete records with readable products and meaningful fulfillment history; do not showcase anonymous placeholders, `Demo Rehearsal`, or mostly missing contact details. Reserved email domains such as `example.com` can provide realistic, non-deliverable addresses without using a real person's information. Keep a provenance record showing that the identity is synthetic.
+- Keep sample data within the demo instance's existing business structure: use its real companies, facilities, products, and supported workflows. Approval to create sample customers or orders does not authorize inventing companies, subsidiaries, facilities, mappings, or fulfillment history for a screenshot. If no suitable hierarchy exists, omit that image and record the gap.
+- No client names, client-associated facility or product names, real customer contact details, credentials, tokens, or sensitive payloads may appear. Select another clean record or omit the image if full framing exposes them. Privacy cropping must not replace the primary device-framed capture; arrange a safe demo record instead.
+- Review both privacy and presentation quality from the actual saved pixels before publication. A privacy-safe screenshot can still be unsuitable when its data, layout, or state looks unfinished.
+
+### Publication checks
+
+- Record the source page, backend environment, capture date, audience, device profile, CSS viewport, saved pixel dimensions, app revision when verified, and the workflow shown. Mark an unverified deployed revision as unknown rather than equating `main` with a deployed build.
+- Explain what the image shows with short alt text and a useful caption. Identify development/demo UI when applicable. Demo counts and delivery times are not performance guarantees.
+- Preserve the original aspect ratio, provide a full-size image link, and verify the public page's image and caption after publication. Internal screenshot briefs and placement notes must not appear in the public body.

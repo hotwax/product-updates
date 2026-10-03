@@ -27,9 +27,9 @@ The Products app's `Product calendar` page shows the dates for the selected prod
 
 The calendar provides visibility into the dates that rules use. Shopify remains the source for mapped values, and a product sync is needed to populate existing products after mappings are configured.
 
-![Products calendar showing introduction and launch dates alongside support and sales end fields](assets/product-updates/screenshots/2026-10-03/products-product-calendar.jpg)
+![Products calendar with stored demo introduction and launch dates for products and variants](assets/product-updates/screenshots/2026-10-03/products-populated-calendar-macbook-air.png)
 
-*Stored product and variant dates in the current development UI with demo data. This connection has no active Shopify calendar mappings. Select the image to enlarge it.*
+*Stored demo introduction and launch dates. Current development UI, captured October 3, 2026; the image shows saved dates, not an active Shopify calendar sync. Select the image to enlarge it.*
 
 ## Define inventory windows around those dates
 

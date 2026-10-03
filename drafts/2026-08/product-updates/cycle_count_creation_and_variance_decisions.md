@@ -21,6 +21,10 @@ The page gives each role the entry point appropriate to its scope. An administra
 
 This is an important distinction from an ad hoc inventory adjustment. The result is a named piece of count work that can move through assignment, counting, and review with its identity intact.
 
+![Cycle Count planning form with existing Brooklyn facility, a due date, and selected demo catalog variants](assets/product-updates/screenshots/2026-10-03/cycle-count-populated-plan-ipad.png)
+
+*An unsaved count plan using the demo's existing Brooklyn facility and catalog. Current development UI, captured October 3, 2026; no count was submitted or inventory changed. Select the image to enlarge it.*
+
 ## Find the exact count waiting for review
 
 The `Pending Review` search accepts either the count name or its work effort ID. Reviewers can use a count reference from a support conversation or another system to find the work without scanning the whole queue.

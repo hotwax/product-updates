@@ -1,45 +1,50 @@
 # August 2026 screenshot brief
 
-Updated October 3, 2026. Approved Company inventory monitoring, organization hierarchy, and Receiving transfer-creation screenshots are now attached and embedded in the August articles and release note. The shared [capture record](../../assets/product-updates/screenshots/2026-10-03/capture-record.md) lists provenance and pending work.
+Updated October 3, 2026. This is an internal capture plan, not public article content. Seven replacement images across August and September have passed privacy and presentation review. They are prepared for source placement; their HubSpot publication and public image checks are still pending. The shared [capture record](../../assets/product-updates/screenshots/2026-10-03/capture-record.md) records the approved files, source pages, and remaining gaps.
 
-Aditya authorized current development apps against demo OMS for this capture pass. Captions identify the current development/demo UI; these are not historical release-tag screenshots. The released builds below remain editorial baselines. Cycle Count capture is pending a Chrome extension control interruption. August Order Routing monitoring is deferred and is not part of the published package.
+Aditya authorized current development apps against demo OMS. The deployed app revisions are unknown; these captures do not prove that `main` is deployed or reproduce historical August release builds. Released tags below are editorial baselines only. No companies, subsidiaries, facilities, or mappings may be invented to fill a screenshot gap. Integration jobs must not be activated for a capture.
 
 ## Application screenshots
 
 ### Company integration control center
 
 - Released build: Company `v2.2.2`
-- Primary image: Shopify Inventory Sync with the per-channel publishers, sender, discard tool, and retention purge visible
-- Supporting image: connection overview with the Shopify, NetSuite, carrier, Unigate, and app-version workspaces visible
-- Optional image: carrier and Unigate readiness checklist or NetSuite order-push backlog and schedule
+- Prepared image: `company-populated-inventory-channel-macbook-air.png`
+- Source: https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync, scrolled to the populated inventory-channel card
+- Audience and framing: administrator; 13-inch MacBook Air with a 13.6-inch display reference, 1280 × 832 CSS pixels, saved at 2560 × 1664 pixels
+- Caption scope: configured demo inventory channel and its publishing context, not an unconfigured connection or a completed end-to-end Shopify claim
+- Optional future images: populated order-sync, carrier, or NetSuite operations views, only if the existing demo data supports them
 
 ### Multi-company management
 
 - Released build: Company `v2.2.2`
-- Primary image: internal company hierarchy with parent and child organizations
-- Supporting image: company detail with facility membership and the external ID helper text
-- Avoid: presenting the generic external ID as a NetSuite-only field
+- Public screenshot omitted for now: the inspected hierarchy does not provide a suitable populated parent/child showcase
+- Keep the earlier `company-organization-hierarchy.jpg` recoverable, but do not publish it as the launch image
+- Do not create new companies, subsidiaries, or facilities for this article
+- A future image must show a real, populated demo hierarchy and mapped IDs; the generic `External ID` field must not be presented as NetSuite-only
 
 ### Connected transfer-order workflow
 
 - Released build: Receiving `v4.2.1`
-- Primary image: transfer-order creation with source, destination, and product selection
-- Supporting image: created transfer detail after approval
-- Avoid: a NetSuite screen unless the exact import file and completed receipt have been validated end to end
+- Prepared images: `receiving-populated-transfers-ipad.png` and `receiving-shipment-box-ipad.png`
+- Source: Receiving `/transfer-orders`, filtered by `RCV-OCT01`, and `/transfer-order-detail/M103573`
+- Audience and framing: store operator; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
+- Workflow shown: existing transfer orders and receiving context, with a populated transfer list and shipment-box product detail
+- Caption scope: transfer review and shipment-backed receiving, not transfer creation, completed receipt, or verified NetSuite synchronization
+- Provenance: the existing October 1 demo-transfer QA record confirms synthetic tracking codes and pending-receipt status; no receipts were submitted for these captures
 
 ### Cycle Count
 
 - Released build: Cycle Count `v5.2.0`
-- Primary image: create count page in the store operating view
-- Supporting image: Pending Review results with a safe count name or Work Effort ID
-- Optional image: inventory history showing the related variance reason and outcome
+- Prepared image: `cycle-count-populated-plan-ipad.png`, a populated unsaved directed-count plan for existing Brooklyn and 15 catalog variants
+- Source: https://inventorycount-dev.hotwax.io/tabs/create-cycle-count; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
+- Caption scope: unsaved local planning only; the create button was not pressed and no count, schedule, or stock adjustment was submitted
+- A variance-history image requires an actual recorded decision; do not invent a successful review or stock adjustment
+- Do not describe the gap as a browser-control blocker; native computer use is available
 
 ### Order Routing inventory monitoring
 
-- Released build: Order Routing `v2.2.0`
-- Primary image: Online ATP calculation walkthrough for one safe product and channel
-- Supporting image: Inventory Updates schedules and Data Manager queue states
-- Optional image: OMS and Shopify reconciliation view
+This August article is deferred and excluded from publication. Do not capture or publish a screenshot for it as part of the August package.
 
 ## Diagrams for backend-heavy flows
 
@@ -56,11 +61,13 @@ Do not invent a management screen that does not exist.
 
 ### Event-driven Shopify inventory publishing
 
-Use Shopify connector `v4.1.2` and Company `v2.2.2` as the implementation baseline. Show this pipeline:
+Use Shopify connector `v4.1.2` and Company `v2.2.2` as the implementation baseline. The existing published diagram shows this pipeline:
 
 Inventory event to ledger decision to Shopify batch to system message to Shopify.
 
 Show Company reading each stage, and show an absolute reset superseding obsolete pending deltas as the recovery path.
+
+The prepared `company-populated-inventory-channel-macbook-air.png` can accompany the monitoring section. It illustrates the current demo administration view; it does not replace the flow diagram or prove every publishing stage ran during capture.
 
 ## Deferred screenshots
 
@@ -68,10 +75,11 @@ Do not capture Job Manager drilldowns, Order Manager returns and holds, or the O
 
 ## Capture standards
 
-- Use the exact released app version named above.
-- Prefer one clear workflow per image.
-- Use descriptive lowercase file names with hyphens.
-- Crop browser chrome only when the app version and environment are recorded in the capture notes.
-- Use a 16:9 or 3:2 landscape crop for article headers, and retain a full-resolution source.
-- Add concise alt text that states what the interface shows and why it matters.
-- Record the app, tag, environment, page, and capture date beside each source image.
+- Follow `.gemini/styleguide.md` and its product screenshot standard.
+- Use the intended operator's full reference viewport, not a square crop or incidental browser-window size.
+- Capture the actual development UI at 2× with native Chrome DevTools, retaining the original proportions, navigation, useful controls, and populated demo context.
+- Keep the observed application halo and layout intact; do not retouch, pad, stretch, replace DOM text, or intercept API responses.
+- Record current development/demo provenance and mark the deployed revision unknown when not verified.
+- Add short alt text and a caption that describes the visible workflow without claiming historical-device testing, completed processing, or performance guarantees.
+- Restore temporary viewport overrides after capture.
+- Keep rejected first-pass assets recoverable. Do not claim replacements are live until the root publisher verifies the public images and captions.
