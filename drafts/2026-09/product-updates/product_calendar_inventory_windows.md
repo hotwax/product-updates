@@ -27,6 +27,10 @@ The Products app's `Product calendar` page shows the dates for the selected prod
 
 The calendar provides visibility into the dates that rules use. Shopify remains the source for mapped values, and a product sync is needed to populate existing products after mappings are configured.
 
+![Products calendar showing introduction and launch dates alongside support and sales end fields](assets/product-updates/screenshots/2026-10-03/products-product-calendar.jpg)
+
+*Stored product and variant dates in the current development UI with demo data. This connection has no active Shopify calendar mappings. Select the image to enlarge it.*
+
 ## Define inventory windows around those dates
 
 Order Routing adds `Products by date` conditions to threshold, safety stock, store pickup, and shipping rules. Choose a lifecycle date, `Days since` or `Days till`, a comparison, and a number of days.

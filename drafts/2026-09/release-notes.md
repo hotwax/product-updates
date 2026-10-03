@@ -23,6 +23,10 @@ For an eligible open item, an operator can request inventory from another facili
 
 *Sources: [Order Manager timeline](https://github.com/hotwax/order-manager/blob/v1.3.0/src/utils/orderTimeline/transactions.ts), [Item transfer controls](https://github.com/hotwax/order-manager/blob/v1.3.0/src/components/orders/OrderItemTransfersModal.vue), [Selected-item actions](https://github.com/hotwax/order-manager/blob/v1.3.0/src/composables/useOrderActions.ts)*
 
+![Order Manager timeline showing placement, import, approval, picking, and packing milestones](assets/product-updates/screenshots/2026-10-03/order-manager-order-timeline.jpg)
+
+*An existing demo order's timeline in the current development UI. Select any screenshot to enlarge it.*
+
 ### Keep queue counts, product identifiers, and form choices consistent
 
 The Funnel's Unfillable Parking count and its drilldown use the same order population. Configured primary and secondary product identifiers carry through customer order cards, return details, custom swaps, and substitute selection. Totals also distinguish tax already included in the price from additional charges.
@@ -40,6 +44,10 @@ Shopify inventory history connects each event to its product, location, source, 
 Transfer sync brings jobs, webhook health, shipment stages, receipts, and outstanding work into one workspace. Teams can open the affected transfer, distinguish reported issues from successful checks, and investigate mapping conflicts with the Shopify variant information in view. [Read the full Shopify diagnostics update](https://www.hotwax.co/product-updates/2026-09/company-shopify-diagnostics).
 
 *Sources: [Inventory event history](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/views/ShopifyInventoryEventHistory.vue), [Batch details](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/components/shopify/InventoryEventBatchModal.vue), [Transfer sync detail](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/views/ShopifyTransferSyncDetail.vue)*
+
+![Company inventory history showing event filters and delivery summary cards](assets/product-updates/screenshots/2026-10-03/company-inventory-event-history.jpg)
+
+*Current development UI with demo data. Delivery times describe this sample, not a performance guarantee.*
 
 ### Review notification subscriptions and connect external assistants
 
@@ -66,6 +74,10 @@ Company maps Shopify product and variant metafields to introduction, launch, sup
 Order Routing can use days since or days until a selected date in threshold, safety stock, pickup, and shipping rules. These conditions follow the configured rule schedule and whole-day comparisons; a product without the chosen date does not match. [Read the full product calendar update](https://www.hotwax.co/product-updates/2026-09/product-calendar-inventory-windows).
 
 *Sources: [Products calendar](https://github.com/hotwax/products/blob/b6699142b88364a8aa14e0c7ca16e8d442ff0431/src/views/ProductCalendar.vue), [Company calendar mappings](https://github.com/hotwax/company/blob/0d5defb98e5c6b2a0eb95c8d688a5b9e9dd26db6/src/components/shopify-product-sync/ProductCalendarMappingsCard.vue), [OMS calendar support](https://github.com/hotwax/oms/releases/tag/v3.3.1), [Shopify date sync](https://github.com/hotwax/mantle-shopify-connector/releases/tag/v4.3.2)*
+
+![Products calendar listing product and variant lifecycle dates](assets/product-updates/screenshots/2026-10-03/products-product-calendar.jpg)
+
+*Stored demo lifecycle dates in the current development UI; no active Shopify calendar mappings are configured on this connection.*
 
 ## Order Routing
 

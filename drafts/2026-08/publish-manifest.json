@@ -16,7 +16,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "9dcff9db6d20ac07706c11bb3ef90cc5e77cfc485688e0c650376adb9d35e628"
+      "contentHash": "c384d106fdd71abd2cea39803562b5e94c7d58c5c11504e4be25592ab58a7921"
     },
     {
       "key": "product-update:2026-08:company-integration-control-center",
@@ -28,7 +28,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "9b3715a77dedf2322bc11150b95dcc47f048049f93a4413027b59cef0cfa6086"
+      "contentHash": "ca3a84856b1e2e707e7535e2bd9d482b7432a32fb98779f5ca61435be49e9d22"
     },
     {
       "key": "product-update:2026-08:connected-transfer-order-workflow",
@@ -40,7 +40,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "bd41cbc06d77fec1a60e224ec91f97ca15d30bee3651f63ede0e6d829dcaa056"
+      "contentHash": "88f6b4bf22b2f0d1fb590b46144527bed2aac99609e2e2f042e27c15309de438"
     },
     {
       "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
@@ -64,7 +64,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "e91a3762189acae3e65680acfa5d3ca364729e9c012c74a7452fd38279545e0f"
+      "contentHash": "50b03ee831044f1933c202f0121e886c9080b0b391c29a0096162f4d7df0409a"
     },
     {
       "key": "product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping",
@@ -76,7 +76,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "332e35566de27e353c4661c95e4d7d29a35f0399f6ec080befade97da3eea841"
+      "contentHash": "7e3ebf01d1cf0a653289a14851e126c594b29bad8af6b60c2a6db83439a86835"
     },
     {
       "key": "product-update:2026-08:shopify-fulfillment-location-reconciliation",

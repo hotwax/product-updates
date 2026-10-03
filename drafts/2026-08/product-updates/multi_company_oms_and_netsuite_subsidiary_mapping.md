@@ -21,6 +21,10 @@ Each company's detail page also lists its stores and warehouses. This gives team
 
 ## Maintain each company's subsidiary ID
 
+![Company organization details with External ID and parent and child hierarchy controls](assets/product-updates/screenshots/2026-10-03/company-organization-hierarchy.jpg)
+
+*Organization hierarchy and External ID controls in the current development UI. This demo organization has no subsidiary mapping or child organizations configured.*
+
 For NetSuite deployments that derive an order's subsidiary from the facility's owning company, administrators can maintain that company's NetSuite subsidiary ID in the `External ID` field. They can add, correct, or clear the value without recreating the company.
 
 Company keeps this mapping beside the company record, so teams have one place to review the subsidiary ID behind their order exports. A hierarchy change does not automatically change facility ownership or rewrite earlier transactions.

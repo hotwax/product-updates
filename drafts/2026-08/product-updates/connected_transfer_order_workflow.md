@@ -19,6 +19,10 @@ Receiving now includes a page for creating a transfer order. Operators can choos
 
 The entry point works with the Transfers app, which continues to show the order as it progresses. Creating a transfer order does not itself move stock between locations.
 
+![Receiving transfer-order creation form with source assignment, destination, shipping method, lifecycle, and planned dates](assets/product-updates/screenshots/2026-10-03/receiving-create-transfer-order.jpg)
+
+*An unsaved transfer-order form in the current development UI with demo data. Creating the order is separate from approving or moving stock.*
+
 ## Keep warehouse commitments out of Shopify availability
 
 When a warehouse transfer order is approved, the order management system (OMS) reserves the requested inventory at the source warehouse. The reservation reduces what is available to promise before fulfillment begins.

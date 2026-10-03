@@ -25,3 +25,14 @@ test("registered inventory flow is a commit-pinned image, not a code fence", () 
 test("unregistered diagrams fail before publication", () => {
     assert.throws(() => markdownToHtml("```mermaid\nflowchart TD\nA-->B\n```"), /no registered publishing image/);
 });
+
+test("local publishing images become commit-pinned public images with alt text", () => {
+    const html = markdownToHtml("![Inventory publishing flow](assets/product-updates/2026-08/shopify-inventory-publishing-flow.png)", {assetRef:"image-commit"});
+    assert.match(html, /<img src="https:\/\/raw\.githubusercontent\.com\/hotwax\/product-updates\/image-commit\/assets\/product-updates\/2026-08\/shopify-inventory-publishing-flow.png" alt="Inventory publishing flow"/);
+    assert.match(html, /<a href="https:\/\/raw\.githubusercontent\.com\/hotwax\/product-updates\/image-commit\/assets\/product-updates\/2026-08\/shopify-inventory-publishing-flow.png" target="_blank" rel="noopener noreferrer"><img/);
+});
+
+test("missing images and traversal paths stop publication", () => {
+    assert.throws(() => markdownToHtml("![Missing](assets/missing.jpg)"), /Publishing image is missing/);
+    assert.throws(() => markdownToHtml("![Invalid](assets/../private.jpg)"), /Invalid publishing image path/);
+});

@@ -25,6 +25,16 @@ export function markdownToHtml(markdownContent, { assetRef = process.env.PUBLISH
         const url = `https://raw.githubusercontent.com/hotwax/product-updates/${encodeURIComponent(assetRef)}/${asset.filePath}`;
         return `\n[![${asset.altText}](${url})](${url})\n`;
     });
+    body = body.replace(/!\[([^\]]*)\]\((assets\/[^\s)]+)(?:\s+"([^"]*)")?\)/g, (_, alt, filePath, title) => {
+        if (!/^assets\/[\w./-]+\.(png|jpe?g|webp)$/.test(filePath) || filePath.split("/").includes("..")) {
+            throw new Error(`Invalid publishing image path: ${filePath}`);
+        }
+        if (!fs.existsSync(new URL(`../../${filePath}`, import.meta.url))) {
+            throw new Error(`Publishing image is missing: ${filePath}`);
+        }
+        const url = `https://raw.githubusercontent.com/hotwax/product-updates/${encodeURIComponent(assetRef)}/${filePath}`;
+        return `[![${alt}](${url}${title ? ` "${title}"` : ""})](${url})`;
+    });
     const rawHtml = marked.parse(body);
     return sanitizeHtml(rawHtml, {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat([

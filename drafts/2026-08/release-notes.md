@@ -37,6 +37,10 @@ The controller recomputes aggregate available-to-promise inventory from committe
 
 Company adds an `Inventory Sync` workspace for monitoring waiting events, batches, jobs, recent resets, and feed mode. Absolute resets can supersede obsolete pending changes, giving the system a clear path back to authoritative inventory when a delta stream needs correction. [Read the full event-driven inventory publishing update](https://www.hotwax.co/product-updates/2026-08/event-driven-shopify-inventory-publishing).
 
+![Company inventory sync workspace showing channel and physical inventory publishing queues and jobs](assets/product-updates/screenshots/2026-10-03/company-shopify-inventory-sync.jpg)
+
+*Current development UI with demo data. Select any screenshot to enlarge it.*
+
 ## Company
 
 ### Run integrations from a shared control center
@@ -53,6 +57,10 @@ Company can now manage internal organizations as a hierarchy, including create, 
 
 For NetSuite exports configured to use the facility's owning company, administrators can maintain the subsidiary ID in that company's `External ID` field. The mapping stays beside the company and its locations. [Read the full multi-company update](https://www.hotwax.co/product-updates/2026-08/multi-company-oms-and-netsuite-subsidiary-mapping).
 
+![Company organization details with External ID and hierarchy controls](assets/product-updates/screenshots/2026-10-03/company-organization-hierarchy.jpg)
+
+*Hierarchy and mapping controls in the current development UI; this demo organization is unmapped.*
+
 ## Transfers and receiving
 
 ### Create and receive transfer orders through one connected workflow
@@ -62,6 +70,10 @@ Receiving now includes a transfer-order creation flow for selecting the source, 
 The flow connects Receiving with Transfers and Fulfillment. NetSuite transfer lifecycle imports now use master data management, so fulfillment, cancellation, and receipt activity completed outside the OMS can update the same transfer records. With event-based Shopify publishing enabled, warehouse commitments reduce the inventory offered for sale close to real time. [Read the full transfer-order update](https://www.hotwax.co/product-updates/2026-08/connected-transfer-order-workflow).
 
 Receiving also corrects force-scan behavior, transfer-detail redirects, and purchase-order sorting. Products without an inventory record at the receiving facility now show zero on hand without repeatedly requesting the same quantity.
+
+![Receiving transfer creation form with assignment, shipping, lifecycle, and date controls](assets/product-updates/screenshots/2026-10-03/receiving-create-transfer-order.jpg)
+
+*An unsaved transfer-order form in the current development UI with demo data.*
 
 ## Cycle Count
 

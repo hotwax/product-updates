@@ -23,6 +23,10 @@ Each failed run keeps its error details available, so teams can review the cause
 
 The latest August release makes every participating inventory job visible. Company shows one publisher for each inventory channel, the system-message sender, the manual discard tool, and the retention purge that explains how long completed event history remains available. Administrators can edit the parameters a job accepts, while app-created jobs begin paused so their scope and schedule can be reviewed before activation.
 
+![Company inventory sync workspace with channel and physical inventory queues and publishing jobs](assets/product-updates/screenshots/2026-10-03/company-shopify-inventory-sync.jpg)
+
+*Inventory queues and job status in the current development UI with demo data. Select the image to enlarge it.*
+
 ## Configure carriers and Unigate together
 
 Company now includes carrier catalog, creation, detail, and shipment-method setup. Administrators can maintain the carrier and its methods, map the values used by connected systems, and review a readiness checklist before the configuration is used in fulfillment.

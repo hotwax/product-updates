@@ -67,6 +67,10 @@ For example, Shopify might apply an adjustment of two units before the connectio
 
 ## Monitor the flow from Company
 
+![Company inventory sync monitoring with event queues, batch queues, and job status](assets/product-updates/screenshots/2026-10-03/company-shopify-inventory-sync.jpg)
+
+*The current development UI shows the demo connection's queues and publishing jobs. Select the image to enlarge it.*
+
 The `Inventory Sync` workspace in Company shows waiting events, batches, jobs, recent reset runs, and event history for each Shopify connection. Teams can see whether inventory is waiting to be batched, in flight, failed, or delivered, then follow the message back to the source events behind it.
 
 Company also exposes whether the supporting data feeds run in manual or real-time mode. Because this setting applies across the OMS, the interface presents it as an operational control rather than a preference for one individual user.

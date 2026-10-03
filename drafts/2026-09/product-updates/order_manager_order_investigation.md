@@ -19,6 +19,10 @@ Day headings and the time between events help you see where an order spent its t
 
 Item and ship group status also carry more meaning. Individual items show their own status, grouped product rows show quantities by status, and completed or canceled ship groups reflect their items even when milestone dates are missing. Variant details help distinguish sizes or colors without opening another view.
 
+![Order Manager timeline showing order placement, import, approval, picking, and packing](assets/product-updates/screenshots/2026-10-03/order-manager-order-timeline.jpg)
+
+*The current development UI groups the existing demo order's milestones into one timeline. Customer and payment details are outside the capture.*
+
 ## Bring stock to the location fulfilling the order
 
 You can request an inventory transfer for an eligible open item at a physical facility. Order Manager keeps that item's fulfillment location as the destination and lets you compare source warehouses and stores by available inventory, recent sales activity, and distance when location data is available.

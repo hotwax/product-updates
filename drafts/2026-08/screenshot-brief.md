@@ -1,8 +1,8 @@
 # August 2026 screenshot brief
 
-Status checked on September 1, 2026. No approved screenshot assets are attached to this branch.
+Updated October 3, 2026. Approved Company inventory monitoring, organization hierarchy, and Receiving transfer-creation screenshots are now attached and embedded in the August articles and release note. The shared [capture record](../../assets/product-updates/screenshots/2026-10-03/capture-record.md) lists provenance and pending work.
 
-The final August package has five user-interface stories that benefit from application screenshots and two backend-heavy stories that are clearer as diagrams. Capture images only from the released versions listed below, using a safe demonstration tenant with no customer personal information.
+Aditya authorized current development apps against demo OMS for this capture pass. Captions identify the current development/demo UI; these are not historical release-tag screenshots. The released builds below remain editorial baselines. Cycle Count capture is pending a Chrome extension control interruption. August Order Routing monitoring is deferred and is not part of the published package.
 
 ## Application screenshots
 
