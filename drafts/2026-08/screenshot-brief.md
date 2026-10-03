@@ -1,6 +1,6 @@
 # August 2026 screenshot brief
 
-Updated October 3, 2026. This is an internal capture plan, not public article content. Seven replacement images across August and September have passed privacy and presentation review. They are prepared for source placement; their HubSpot publication and public image checks are still pending. The shared [capture record](../../assets/product-updates/screenshots/2026-10-03/capture-record.md) records the approved files, source pages, and remaining gaps.
+Updated October 3, 2026. This is an internal capture plan, not public article content. The device-framed screenshot batch from documentation source commit `cb0e350de4bc7d49f9fb6c0f64e9df0c537204ee` went live across nine posts. Verification at `2026-10-03T18:25:49Z` checked exact CMS bodies and protected metadata, all 16 public pages and their full text, and 15 image placements. August's images are unchanged. September's rejected held-order image was replaced with the approved genuine fulfillment-timeline illustration from documentation source commit `8ca8c6655871655134f53e8df2d60920a5d644bb`. The existing September note and article passed exact CMS body and protected-metadata verification at `2026-10-03T18:49:32.746Z` and `2026-10-03T18:49:34.695Z`, respectively. All 16 public pages subsequently passed HTTP, full-text, image, alt-text, and enlargement checks; native Chrome also verified the replacement, disclosure caption, and 2560 × 1664 full-size image. The other seven screenshot-updated posts retain the earlier source commit. The shared [capture record](../../assets/product-updates/screenshots/2026-10-03/capture-record.md) records publication and provenance.
 
 Aditya authorized current development apps against demo OMS. The deployed app revisions are unknown; these captures do not prove that `main` is deployed or reproduce historical August release builds. Released tags below are editorial baselines only. No companies, subsidiaries, facilities, or mappings may be invented to fill a screenshot gap. Integration jobs must not be activated for a capture.
 
@@ -9,7 +9,7 @@ Aditya authorized current development apps against demo OMS. The deployed app re
 ### Company integration control center
 
 - Released build: Company `v2.2.2`
-- Prepared image: `company-populated-inventory-channel-macbook-air.png`
+- Published image: `company-populated-inventory-channel-macbook-air.png`
 - Source: https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync, scrolled to the populated inventory-channel card
 - Audience and framing: administrator; 13-inch MacBook Air with a 13.6-inch display reference, 1280 × 832 CSS pixels, saved at 2560 × 1664 pixels
 - Caption scope: configured demo inventory channel and its publishing context, not an unconfigured connection or a completed end-to-end Shopify claim
@@ -26,7 +26,7 @@ Aditya authorized current development apps against demo OMS. The deployed app re
 ### Connected transfer-order workflow
 
 - Released build: Receiving `v4.2.1`
-- Prepared images: `receiving-populated-transfers-ipad.png` and `receiving-shipment-box-ipad.png`
+- Published images: `receiving-populated-transfers-ipad.png` and `receiving-shipment-box-ipad.png`
 - Source: Receiving `/transfer-orders`, filtered by `RCV-OCT01`, and `/transfer-order-detail/M103573`
 - Audience and framing: store operator; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
 - Workflow shown: existing transfer orders and receiving context, with a populated transfer list and shipment-box product detail
@@ -36,7 +36,7 @@ Aditya authorized current development apps against demo OMS. The deployed app re
 ### Cycle Count
 
 - Released build: Cycle Count `v5.2.0`
-- Prepared image: `cycle-count-populated-plan-ipad.png`, a populated unsaved directed-count plan for existing Brooklyn and 15 catalog variants
+- Published image: `cycle-count-populated-plan-ipad.png`, a populated unsaved directed-count plan for existing Brooklyn and 15 catalog variants
 - Source: https://inventorycount-dev.hotwax.io/tabs/create-cycle-count; 11-inch iPad (A16) reference, 1180 × 820 CSS pixels, saved at 2360 × 1640 pixels
 - Caption scope: unsaved local planning only; the create button was not pressed and no count, schedule, or stock adjustment was submitted
 - A variance-history image requires an actual recorded decision; do not invent a successful review or stock adjustment
@@ -67,7 +67,7 @@ Inventory event to ledger decision to Shopify batch to system message to Shopify
 
 Show Company reading each stage, and show an absolute reset superseding obsolete pending deltas as the recovery path.
 
-The prepared `company-populated-inventory-channel-macbook-air.png` can accompany the monitoring section. It illustrates the current demo administration view; it does not replace the flow diagram or prove every publishing stage ran during capture.
+The published `company-populated-inventory-channel-macbook-air.png` accompanies the monitoring section. It illustrates the current demo administration view; it does not replace the flow diagram or prove every publishing stage ran during capture.
 
 ## Deferred screenshots
 
@@ -78,7 +78,7 @@ Do not capture Job Manager drilldowns, Order Manager returns and holds, or the O
 - Follow `.gemini/styleguide.md` and its product screenshot standard.
 - Use the intended operator's full reference viewport, not a square crop or incidental browser-window size.
 - Capture the actual development UI at 2× with native Chrome DevTools, retaining the original proportions, navigation, useful controls, and populated demo context.
-- Keep the observed application halo and layout intact; do not retouch, pad, stretch, replace DOM text, or intercept API responses.
+- Keep the observed application halo and layout intact; do not retouch, pad, stretch, replace DOM text, or intercept API responses. The separately authorized September customer-summary illustration is a documented, narrow exception, not a general capture policy.
 - Record current development/demo provenance and mark the deployed revision unknown when not verified.
 - Add short alt text and a caption that describes the visible workflow without claiming historical-device testing, completed processing, or performance guarantees.
 - Restore temporary viewport overrides after capture.

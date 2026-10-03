@@ -1,22 +1,22 @@
 # August and September screenshot capture record
 
-Updated October 3, 2026. This is an internal provenance record. Seven replacement captures are approved for privacy and presentation and prepared for publication. They are not yet claimed as deployed to HubSpot; the root publisher must verify the final public images and captions.
+Updated October 3, 2026. This is an internal provenance record. The seven-image device-framed batch from documentation source commit `cb0e350de4bc7d49f9fb6c0f64e9df0c537204ee` went live across nine posts. Verification at `2026-10-03T18:25:49Z` checked exact CMS bodies and protected metadata, all 16 public pages and their full text, and 15 image placements. The six non-Order Manager assets remain unchanged. After the held-order primary was rejected as a weak feature example, its approved fulfillment-timeline replacement from documentation source commit `8ca8c6655871655134f53e8df2d60920a5d644bb` was published to the existing September release note and Order Manager article. Exact CMS body and protected-metadata verification completed at `2026-10-03T18:49:32.746Z` for the note and `2026-10-03T18:49:34.695Z` for the article. All 16 public pages subsequently passed HTTP, full-text, image, alt-text, and enlargement checks. The other seven screenshot-updated posts retain the earlier source commit.
 
 The captures use current development apps against demo OMS and its paired demo Maarg backend. All deployed app source commits are unknown. The images illustrate current demo UI, not historical August or September builds, production deployments, Safari, touch behavior, or physical-device testing. Exact replacement capture timestamps were not retained; the capture date is October 3, 2026.
 
-## Approved replacement captures
+## Current capture set
 
-| File | Source page and view | Audience and reference viewport | Saved pixels | Workflow shown |
-| --- | --- | --- | --- | --- |
-| `company-populated-inventory-channel-macbook-air.png` | https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync; normal scroll to the populated inventory-channel card | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Existing configured demo channel and publishing context |
-| `company-delivered-inventory-events-macbook-air.png` | https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync/history?state=sent | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Filtered history containing 18 delivered demo inventory events |
-| `products-populated-calendar-macbook-air.png` | https://products-dev.hotwax.io/product-calendar | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Existing Aeon product-calendar rows with stored October 8 dates |
-| `receiving-populated-transfers-ipad.png` | https://receiving-dev.hotwax.io/transfer-orders; search `RCV-OCT01` | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Existing demo replenishment transfers and package tracking |
-| `receiving-shipment-box-ipad.png` | https://receiving-dev.hotwax.io/transfer-order-detail/M103573 | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Populated shipment-box product and quantity detail before receipt |
-| `cycle-count-populated-plan-ipad.png` | https://inventorycount-dev.hotwax.io/tabs/create-cycle-count | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Unsaved directed-count plan for existing Brooklyn and 15 catalog variants |
-| `order-manager-populated-order-macbook-air.png` | https://order-manager-dev.hotwax.io/orders/M103650 | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Full held demo-order detail with synthetic customer contact information and recorded held-order history |
+| File | Source page and view | Audience and reference viewport | Saved pixels | Workflow shown | Publication state |
+| --- | --- | --- | --- | --- | --- |
+| `company-populated-inventory-channel-macbook-air.png` | https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync; normal scroll to the populated inventory-channel card | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Existing configured demo channel and publishing context | Live in verified batch |
+| `company-delivered-inventory-events-macbook-air.png` | https://company-dev.hotwax.io/shopify-connection-details/10010/inventory-sync/history?state=sent | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Filtered history containing 18 delivered demo inventory events | Live in verified batch |
+| `products-populated-calendar-macbook-air.png` | https://products-dev.hotwax.io/product-calendar | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Existing Aeon product-calendar rows with stored October 8 dates | Live in verified batch |
+| `receiving-populated-transfers-ipad.png` | https://receiving-dev.hotwax.io/transfer-orders; search `RCV-OCT01` | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Existing demo replenishment transfers and package tracking | Live in verified batch |
+| `receiving-shipment-box-ipad.png` | https://receiving-dev.hotwax.io/transfer-order-detail/M103573 | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Populated shipment-box product and quantity detail before receipt | Live in verified batch |
+| `cycle-count-populated-plan-ipad.png` | https://inventorycount-dev.hotwax.io/tabs/create-cycle-count | Store operator; 11-inch iPad (A16); 1180 × 820 CSS pixels | 2360 × 1640 | Unsaved directed-count plan for existing Brooklyn and 15 catalog variants | Live in verified batch |
+| `order-manager-fulfillment-timeline-macbook-air.png` | https://order-manager-dev.hotwax.io/orders/M103648; order reference `HC#2760` | Administrator; 13-inch MacBook Air with a 13.6-inch display; 1280 × 832 CSS pixels | 2560 × 1664 | Genuine recorded fulfillment timeline with a fictional display-only customer-summary illustration | Published; CMS, public image, disclosure caption, and full-size view verified |
 
-All seven dimensions were checked from the saved PNG files. Capture used native Chrome DevTools full reference viewports at 2×. The observed application halo and layout remain intact. No image resizing, padding, stretching, retouching, square cropping, fixture responses, DOM text replacement, or API interception was used to improve these pictures. Each unique replacement asset passed actual-pixel privacy review. Temporary viewport overrides should be restored after capture.
+All seven current-set dimensions were checked from the saved PNG files. Capture used native Chrome DevTools full reference viewports at 2×. The observed application halo and layout remain intact. No image resizing, padding, stretching, retouching, square cropping, fixture API responses, or API interception was used. The six unchanged captures also used no DOM text replacement. The seventh illustration has the narrow customer-summary presentation substitution documented below; do not describe it as an untouched customer record. Each current-set image passed actual-pixel privacy review. After the Order Manager capture, a reload restored the actual customer display and missing-contact presentation; device override `0` and closed DevTools were verified.
 
 ## Data provenance and limits
 
@@ -27,12 +27,35 @@ All seven dimensions were checked from the saved PNG files. Capture used native 
 - Receiving list and shipment-box images illustrate transfer orders and receiving context. They do not show transfer creation, completed receiving, direct inventory-transfer requests, or verified NetSuite/Shopify synchronization.
 - Cycle Count shows an unsaved local form: `Brooklyn weekly apparel count`, due October 5, directed count, and 15 existing Abominable catalog variants selected through the app. The create button was not pressed; no count, schedule, or inventory change was submitted.
 
-The first six approved captures used existing demo data or unsaved local planning without backend record changes. The seventh image uses separately authorized new demo customer/contact/order records documented below. Existing demo records remain unmodified; no companies, subsidiaries, facilities, products, or integration configuration were created or changed.
+The first six captures used existing demo data or unsaved local planning without backend record changes. The current seventh illustration uses an existing order's real operational history with a separately authorized display-only customer fixture. No new backend records or operational activity were created for it. Retain the audit of the earlier held sample below; that sample is superseded for presentation, not erased or relabeled as the source of another order's history.
 
-### Authorized Order Manager sample
+### Genuine Order Manager timeline with a customer illustration
+
+- Source: existing order `M103648`, reference `HC#2760`, in the current development Order Manager against demo OMS.
+- The saved image shows genuine recorded placement, approval, brokering, shipping, picking, packing, and completion events, including Central Warehouse and Broadway context. Event text, timestamps, products, quantities, statuses, API responses, and backend records were not changed.
+- On October 3, Aditya specifically authorized temporary presentation of fictional customer details. Native DevTools changed only the customer-summary card's visible display name, email, phone, locale, billing text, and missing-field `Add` button presentation to the synthetic Avery fixture. The card's illustrated completeness must not be presented as a readback of the underlying customer record.
+- The original customer's provenance is unproven and original identifying fields are not visible in the approved PNG. No claim is made that the underlying customer is fictional. The fixture's generated postal address is not verified as unoccupied.
+- The approved PNG is a display-only illustration, not a fixture API response or backend mutation. Its published caption discloses that customer details are fictional and illustrative while the visible operational milestones remain real.
+- This is a specifically authorized exception to the style guide's normal no-DOM-replacement rule. It does not authorize invented events, dates, processing states, products, quantities, fulfillment milestones, companies, facilities, mappings, jobs, or stock movements.
+- No backend write, new company/facility, configuration change, job activation, or fulfillment action was needed for this illustration. Privacy and presentation approval, CMS publication, and public verification are complete.
+
+The following synthetic values were used only for the authorized visible customer-summary illustration. They are not the original customer's identifying information or backend readbacks.
+
+| Display field | Synthetic illustration value |
+| --- | --- |
+| Name | Avery Bennett |
+| Email | `avery.bennett@example.com` |
+| Phone | `1-801-555-0162` |
+| Locale | `en-US` |
+| Billing addressee | Avery Bennett |
+| Billing address | 2084 Willow Meadow Lane, Apt 306; Salt Lake City, UT 84102; United States |
+
+Native Chrome verification of the public September `#order-manager` section showed the complete replacement image and disclosure caption. Clicking the image loaded the new-commit raw PNG at 2560 × 1664 pixels; the exact newly opened tab was then closed. The internal visual proof is `tmp/public-september-fulfillment-timeline-proof.png`. The original customer display was restored by reload, and device override `0` was verified.
+
+### Earlier authorized held sample, now superseded
 
 - Created person `M101284`, contact records `M104816`, `M104817`, and `M104818`, and sales order `M103650` through existing REST/entity services.
-- The full detail capture shows fictional customer Avery with synthetic email, a 555 phone, and a generated postal address. The address is not verified as unoccupied. The saved image passed privacy review; no real-customer identity is claimed.
+- The earlier full detail capture, `order-manager-populated-order-macbook-air.png`, showed fictional customer Avery with synthetic email, a 555 phone, and a generated postal address. The address is not verified as unoccupied. It passed privacy review and went live in the verified batch, but the latest user review rejects it as a weak feature example.
 - GET-only reconciliation against the actual current Order Manager order-detail master endpoint confirmed `HOLD`, `autoApprove=N`, the created item state, existing `STORE` and `COMPANY` context, `_NA_`, existing product `10227`, quantity two, unit price 48, and total 96.
 - Reconciliation found no inventory or fulfillment operational footprints. No fulfillment statuses or milestone history were added for presentation. The image illustrates the recorded held state, not approval, picking, packing, shipping, or completed fulfillment.
 - No search-index POST was needed or called: the current order-detail endpoint reads the entity records directly.
@@ -48,11 +71,12 @@ Keep these original files recoverable; do not delete them. They are not approved
 | `company-organization-hierarchy.jpg` | Omitted; the empty hierarchy is not a suitable company-management showcase |
 | `company-shopify-transfer-sync.jpg` | Omitted; the unconfigured sync view does not show a working connected workflow |
 | `company-inventory-event-history.jpg` | Superseded by the populated delivered-event MacBook Air capture |
-| `order-manager-order-timeline.jpg` | Rejected square crop; superseded by approved full held-order detail; do not reuse even as a secondary image |
+| `order-manager-order-timeline.jpg` | Rejected square crop; do not reuse even as a secondary image |
+| `order-manager-populated-order-macbook-air.png` | Previously live held sample, now rejected as a weak feature example; retain recoverably and replace with the genuine timeline illustration |
 | `receiving-create-transfer-order.jpg` | Superseded as the transfer story's primary image by populated Receiving workflow captures; those captures are not creation-form proof |
 | `products-product-calendar.jpg` | Superseded by the populated calendar MacBook Air capture |
 
-The earlier `order-manager-order-timeline-macbook-air.png` is also rejected for the replacement pass and must not be reused, including as a secondary image. Keep it recoverable. The approved `order-manager-populated-order-macbook-air.png` replaces the primary Order Manager image. Its recorded held-order history is not a demonstration of later fulfillment milestones. The first-pass August release-note images were an intermediate live update; replacement publication is not complete until the new source revision and public pixels are checked.
+The earlier `order-manager-order-timeline-macbook-air.png` and all other rejected timeline candidates must not be published or reused, including as secondary images. Keep rejected assets unmodified and recoverable. The six non-Order Manager device-framed images remain live. The approved `order-manager-fulfillment-timeline-macbook-air.png` has replaced the rejected held primary in both existing September posts; its source revision, public pixels, full-size image, and fictional-display disclosure caption are verified.
 
 ## Remaining capture work
 
@@ -62,7 +86,7 @@ Native computer use works on the inspected apps. The earlier extension-panel exp
 - Company transfer sync: no approved populated connected-workflow image; omit the unconfigured showcase.
 - Order Routing Replenishment: suitable populated view pending.
 - Routing Simulation: native read-only inspection of `/simulate/history/M100126` found a saved demo result with client-identifying variant and facility labels. No public screenshot was captured. This is a privacy gate, not a browser blocker or evidence of historical September deployment.
-- Cycle Count: the populated unsaved creation-plan image is prepared and approved. A populated variance-decision/review image remains pending; no old count was altered.
+- Cycle Count: the populated unsaved creation-plan image is published and approved. A populated variance-decision/review image remains pending; no old count was altered.
 - Transfers: native read-only inspection of `/tabs/inventory-transfers` found no requested transfers. Changing the status filter to `All` and applying it still showed no inventory transfers. No request was created or executed. Existing Receiving transfer orders cannot substitute for this separate direct-adjustment workflow.
 
 Do not create companies, subsidiaries, facilities, mappings, successful-processing history, or stock movements to fill these gaps. Any new data or configuration work needs the exact scope explained and authorized before it begins. Nothing in this record authorizes publishing unreviewed images or changing live application configuration.

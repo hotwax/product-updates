@@ -31,3 +31,11 @@ Reviewed source commit: 5fa9046f9c100a8b36c4967708de5e501961c53a. PR #15 remains
 - September Routing Simulation guided setup remains labeled as a preview with its unmerged OMS-facade prerequisite.
 
 Publication dates follow the existing monthly convention (August 1 and September 1). Actual publication timestamps are retained in the sync state.
+
+## October 3 screenshot refresh
+
+Four screenshot-bearing September posts were updated from source `cb0e350de4bc7d49f9fb6c0f64e9df0c537204ee` at 18:24:30–18:24:36 UTC. They show populated demo Company, Products, and Order Manager views at administrator device proportions.
+
+The initial held-order image did not adequately demonstrate the timeline feature. The September release notes and Order Manager article were updated again from source `8ca8c6655871655134f53e8df2d60920a5d644bb` at 18:49:32.746 UTC and 18:49:34.695 UTC, respectively. The replacement shows existing demo order `M103648` with real placement, approval, brokerage, and completed fulfillment history. Only the rendered customer profile was temporarily replaced with fictional details; the public caption discloses this illustration. The page was reloaded after capture, and the original display was verified restored. No saved order or fulfillment data was changed for this replacement.
+
+Exact current-source/live/draft body and metadata guards passed before the two follow-on writes. The publisher verified both final CMS bodies and unchanged protected metadata. Public HTTP verification subsequently passed for all 16 August/September pages, expected text blocks, images, alt text, and full-size links. Native Chrome confirmed the September release-note image and disclosure caption together, and selecting the image opened the full 2560 × 1664 PNG. Titles, URLs, byline, tags, and publication dates were preserved. No other posts were republished in the follow-on update.

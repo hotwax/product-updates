@@ -29,3 +29,9 @@ Reviewed source commit: 5fa9046f9c100a8b36c4967708de5e501961c53a. PR #15 remains
 - September Routing Simulation guided setup remains labeled as a preview with its unmerged OMS-facade prerequisite.
 
 Publication dates follow the existing monthly convention (August 1 and September 1). Actual publication timestamps are retained in the sync state.
+
+## October 3 screenshot refresh
+
+The five screenshot-bearing August posts were updated from source `cb0e350de4bc7d49f9fb6c0f64e9df0c537204ee` at 18:24:21–18:24:29 UTC. The replacement images show populated demo Company, Receiving, and Cycle Count views at their operator's device proportions. Empty company hierarchy and unconfigured transfer-sync images were removed rather than filled with invented organizations or facilities.
+
+The publisher verified exact CMS bodies and unchanged protected metadata. A subsequent public check verified all 16 August/September pages, every expected text block, image, alt text, and full-size link over HTTP. Actual-pixel review passed for each replacement image; native Chrome also confirmed representative public images and an enlargement link. No posts were created, and titles, URLs, byline, tags, and publication dates were preserved.
