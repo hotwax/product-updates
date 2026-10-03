@@ -23,9 +23,9 @@ For an eligible open item, an operator can request inventory from another facili
 
 *Sources: [Order Manager timeline](https://github.com/hotwax/order-manager/blob/v1.3.0/src/utils/orderTimeline/transactions.ts), [Item transfer controls](https://github.com/hotwax/order-manager/blob/v1.3.0/src/components/orders/OrderItemTransfersModal.vue), [Selected-item actions](https://github.com/hotwax/order-manager/blob/v1.3.0/src/composables/useOrderActions.ts)*
 
-![Order Manager showing a held sample order, fictional customer contact details, and its timeline](assets/product-updates/screenshots/2026-10-03/order-manager-populated-order-macbook-air.png)
+![Order Manager showing order placement, approval, routing, and completed fulfillment in its timeline](assets/product-updates/screenshots/2026-10-03/order-manager-fulfillment-timeline-macbook-air.png)
 
-*A held sample order with fictional customer details, shown in the current development UI on October 3, 2026. No fulfillment milestones were added for the screenshot. Select any screenshot to enlarge it.*
+*A demo order's recorded timeline, from Shopify placement through completed fulfillment. Customer details are fictional, display-only replacements. Current development UI, captured October 3, 2026. Select any screenshot to enlarge it.*
 
 ### Keep queue counts, product identifiers, and form choices consistent
 

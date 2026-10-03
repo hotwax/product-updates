@@ -18,7 +18,7 @@
       "tagNames": [
         "Release Note"
       ],
-      "contentHash": "89cadd387d2d980aaf37fe42d11555294dee5fa5f1918c5134f7372614996e34"
+      "contentHash": "7cdcc23fd8cbf515ac6ac7b18a36bf67fac32d643d80d1faa979d771e7f4d817"
     },
     {
       "key": "product-update:2026-09:company-shopify-diagnostics",
@@ -54,7 +54,7 @@
       "tagNames": [
         "Product Update"
       ],
-      "contentHash": "79b6ee4941a938c26af5250c13a4c3a9061ded4019bbca81ea007b22fbdec3be"
+      "contentHash": "80016dd96f8817fbc91cf92024bea2ef028cd62f126a4f090629438ca1e441a8"
     },
     {
       "key": "product-update:2026-09:order-routing-inventory-replenishment",

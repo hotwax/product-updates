@@ -19,9 +19,9 @@ Day headings and the time between events help you see where an order spent its t
 
 Item and ship group status also carry more meaning. Individual items show their own status, grouped product rows show quantities by status, and completed or canceled ship groups reflect their items even when milestone dates are missing. Variant details help distinguish sizes or colors without opening another view.
 
-![Order Manager showing a held sample order, fictional customer contact details, and its timeline](assets/product-updates/screenshots/2026-10-03/order-manager-populated-order-macbook-air.png)
+![Order Manager showing order placement, approval, routing, and completed fulfillment in its timeline](assets/product-updates/screenshots/2026-10-03/order-manager-fulfillment-timeline-macbook-air.png)
 
-*A held sample order with fictional customer details, shown in the current development UI on October 3, 2026. No fulfillment milestones were added for the screenshot.*
+*A demo order's recorded timeline, from Shopify placement through completed fulfillment. Customer details are fictional, display-only replacements. Current development UI, captured October 3, 2026.*
 
 ## Bring stock to the location fulfilling the order
 
