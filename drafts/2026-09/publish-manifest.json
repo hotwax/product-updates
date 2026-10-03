@@ -1,0 +1,122 @@
+{
+  "month": "2026-09",
+  "mode": "monthly",
+  "generatedAt": "2026-10-03T02:38:07.616Z",
+  "requestedAt": "2026-10-03T02:38:07.621Z",
+  "requestedBy": "dt2patel",
+  "replayReason": null,
+  "publicationStatus": "published",
+  "appEligibility": "Merged to main during September 2026, plus identified September-release carryovers.",
+  "items": [
+    {
+      "key": "release-notes:2026-09",
+      "contentType": "release-note",
+      "title": "September 2026 apps release notes",
+      "slug": "release-notes/2026-09",
+      "filePath": "drafts/2026-09/release-notes.md",
+      "metaDescription": "September connects order investigation, product calendar dates, replenishment planning, and Shopify inventory and transfer operations across HotWax Commerce.",
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "af30dbd39d52a0526ffacc85594b440a9c94ecdc34ed3a6f584da883308e714b"
+    },
+    {
+      "key": "product-update:2026-09:company-shopify-diagnostics",
+      "contentType": "product-update",
+      "title": "HotWax Commerce brings Shopify inventory and transfer diagnostics into Company",
+      "slug": "product-updates/2026-09/company-shopify-diagnostics",
+      "filePath": "drafts/2026-09/product-updates/company_shopify_diagnostics.md",
+      "metaDescription": "Company connects Shopify inventory events, delivery timing, batch details, transfer sync health, and mapping conflicts in one operating workspace.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "3430626b809c62a75ed73064efa5dde38e644f498c70530255a4d1fd92c504a9"
+    },
+    {
+      "key": "product-update:2026-09:inventory-transfer-requests",
+      "contentType": "product-update",
+      "title": "HotWax Commerce adds inventory transfer requests with explicit execution and cancellation",
+      "slug": "product-updates/2026-09/inventory-transfer-requests",
+      "filePath": "drafts/2026-09/product-updates/inventory_transfer_requests.md",
+      "metaDescription": "Request a one-product movement between facilities, review its order context, and execute paired inventory adjustments or cancel without changing stock.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "bcc802d7868138ac0d5538de3780d82a137922cb16a35947eddbf6b6a4ec0f91"
+    },
+    {
+      "key": "product-update:2026-09:order-manager-order-investigation",
+      "contentType": "product-update",
+      "title": "HotWax Commerce connects order history, item actions, and inventory transfers in Order Manager",
+      "slug": "product-updates/2026-09/order-manager-order-investigation",
+      "filePath": "drafts/2026-09/product-updates/order_manager_order_investigation.md",
+      "metaDescription": "Order Manager connects a readable order timeline with item status, scoped actions, inventory transfer requests, and staged order attribute changes.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "bc86c1b77a09a12262386653e68fd5fee51e7a6da234228c50a0cb3a91b48a0d"
+    },
+    {
+      "key": "product-update:2026-09:order-routing-inventory-replenishment",
+      "contentType": "product-update",
+      "title": "HotWax Commerce brings inventory history and replenishment planning into Order Routing",
+      "slug": "product-updates/2026-09/order-routing-inventory-replenishment",
+      "filePath": "drafts/2026-09/product-updates/order_routing_inventory_replenishment.md",
+      "metaDescription": "Order Routing connects multi-facility inventory searches, movement history, demand, incoming stock, and editable replenishment settings.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "49f4fe421b64ca610f11f5d2a9c5838473c54509bb22fbd5d1838c0a07f2d546"
+    },
+    {
+      "key": "product-update:2026-09:order-routing-simulation",
+      "contentType": "product-update",
+      "title": "HotWax Commerce previews a guided Routing Simulation workflow",
+      "slug": "product-updates/2026-09/order-routing-simulation",
+      "filePath": "drafts/2026-09/product-updates/order_routing_simulation.md",
+      "metaDescription": "A preview of guided Routing Simulation setup connects data-copy preparation, saved policy variations, and order-level results for routing review.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "eb126e6e2255edd246319b2412502429bc253486f4f31ec1d9972b9dd5158084"
+    },
+    {
+      "key": "product-update:2026-09:product-calendar-inventory-windows",
+      "contentType": "product-update",
+      "title": "HotWax Commerce connects product calendar dates to inventory selling windows",
+      "slug": "product-updates/2026-09/product-calendar-inventory-windows",
+      "filePath": "drafts/2026-09/product-updates/product_calendar_inventory_windows.md",
+      "metaDescription": "Map Shopify lifecycle dates in Company, review them in Products, and use scheduled date conditions in HotWax Commerce inventory rules.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "bb21c3a3ff02d72a277bea2243e192dd674970ffd5e558d71dc251c84287b395"
+    },
+    {
+      "key": "product-update:2026-09:shopify-location-and-kit-inventory",
+      "contentType": "product-update",
+      "title": "HotWax Commerce expands Shopify inventory publishing to physical locations and kits",
+      "slug": "product-updates/2026-09/shopify-location-and-kit-inventory",
+      "filePath": "drafts/2026-09/product-updates/shopify_location_and_kit_inventory.md",
+      "metaDescription": "Shopify physical-location events, available-to-promise resets, and facility-level kit calculations keep availability tied to stock retailers can fulfill.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "d9170faa58074779717e53703caeb5d03637c160515f9164d14848c7ab8a0793"
+    },
+    {
+      "key": "product-update:2026-09:shopify-native-transfer-sync",
+      "contentType": "product-update",
+      "title": "HotWax Commerce connects transfer orders to Shopify's native transfer workflow",
+      "slug": "product-updates/2026-09/shopify-native-transfer-sync",
+      "filePath": "drafts/2026-09/product-updates/shopify_native_transfer_sync.md",
+      "metaDescription": "HotWax Commerce connects approved transfer orders, including NetSuite imports, with Shopify native transfers and two-way shipping and receiving updates.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "424a8eb9fd6c342520b11caf2f21d42cccbeccf25f6698fc3bffa6cb557dd124"
+    }
+  ],
+  "approvedBy": "dt2patel",
+  "approvedAt": "2026-10-03T05:08:01.416Z"
+}

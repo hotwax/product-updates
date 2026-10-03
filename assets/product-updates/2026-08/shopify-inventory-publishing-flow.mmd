@@ -1,0 +1,15 @@
+flowchart TD
+    A[Receipt, return, reservation, or configuration change] --> B[Business transaction commits]
+    B --> C[Data feed passes the source reference]
+    C --> D[Controller reads saved event and channel rules]
+    E[Scheduled configuration date takes effect] --> D
+    D --> F[Calculate sellable inventory before and after]
+    F --> G{Does channel availability change?}
+    G -->|No| H[Record no-change ledger row; no Shopify message]
+    G -->|Yes| I[Record pending inventory change]
+    I --> J[Publisher groups pending changes]
+    J --> K[Save system message with fixed request and key]
+    K --> L[Shared sender calls Shopify]
+    L -->|Confirmed| M[Record delivery and Shopify adjustment reference]
+    L -->|Retry needed| N[Retain message, request, destination, and key]
+    N --> L

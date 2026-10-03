@@ -1,0 +1,97 @@
+{
+  "month": "2026-08",
+  "mode": "monthly",
+  "generatedAt": "2026-09-01T09:10:45.346Z",
+  "requestedAt": "2026-09-01T09:10:45.346Z",
+  "requestedBy": "finish-august-product-updates",
+  "replayReason": null,
+  "items": [
+    {
+      "key": "release-notes:2026-08",
+      "contentType": "release-note",
+      "title": "August 2026 apps release notes",
+      "slug": "release-notes/2026-08",
+      "filePath": "drafts/2026-08/release-notes.md",
+      "metaDescription": "August connects inventory, transfers, integrations, and exception work across HotWax Commerce, with clearer controls and stronger operational visibility.",
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "c335cc6b1010a70cb191f392a4812281ee8081e2f318cf55bd0bcf7d06f75a15"
+    },
+    {
+      "key": "product-update:2026-08:company-integration-control-center",
+      "contentType": "product-update",
+      "title": "HotWax Commerce turns Company into an integration control center",
+      "slug": "product-updates/2026-08/company-integration-control-center",
+      "filePath": "drafts/2026-08/product-updates/company_integration_control_center.md",
+      "metaDescription": "Company brings Shopify, NetSuite, carrier, Unigate, app-version, and batch-order controls into one HotWax Commerce administration workspace.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "c55c5c385761bb033c0590ab754bf3a76e188991a306bba93dc003efd5262d0a"
+    },
+    {
+      "key": "product-update:2026-08:connected-transfer-order-workflow",
+      "contentType": "product-update",
+      "title": "HotWax Commerce connects transfer-order creation, reservation, fulfillment, and receipt",
+      "slug": "product-updates/2026-08/connected-transfer-order-workflow",
+      "filePath": "drafts/2026-08/product-updates/connected_transfer_order_workflow.md",
+      "metaDescription": "HotWax Commerce connects transfer creation, warehouse inventory commitments, and NetSuite lifecycle imports to keep transfer stock out of online availability.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "fcde5b48c02ef3389ffa63ca6964e4a25f670b64f0a8dce19a7109edb42e7a35"
+    },
+    {
+      "key": "product-update:2026-08:cycle-count-creation-and-variance-decisions",
+      "contentType": "product-update",
+      "title": "HotWax Commerce connects Cycle Count creation with traceable variance decisions",
+      "slug": "product-updates/2026-08/cycle-count-creation-and-variance-decisions",
+      "filePath": "drafts/2026-08/product-updates/cycle_count_creation_and_variance_decisions.md",
+      "metaDescription": "Cycle Count adds count creation for store and admin teams, better review search, and a reusable history of inventory variance decisions.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "0e72daf0924bd0bdc2fd246f2f53514351bfb41da2b0b028b40338302c0d126c"
+    },
+    {
+      "key": "product-update:2026-08:event-driven-shopify-inventory-publishing",
+      "contentType": "product-update",
+      "title": "HotWax Commerce adds a durable event ledger for Shopify inventory publishing",
+      "slug": "product-updates/2026-08/event-driven-shopify-inventory-publishing",
+      "filePath": "drafts/2026-08/product-updates/event_driven_shopify_inventory_publishing.md",
+      "metaDescription": "HotWax Commerce records inventory events in a durable ledger, batches Shopify updates safely, and exposes the publishing flow in Company.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "c1c2a39217ed0d1d257c9b988bafc8eb53726275bd6cdbc4c9ca28b98d301f5a"
+    },
+    {
+      "key": "product-update:2026-08:multi-company-oms-and-netsuite-subsidiary-mapping",
+      "contentType": "product-update",
+      "title": "HotWax Commerce brings NetSuite subsidiary mapping into Company",
+      "slug": "product-updates/2026-08/multi-company-oms-and-netsuite-subsidiary-mapping",
+      "filePath": "drafts/2026-08/product-updates/multi_company_oms_and_netsuite_subsidiary_mapping.md",
+      "metaDescription": "HotWax Commerce helps retailers manage operating companies and maintain subsidiary IDs for configured NetSuite order exports in Company.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "332e35566de27e353c4661c95e4d7d29a35f0399f6ec080befade97da3eea841"
+    },
+    {
+      "key": "product-update:2026-08:shopify-fulfillment-location-reconciliation",
+      "contentType": "product-update",
+      "title": "HotWax Commerce keeps Shopify fulfillment locations and OMS allocations aligned",
+      "slug": "product-updates/2026-08/shopify-fulfillment-location-reconciliation",
+      "filePath": "drafts/2026-08/product-updates/shopify_fulfillment_location_reconciliation.md",
+      "metaDescription": "HotWax Commerce reconciles Shopify fulfillment-location changes with OMS allocations while protecting inventory accuracy and preventing sync loops.",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "9e4a9665eb8d426671ec05bfc8ff0141f6b871037becd2656ba00d0695545a22"
+    }
+  ],
+  "publicationStatus": "published",
+  "approvedBy": "dt2patel",
+  "approvedAt": "2026-10-03T05:08:01.659Z"
+}
