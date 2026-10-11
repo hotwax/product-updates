@@ -78,7 +78,9 @@ jobs:
         env:
           MANIFEST_PATH: ${{ steps.manifest.outputs.manifest_path }}
           PRODUCTION: "true"
-        run: npm run prepublish:monthly
+        run: |
+          npm run validate:public-content
+          npm run prepublish:monthly
 
       - name: Validate publish manifest
         if: steps.guard.outputs.should_publish == 'true'

@@ -1,0 +1,26 @@
+{
+  "name": "Search Integration",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/features).\n    *   Task: Summarize a cluster of updates into one cohesive release note entry.\n    *   Input Cluster Description: Routing adjustments aligning frontend product and store queries with specific Maarg-compatible Solr lookup endpoints.\n    *   Raw Items:\n        1.  `hotwax/bopis#802`: Passed 'query' parameter correctly to `runSolrQuery` API. (Enhancement/Fix)\n        2.  `hotwax/bopis#778`: Fixed solr query and stores endpoints for product details to use Moqui specific endpoints. (Fix/Enhancement)\n        3.  `hotwax/bopis#779`: Improved payload preparation logic for solr query to apply filters correctly. (Enhancement)\n        4.  `hotwax/inventory-count#1424`: Fixed 404 error by routing `runSolrQuery` to `maargUrl` instead of `omsUrl`. (Bug Fix)\n\n    *   Structure for Features/Enhancements: Problem, Solution, Impact.\n    *   Structure for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style: Simpler is better, active voice, granular but concise (",
+  "prReferences": [
+    {
+      "repo": "hotwax/bopis",
+      "number": "802",
+      "url": "https://github.com/hotwax/bopis/pull/802"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "778",
+      "url": "https://github.com/hotwax/bopis/pull/778"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "779",
+      "url": "https://github.com/hotwax/bopis/pull/779"
+    },
+    {
+      "repo": "hotwax/inventory-count",
+      "number": "1424",
+      "url": "https://github.com/hotwax/inventory-count/pull/1424"
+    }
+  ]
+}

@@ -30,6 +30,7 @@ Structure Guidelines:
 - **Tone Check**: Ensure the tone is professional and utility-focused.
 - **No AI Slop**: Do not use words like "enhanced", "streamlined", or "robust".
 - **No Exclamation Points**: Use periods only. No exclamation points allowed.
+- **Client Privacy**: Never name, link, or attribute an update to a retailer, client instance, client-specific repository, or client-specific implementation. Include a capability only when the shared product evidence supports it. Omit implementation-specific behavior instead of presenting it as a product-wide release.
 - **Citations**: At the end of each feature/section summary, include the citations provided in the cluster data. Format them as a single line with GitHub pull request links, like: *Sources: [repo#123](url), [repo#456](url)*
 
 Structure:

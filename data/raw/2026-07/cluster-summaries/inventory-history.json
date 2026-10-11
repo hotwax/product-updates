@@ -1,0 +1,11 @@
+{
+  "name": "Inventory History",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements and new features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Input Cluster: Implementation of manual inventory variance endpoints assisting history lookups.\n    *   Input Data: A single PR (`hotwax/oms#744`) that adds a read-only `GET /oms/inventoryItemVariances` endpoint.\n    *   Context of the PR: The order-routing app's inventory history needs to show \"who did it\" (actor) and \"why\" (reason) for manual variances. This data lives in `InventoryItemVariance` but wasn't accessible via API. The new endpoint allows the client to fetch these details using the variance PK.\n\n    *   Structure for New Features/Enhancements: Problem, Solution, Impact.\n    *   Structure for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\" (Not applicable here, this is a new feature/endpoint).\n    *   Style Guidelines:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features).\n        *   Tone: Professional, utility-focused.\n        *   **No AI Slop**: Avoid \"enhanced\", \"",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "744",
+      "url": "https://github.com/hotwax/oms/pull/744"
+    }
+  ]
+}

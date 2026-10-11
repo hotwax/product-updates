@@ -1,0 +1,11 @@
+{
+  "name": "Inventory Reservation",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer (cares about improvements/new features).\n*   Input: A single PR description regarding automation of physical item reservations on order approvals via a system service execution trigger (SECA).\n*   Format/Structure:\n    *   New features/enhancements: Problem, Solution, Impact (3-4 sentences).\n    *   Bug fixes: \"Fixed a bug if [Condition], [Symptom].\" (1 sentence).\n*   Style Guide:\n    *   Simple, active voice.\n    *   Granular but concise.\n    *   Professional, utility-focused tone.\n    *   **No AI Slop**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   **No Exclamation Points**: Only periods.\n    *   **No dev-time bugs**: Don't mention \"fixes\" or \"issues\" found during development of new features.\n    *   **True Bug Fixes**: Use \"Fixed a bug...\".\n*   Input Analysis:\n    *   Title: \"Improvement: Moved reserve#OrderItems call to a new SECA on approve#Order to ensure automatic reservation on order approval\".\n    *   Body: \"Moved reserve#OrderItems call to a new SECA on approve#Order to ensure automatic reservation on order approval.\"",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "788",
+      "url": "https://github.com/hotwax/oms/pull/788"
+    }
+  ]
+}

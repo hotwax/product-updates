@@ -1,0 +1,26 @@
+{
+  "name": "Dashboard Analytics",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: A Retailer (enthusiastic, cares about improvements and new features).\n*   Goal: Summarize a cluster of updates into a cohesive release note entry.\n*   Structure:\n    *   New features/enhancements: Problem, Solution, Impact (3-4 sentences).\n    *   Standalone bug fixes: \"Fixed a bug if [Condition], [Symptom].\" (1 sentence).\n*   Style Guide:\n    *   Simpler is better.\n    *   Active voice.\n    *   Granular but concise.\n    *   Tone: Professional, utility-focused.\n    *   **No AI Slop**: No \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   **No Exclamation Points**: Only periods.\n    *   **No dev-time bugs**: Synthesize development issues into the polished feature.\n    *   **True Bug Fixes**: Start with \"Fixed a bug if [Condition], [Symptom].\"\n\n    *   *Item 1 (#755) & Item 2 (#756) & Item 3 (#796):* These relate to `get#FacilityRejections`. There was a bug where it only returned one row due to a coding error in Groovy. This resulted in incorrect \"Rejected\" counts on the",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "755",
+      "url": "https://github.com/hotwax/oms/pull/755"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "756",
+      "url": "https://github.com/hotwax/oms/pull/756"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "793",
+      "url": "https://github.com/hotwax/oms/pull/793"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "796",
+      "url": "https://github.com/hotwax/oms/pull/796"
+    }
+  ]
+}

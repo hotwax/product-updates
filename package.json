@@ -15,6 +15,7 @@
         "prepublish:monthly": "node scripts/prepublish_monthly_content.js",
         "publish:monthly": "node scripts/publish_monthly_content.js",
         "validate:manifest": "node scripts/validate_manifest.js",
+        "validate:public-content": "node scripts/validate_public_content.js",
         "validate:state": "node scripts/validate_state.js"
     }
 }

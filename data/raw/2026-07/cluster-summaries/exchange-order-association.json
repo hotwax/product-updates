@@ -1,0 +1,16 @@
+{
+  "name": "Exchange Order Association",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Target Audience: A Retailer (enthusiastic, cares about system improvements and new features).\n    *   Input: A cluster of updates regarding API enhancements for bidirectional relationships on exchange order item connections.\n    *   Task: Summarize into a cohesive release note entry.\n\n    *   Feature: Support reverse `OrderItemAssoc` lookup (`toOrderId`) on the orders REST API.\n    *   Problem: Currently, exchange orders reference their original order via `toOrderId`. However, the original order has no way to find the exchange orders created from it through the API. The Order Manager UI currently has to \"guess\" the exchange order IDs using naming conventions, which is fragile and doesn't work for all exchange flows.\n    *   Solution: Added a new `itemAssocs` sub-resource to the orders API. This allows callers to query exchange orders by the original order ID (`toOrderId`).\n    *   Impact: The Order Manager can accurately link and display exchange orders in the order detail timeline without relying on naming patterns.\n\n    *   Structure: Problem, Solution, Impact.\n    *   Style Guide:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences total).\n        *   Tone: Professional, utility-focused.\n        *   **",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "776",
+      "url": "https://github.com/hotwax/oms/pull/776"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "777",
+      "url": "https://github.com/hotwax/oms/pull/777"
+    }
+  ]
+}

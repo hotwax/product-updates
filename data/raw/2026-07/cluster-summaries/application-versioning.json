@@ -1,0 +1,36 @@
+{
+  "name": "Application Versioning",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/new features).\n    *   Task: Summarize a cluster of updates into one cohesive release note entry.\n    *   Format for New Features/Enhancements: Problem, Solution, Impact.\n    *   Format for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide Constraints:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features).\n        *   Tone: Professional, utility-focused.\n        *   **NO AI SLOP**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **NO EXCLAMATION POINTS**: Use periods only.\n        *   **NO DEV-TIME BUGS**: Synthesize polish into the feature description.\n        *   **TRUE BUG FIXES**: Start with \"Fixed a bug...\" (not applicable here, as this is a feature/improvement).\n\n    *   The cluster involves multiple repositories: `receiving`, `bopis`, `fulfillment`, `inventory-count`, `transfers`.\n    *   All PRs are titled similarly: \"Added multi version app support\" or \"support to serve app on specific version requested on oms\".\n    *   Core",
+  "prReferences": [
+    {
+      "repo": "hotwax/receiving",
+      "number": "704",
+      "url": "https://github.com/hotwax/receiving/pull/704"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "809",
+      "url": "https://github.com/hotwax/bopis/pull/809"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "805",
+      "url": "https://github.com/hotwax/bopis/pull/805"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1653",
+      "url": "https://github.com/hotwax/fulfillment/pull/1653"
+    },
+    {
+      "repo": "hotwax/inventory-count",
+      "number": "1425",
+      "url": "https://github.com/hotwax/inventory-count/pull/1425"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "252",
+      "url": "https://github.com/hotwax/transfers/pull/252"
+    }
+  ]
+}

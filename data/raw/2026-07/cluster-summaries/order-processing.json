@@ -1,0 +1,11 @@
+{
+  "name": "Order Processing",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: A retailer who is enthusiastic and cares about improvements/features.\n*   Input: A cluster of updates (one PR/Issue) regarding a bug where `billToPartyId` was missing on `OrderHeader` for existing customers.\n*   Goal: Summarize into a cohesive release note entry.\n*   Constraint Checklist & Confidence Score:\n    1.  Structure (New features): Problem, Solution, Impact. (N/A here, this is a bug fix).\n    2.  Structure (Bug fix): \"Fixed a bug if [Condition], [Symptom].\"\n    3.  Style: Simple, active voice, granular but concise.\n    4.  Tone: Professional, utility-focused.\n    5.  No AI Slop: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    6.  No Exclamation Points: Only periods.\n    7.  No dev-time bugs: For new features (N/A).\n    8.  True Bug Fixes: Start with \"Fixed a bug if [Condition], [Symptom]\".\n    9.  Output: JUST the summary text.\n\n    *   Issue: `billToPartyId` is null on `OrderHeader` when an *existing* customer places an order.\n    *   Technical cause:",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "772",
+      "url": "https://github.com/hotwax/oms/pull/772"
+    }
+  ]
+}

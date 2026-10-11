@@ -1,0 +1,16 @@
+{
+  "name": "Delivery Estimation",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Structure for Features/Enhancements: Problem, Solution, Impact.\n    *   Structure for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide:\n        *   Simple, active voice, granular but concise.\n        *   Professional, utility-focused tone.\n        *   No AI Slop (\"enhanced\", \"streamlined\", \"seamless\", \"robust\").\n        *   No Exclamation Points.\n        *   No dev-time bugs mentioned for new features (synthesize into polished experience).\n        *   True Bug Fixes must start with \"Fixed a bug...\".\n\n    *   *Item 1 (#779):* Computes estimated ship and delivery dates for ship groups requiring fulfillment.\n        *   Problem (implied): Orders lacking estimated dates make it hard to communicate delivery expectations.\n        *   Mechanism: Uses facility SLA (default days to ship) and carrier configurations (delivery days). If an external date (like Shopify) is provided, it uses that; otherwise, it calculates it based on order date + SLA.\n        *   Solution: Automatically calculates `estimatedShipDate` and",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "779",
+      "url": "https://github.com/hotwax/oms/pull/779"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "750",
+      "url": "https://github.com/hotwax/oms/pull/750"
+    }
+  ]
+}

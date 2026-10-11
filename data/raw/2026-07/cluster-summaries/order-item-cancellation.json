@@ -1,0 +1,11 @@
+{
+  "name": "Order Item Cancellation",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/features).\n    *   Goal: Summarize a cluster of updates into a cohesive release note entry.\n    *   Structure for New Features/Enhancements: Problem, Solution, Impact.\n    *   Structure for Standalone Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Constraints:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features, 1 sentence for bug fixes).\n        *   Tone: Professional, utility-focused.\n        *   **No \"AI Slop\"**: No \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **No Exclamation Points**: Only periods.\n        *   **No dev-time bugs**: Synthesize dev-time fixes into the polished feature.\n        *   **True Bug Fixes**: Start with \"Fixed a bug...\" and focus on symptoms.\n        *   Output: JUST the summary text.\n\n    *   *Core Update:* The `cancel#SalesOrderItem` service was returning inventory reservations instead of actual cancelled items. It now returns the actual cancelled items.\n    *   *Cleanup:* Removed unused parameters (`inventoryItemId`, `cancelledQuantity`) from `",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "745",
+      "url": "https://github.com/hotwax/oms/pull/745"
+    }
+  ]
+}

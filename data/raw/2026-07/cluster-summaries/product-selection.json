@@ -1,0 +1,11 @@
+{
+  "name": "Product Selection",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer.\n*   Goal: Summarize a cluster of updates into a cohesive release note entry.\n*   Input: A JSON object describing a PR: \"Fixed: Fetched only variant products to add items to the transfer order.\" The context is \"Filtering product searches during manual inventory transfer setups to retrieve only product variants.\"\n\n    *   For new features/enhancements: Problem, Solution, Impact.\n    *   For standalone bug fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style: Simple, active voice, granular but concise (3-4 sentences for features, 1 sentence for bugs).\n    *   Tone: Professional, utility-focused.\n    *   Constraint: NO \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   Constraint: NO exclamation points.\n    *   Constraint: NO \"fixed\", \"issue\", \"bug\" for *new features* (synthesize as polished experience).\n    *   Constraint: For *true bug fixes*, start with \"Fixed a bug...\".\n    *   Constraint: Only output the summary text.\n\n    *   The PR title says \"Fixed: Fetched only variant products...\".\n    *   The description says \"Filtering product searches during manual inventory transfer setups to retrieve only product variants.\"",
+  "prReferences": [
+    {
+      "repo": "hotwax/transfers",
+      "number": "248",
+      "url": "https://github.com/hotwax/transfers/pull/248"
+    }
+  ]
+}

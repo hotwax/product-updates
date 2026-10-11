@@ -1,0 +1,16 @@
+{
+  "name": "Purchase Orders",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Target Audience: An enthusiastic Retailer (cares about improvements and new features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Cluster Description: Addition of generic setup services and response alignments supporting purchase order details on listings.\n    *   Raw Items:\n        1.  `#714`: Refactor `get#PurchaseOrders` to return PO headers (instead of items) with the nearest delivery date.\n        2.  `#696`: New `setup#PurchaseOrder` service. Centralizes creation/update. Supports external imports, product/facility/supplier resolution and validation, and status management.\n\n    *   *Structure for New Features/Enhancements:* Problem, Solution, Impact.\n    *   *Structure for Bug Fixes:* \"Fixed a bug if [Condition], [Symptom].\"\n    *   *Style:* Simple, active voice, granular but concise (3-4 sentences for features).\n    *   *Tone:* Professional, utility-focused.\n    *   *No-Go Words (AI Slop):* enhanced, streamlined, seamless, robust.\n    *   *No Exclamation Points:* Use periods only.\n    *   *No \"dev-time bugs\":* Don't mention fixes/issues found during development of new features",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "714",
+      "url": "https://github.com/hotwax/oms/pull/714"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "696",
+      "url": "https://github.com/hotwax/oms/pull/696"
+    }
+  ]
+}

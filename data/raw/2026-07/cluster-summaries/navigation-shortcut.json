@@ -1,0 +1,11 @@
+{
+  "name": "Navigation Shortcut",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer (cares about improvements/features).\n*   Goal: Summarize a cluster of updates into a cohesive release note entry.\n*   Input: A single PR/Issue cluster regarding \"Mount Fast Travel in Transfers\".\n\n    *   *Feature:* Integrating \"Fast Travel\" search utility into the Transfers application.\n    *   *Problem:* Operators currently have to return to the Launchpad or manually copy/paste URLs to switch between different HotWax admin applications.\n    *   *Solution:* Added the Fast Travel entry point (Cmd/Ctrl+K) directly into the Transfers app shell.\n    *   *Impact:* Faster navigation between configured admin apps without leaving the current application.\n\n    *   *Structure for Features:* Problem, Solution, Impact.\n    *   *Simpler is better.*\n    *   *Active voice.*\n    *   *Granular but concise (3-4 sentences total).*\n    *   *Tone:* Professional, utility-focused.\n    *   *No AI Slop:* Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   *No Exclamation Points:* Use periods only.\n    *   *No dev-time bugs:* Don't mention build issues or code refactoring; focus on the polished feature.\n    *   *Standalone Bug Fix",
+  "prReferences": [
+    {
+      "repo": "hotwax/transfers",
+      "number": "240",
+      "url": "https://github.com/hotwax/transfers/pull/240"
+    }
+  ]
+}

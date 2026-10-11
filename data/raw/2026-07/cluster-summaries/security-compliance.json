@@ -1,0 +1,11 @@
+{
+  "name": "Security Compliance",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: A retailer (enthusiastic, cares about improvements/features).\n*   Task: Summarize a cluster of updates into a cohesive release note entry.\n*   Input: A single PR describing the removal of a full service-context log dump in `create#SalesOrder` to prevent PII leakage.\n\n    *   *Problem*: The `create#SalesOrder` service was logging the entire service context (including customer names, addresses, emails, etc.) at an info level. This leaks PII (Personally Identifiable Information) into server logs.\n    *   *Solution*: Removed the specific log statement that dumped the full context.\n    *   *Impact*: Improved data privacy and reduced log volume/noise.\n    *   *Type*: This is a standalone bug fix (it was a \"leftover debug log\" causing a data leak).\n\n    *   *Structure (Feature/Enhancement)*: Problem, Solution, Impact.\n    *   *Structure (Bug Fix)*: \"Fixed a bug if [Condition], [Symptom].\"\n    *   *Style*: Simple, active voice, granular but concise, professional/utility tone.\n    *   *Forbidden Words (AI Slop)*: \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   *Punctuation*: No exclamation points.",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "780",
+      "url": "https://github.com/hotwax/oms/pull/780"
+    }
+  ]
+}

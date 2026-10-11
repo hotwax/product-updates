@@ -1,0 +1,41 @@
+{
+  "name": "Framework Migration",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/new features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Format (New Features/Enhancements): Problem, Solution, Impact.\n    *   Format (Bug Fixes): \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide:\n        *   Simple, active voice, granular but concise (3-4 sentences for features, 1 sentence for bugs).\n        *   Professional, utility-focused tone.\n        *   **No AI Slop**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **No Exclamation Points**: Use periods only.\n        *   **No dev-time bugs**: Synthesize into polished experience for new features.\n        *   **True Bug Fixes**: Use \"Fixed a bug...\" + user-visible symptom.\n\n    *   *Item 1, 2, 3 (hotwax/receiving):* Migrating Purchase Orders, Return Shipments, and Shipments APIs from OFBiz to Moqui. This is a backend refactor/migration.\n        *   *Interpretation:* This is a system improvement/infrastructure update. It's an \"enhancement\" of the underlying framework.\n    *",
+  "prReferences": [
+    {
+      "repo": "hotwax/receiving",
+      "number": "671",
+      "url": "https://github.com/hotwax/receiving/pull/671"
+    },
+    {
+      "repo": "hotwax/receiving",
+      "number": "665",
+      "url": "https://github.com/hotwax/receiving/pull/665"
+    },
+    {
+      "repo": "hotwax/receiving",
+      "number": "670",
+      "url": "https://github.com/hotwax/receiving/pull/670"
+    },
+    {
+      "repo": "hotwax/inventory-count",
+      "number": "1404",
+      "url": "https://github.com/hotwax/inventory-count/pull/1404"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "250",
+      "url": "https://github.com/hotwax/transfers/pull/250"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "746",
+      "url": "https://github.com/hotwax/oms/pull/746"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "869",
+      "url": "https://github.com/hotwax/oms/pull/869"
+    }
+  ]
+}

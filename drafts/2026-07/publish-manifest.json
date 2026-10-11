@@ -1,0 +1,72 @@
+{
+  "month": "2026-07",
+  "mode": "monthly",
+  "generatedAt": "2026-08-23T18:25:10.622Z",
+  "requestedAt": "2026-08-23T18:25:10.623Z",
+  "requestedBy": "local",
+  "replayReason": null,
+  "items": [
+    {
+      "key": "release-notes:2026-07",
+      "contentType": "release-note",
+      "title": "July 2026 apps release notes",
+      "slug": "release-notes/2026-07",
+      "filePath": "drafts/2026-07/release-notes.md",
+      "metaDescription": "July brings more of the retail operating day into focused HotWax Commerce apps. Teams can administer the OMS from Company, compose governed agents, test routin…",
+      "tagNames": [
+        "Release Note"
+      ],
+      "contentHash": "7ed43f812262f37b66e269ba7d8a3da8adf9f08cf1128cdfa1e419a5cfa12f8f"
+    },
+    {
+      "key": "product-update:2026-07:hotwax-introduces-agent-composer-for-building-governed-oms-agents",
+      "contentType": "product-update",
+      "title": "HotWax introduces Agent Composer for building governed OMS agents",
+      "slug": "product-updates/2026-07/hotwax-introduces-agent-composer-for-building-governed-oms-agents",
+      "filePath": "drafts/2026-07/product-updates/hotwax_introduces_agent_composer_for_building_governed_oms_agents.md",
+      "metaDescription": "Retail operations teams regularly face questions that are too specific for a generic report and too repetitive to investigate from scratch. Why did a group of…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "2bde8e3c49711666f1045589e7446aa67252adc6639131ba96a0d1241862de5d",
+      "sourceFaq": "agent-composer-oms-agents.md"
+    },
+    {
+      "key": "product-update:2026-07:hotwax-brings-oms-administration-into-the-company-app",
+      "contentType": "product-update",
+      "title": "HotWax brings OMS administration into the Company app",
+      "slug": "product-updates/2026-07/hotwax-brings-oms-administration-into-the-company-app",
+      "filePath": "drafts/2026-07/product-updates/hotwax_brings_oms_administration_into_the_company_app.md",
+      "metaDescription": "An omnichannel order management system depends on more than an order feed. Product stores define business scope, Shopify connections define channel access, fac…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "d115c892f8272bbf247298dc1d91bd61b798f1163de52b9cbf8e6892ab7a75b6"
+    },
+    {
+      "key": "product-update:2026-07:hotwax-lets-retailers-simulate-ship-from-store-routing-changes-before-live-fulfillment",
+      "contentType": "product-update",
+      "title": "HotWax lets retailers simulate ship-from-store routing changes before live fulfillment",
+      "slug": "product-updates/2026-07/hotwax-lets-retailers-simulate-ship-from-store-routing-changes-before-live-fulfillment",
+      "filePath": "drafts/2026-07/product-updates/hotwax_lets_retailers_simulate_ship_from_store_routing_changes_before_live_fulfillment.md",
+      "metaDescription": "Ship-from-store routing policy affects customer promises, store workload, inventory exposure, and transportation distance. A small change to safety stock, faci…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "a45404c57186fbc0f995013775c7b10357b02af60aaa1894e92b4fc9934fdb06",
+      "sourceFaq": "routing-simulation.md"
+    },
+    {
+      "key": "product-update:2026-07:hotwax-introduces-version-aware-app-delivery-for-controlled-oms-rollouts",
+      "contentType": "product-update",
+      "title": "HotWax introduces version-aware app delivery for controlled OMS rollouts",
+      "slug": "product-updates/2026-07/hotwax-introduces-version-aware-app-delivery-for-controlled-oms-rollouts",
+      "filePath": "drafts/2026-07/product-updates/hotwax_introduces_version_aware_app_delivery_for_controlled_oms_rollouts.md",
+      "metaDescription": "HotWax Commerce now lets recent web app releases remain available while the order management system (OMS) selects the compatible build for each app environment…",
+      "tagNames": [
+        "Product Update"
+      ],
+      "contentHash": "f30615b7a5f8ca53790c2bba684cfb9aa01bd1ce010cfa848e9b662571959c2c"
+    }
+  ]
+}

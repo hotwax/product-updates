@@ -1,0 +1,11 @@
+{
+  "name": "Fulfillment Mapping",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: A retailer (enthusiastic about the system, cares about improvements/features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Input Data: A PR (786) extending `OrderItemShipGroup` with `shipGroupExternalId` to sync with Shopify and handle B2B Purchase Orders.\n\n    *   New Features/Enhancements: Structure = Problem, Solution, Impact. (3-4 sentences).\n    *   Standalone Bug Fixes: Structure = \"Fixed a bug if [Condition], [Symptom].\" (1 sentence).\n    *   Style Guide:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise.\n        *   Professional, utility-focused tone.\n        *   **NO AI SLOP**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **NO EXCLAMATION POINTS**: Use periods only.\n        *   **NO DEV-TIME BUGS**: Don't mention development fixes; present the feature as polished.\n        *   **TRUE BUG FIXES**: Start with \"Fixed a bug...\".\n\n    *   *What happened?* Added `shipGroupExternalId` to `OrderItemShipGroup`.\n    *   *",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "786",
+      "url": "https://github.com/hotwax/oms/pull/786"
+    }
+  ]
+}

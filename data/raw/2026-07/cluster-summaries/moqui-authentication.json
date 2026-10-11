@@ -1,0 +1,61 @@
+{
+  "name": "Moqui Authentication",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/new features).\n    *   Task: Summarize a cluster of updates into a single cohesive release note entry.\n    *   Structure for Features/Enhancements: Problem, Solution, Impact.\n    *   Structure for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features, 1 for bug fixes).\n        *   Tone: Professional, utility-focused.\n        *   No \"AI Slop\" (enhanced, streamlined, seamless, robust).\n        *   No exclamation points.\n        *   No dev-time bugs mentioned in new features (synthesize as polished experience).\n        *   True Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n    *   Input Data: A cluster of PRs related to Moqui-only login environments, permission fetching via Moqui API, cookie/state management, and UI adjustments (hiding \"Go to OMS\" button).\n\n    *   *Item 1 (receiving#705):* Hide \"go to oms\" button if Moqui-only login. (UI refinement)",
+  "prReferences": [
+    {
+      "repo": "hotwax/receiving",
+      "number": "705",
+      "url": "https://github.com/hotwax/receiving/pull/705"
+    },
+    {
+      "repo": "hotwax/receiving",
+      "number": "688",
+      "url": "https://github.com/hotwax/receiving/pull/688"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "804",
+      "url": "https://github.com/hotwax/bopis/pull/804"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "797",
+      "url": "https://github.com/hotwax/bopis/pull/797"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1652",
+      "url": "https://github.com/hotwax/fulfillment/pull/1652"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1622",
+      "url": "https://github.com/hotwax/fulfillment/pull/1622"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1642",
+      "url": "https://github.com/hotwax/fulfillment/pull/1642"
+    },
+    {
+      "repo": "hotwax/inventory-count",
+      "number": "1409",
+      "url": "https://github.com/hotwax/inventory-count/pull/1409"
+    },
+    {
+      "repo": "hotwax/inventory-count",
+      "number": "1407",
+      "url": "https://github.com/hotwax/inventory-count/pull/1407"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "244",
+      "url": "https://github.com/hotwax/transfers/pull/244"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "242",
+      "url": "https://github.com/hotwax/transfers/pull/242"
+    }
+  ]
+}

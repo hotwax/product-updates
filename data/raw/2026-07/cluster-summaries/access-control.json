@@ -1,0 +1,51 @@
+{
+  "name": "Access Control",
+  "summary": "Product Manager at HotWax Commerce.\nRetailer (enthusiastic, cares about improvements and new features).\nA cluster of updates related to system permissions.\n\n        *   Features/Enhancements: Problem, Solution, Impact.\n        *   Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features, 1 sentence for bugs).\n        *   Professional, utility-focused tone.\n        *   *No* AI slop (enhanced, streamlined, seamless, robust).\n        *   *No* exclamation points.\n        *   *No* dev-time bugs for new features.\n        *   Standalone bug fixes must start with \"Fixed a bug...\".\n\n    *   *Fulfillment #1626:* Moved \"Ship Now\" and \"Unpack\" controls from product-store settings to security permissions (security groups).\n    *   *Fulfillment #1599:* Fixed incorrect permissions on multiple pages. (True bug fix).\n    *   *Transfers #245/246 & OMS #817:* Discrepancies and Bulk Upload screens were unreachable because permission IDs didn't exist in the backend or had mismatched env variables. Fixed by adding/renaming permissions. (True bug",
+  "prReferences": [
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1626",
+      "url": "https://github.com/hotwax/fulfillment/pull/1626"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1599",
+      "url": "https://github.com/hotwax/fulfillment/pull/1599"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "245",
+      "url": "https://github.com/hotwax/transfers/pull/245"
+    },
+    {
+      "repo": "hotwax/transfers",
+      "number": "246",
+      "url": "https://github.com/hotwax/transfers/pull/246"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "817",
+      "url": "https://github.com/hotwax/oms/pull/817"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "728",
+      "url": "https://github.com/hotwax/oms/pull/728"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "731",
+      "url": "https://github.com/hotwax/oms/pull/731"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "758",
+      "url": "https://github.com/hotwax/oms/pull/758"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "864",
+      "url": "https://github.com/hotwax/oms/pull/864"
+    }
+  ]
+}

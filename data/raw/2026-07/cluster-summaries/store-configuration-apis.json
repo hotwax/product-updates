@@ -1,0 +1,21 @@
+{
+  "name": "Store Configuration APIs",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer (cares about improvements and new features).\n*   Task: Summarize a cluster of updates into a cohesive release note entry.\n*   Input Cluster: Deployment of REST write and fetch resources for carrier methods, gateway details, and payment typologies.\n*   Input Items:\n    1.  `#840`/`#841`: Add API to fetch shipping gateway config (GET /oms/shippingGateways/configs) for backward compatibility for the fulfillment app.\n    2.  `#857`: Allow creating/updating/deleting payment method types via API (POST, PUT, DELETE on `paymentMethodTypes`). This is needed for the \"create payment method\" flow in the company app to map to Shopify.\n\n    *   *Feature 1: Shipping Gateway Config API.*\n        *   Problem: The fulfillment app requires access to shipping gateway configuration options to maintain compatibility.\n        *   Solution: Added a GET API endpoint to fetch shipping gateway configurations.\n        *   Impact: Ensures consistent shipment method setup within the fulfillment application.\n    *   *Feature 2: Payment Method Type API.*\n        *   Problem: Payment method types were previously read-only, preventing the creation of new types during the payment method mapping process.\n        *   Solution: Added POST, PUT, and",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "840",
+      "url": "https://github.com/hotwax/oms/pull/840"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "841",
+      "url": "https://github.com/hotwax/oms/pull/841"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "857",
+      "url": "https://github.com/hotwax/oms/pull/857"
+    }
+  ]
+}

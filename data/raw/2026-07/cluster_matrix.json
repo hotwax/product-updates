@@ -1,0 +1,330 @@
+{
+  "clusters": [
+    {
+      "name": "Platform Integration",
+      "reason": "Migration of front-end applications to the Accxui framework, aligning state management with Pinia, refactoring bundlers to Vite, and standardizing Shopify-based login flows.",
+      "itemIds": [
+        "hotwax/receiving#693",
+        "hotwax/receiving#694",
+        "hotwax/receiving#659",
+        "hotwax/receiving#660",
+        "hotwax/receiving#682",
+        "hotwax/receiving#683",
+        "hotwax/bopis#760",
+        "hotwax/bopis#766",
+        "hotwax/bopis#770",
+        "hotwax/fulfillment#1583",
+        "hotwax/fulfillment#1591",
+        "hotwax/fulfillment#1596",
+        "hotwax/inventory-count#1390"
+      ]
+    },
+    {
+      "name": "Application Versioning",
+      "reason": "Introduction of URL-based version routing support to handle multiple live application builds requested directly by the Order Management System.",
+      "itemIds": [
+        "hotwax/receiving#704",
+        "hotwax/bopis#809",
+        "hotwax/bopis#805",
+        "hotwax/fulfillment#1653",
+        "hotwax/inventory-count#1425",
+        "hotwax/transfers#252"
+      ]
+    },
+    {
+      "name": "Framework Migration",
+      "reason": "Backend framework transitions refactoring services and APIs from legacy Apache OFBiz implementations to Moqui counterparts.",
+      "itemIds": [
+        "hotwax/receiving#671",
+        "hotwax/receiving#665",
+        "hotwax/receiving#670",
+        "hotwax/inventory-count#1404",
+        "hotwax/transfers#250",
+        "hotwax/oms#746",
+        "hotwax/oms#869"
+      ]
+    },
+    {
+      "name": "Concurrency Control",
+      "reason": "Establishment of robust row locks and status-transition gates preventing concurrent submissions from producing duplicate receipts and inventory duplication during partial or complete receiving processes.",
+      "itemIds": [
+        "hotwax/receiving#687",
+        "hotwax/receiving#689",
+        "hotwax/oms#751",
+        "hotwax/oms#753"
+      ]
+    },
+    {
+      "name": "Access Control",
+      "reason": "Standardization of system permissions to gate user interfaces and restrict business operations like shipping, unpacking, and bulk transfers based on assigned security groups.",
+      "itemIds": [
+        "hotwax/fulfillment#1626",
+        "hotwax/fulfillment#1599",
+        "hotwax/transfers#245",
+        "hotwax/transfers#246",
+        "hotwax/oms#817",
+        "hotwax/oms#728",
+        "hotwax/oms#731",
+        "hotwax/oms#758",
+        "hotwax/oms#864"
+      ]
+    },
+    {
+      "name": "Attribute Management",
+      "reason": "Deployment of write APIs and bulk upsert operations to allow the seamless addition and editing of attributes at both the order and order line-item levels.",
+      "itemIds": [
+        "hotwax/oms#718",
+        "hotwax/oms/719",
+        "hotwax/oms#831",
+        "hotwax/oms#832"
+      ]
+    },
+    {
+      "name": "User Provisioning",
+      "reason": "Refactoring of user search synchronization, profile content models, and transitions to Moqui UserAccount configurations for bootstrap and operational roles.",
+      "itemIds": [
+        "hotwax/oms#820",
+        "hotwax/oms#765",
+        "hotwax/oms#782",
+        "hotwax/oms#871"
+      ]
+    },
+    {
+      "name": "Hold Queue Management",
+      "reason": "Introduction of unified order hold tasks and life cycle auto-resolution rules to ensure that hold/review tasks automatically cancel when orders are closed.",
+      "itemIds": [
+        "hotwax/oms#721",
+        "hotwax/oms#761",
+        "hotwax/oms#762",
+        "hotwax/oms#763",
+        "hotwax/oms#790"
+      ]
+    },
+    {
+      "name": "Delivery Estimation",
+      "reason": "Calculations establishing estimated ship dates and delivery dates for groups requiring fulfillment, utilizing facility SLA times and carrier configurations.",
+      "itemIds": [
+        "hotwax/oms#778",
+        "hotwax/oms#779",
+        "hotwax/oms#750"
+      ]
+    },
+    {
+      "name": "Customer Communications",
+      "reason": "Upgrades to customer notification event payloads including carrier tracking links, fulfillment store identifiers, and dynamic URLs specifically for order updates.",
+      "itemIds": [
+        "hotwax/oms#741",
+        "hotwax/oms#733",
+        "hotwax/oms#814",
+        "hotwax/oms#838"
+      ]
+    },
+    {
+      "name": "Dashboard Analytics",
+      "reason": "API adjustments that correct the collection and deduplication of warehouse metric metrics on the dashboard funnels.",
+      "itemIds": [
+        "hotwax/oms#755",
+        "hotwax/oms#756",
+        "hotwax/oms#793",
+        "hotwax/oms#796"
+      ]
+    },
+    {
+      "name": "Performance Optimization",
+      "reason": "Optimizations target bottlenecks in rendering loops and identical database operations by substituting map lookups and memoizing frequently fetched data structures.",
+      "itemIds": [
+        "hotwax/receiving#661",
+        "hotwax/receiving#668",
+        "hotwax/bopis#773",
+        "hotwax/fulfillment#1600",
+        "hotwax/oms#485"
+      ]
+    },
+    {
+      "name": "Token Management",
+      "reason": "Relocation of FCM and client registration token destruction to pre-logout workflows to resolve permission failures on user sign-out.",
+      "itemIds": [
+        "hotwax/receiving#684",
+        "hotwax/bopis#807",
+        "hotwax/bopis#808",
+        "hotwax/bopis#794",
+        "hotwax/fulfillment#1637"
+      ]
+    },
+    {
+      "name": "Moqui Authentication",
+      "reason": "Adjustments supporting system actions, cookie parameters, and permission fetches within moqui-only login environments.",
+      "itemIds": [
+        "hotwax/receiving#705",
+        "hotwax/receiving#688",
+        "hotwax/bopis#804",
+        "hotwax/bopis#797",
+        "hotwax/fulfillment#1652",
+        "hotwax/fulfillment#1622",
+        "hotwax/fulfillment#1642",
+        "hotwax/inventory-count#1409",
+        "hotwax/inventory-count#1407",
+        "hotwax/transfers#244",
+        "hotwax/transfers#242"
+      ]
+    },
+    {
+      "name": "Search Integration",
+      "reason": "Routing adjustments aligning frontend product and store queries with specific Maarg-compatible Solr lookup endpoints.",
+      "itemIds": [
+        "hotwax/bopis#802",
+        "hotwax/bopis#778",
+        "hotwax/bopis#779",
+        "hotwax/inventory-count#1424"
+      ]
+    },
+    {
+      "name": "User Interface Layout",
+      "reason": "Front-end refinements correcting card borders, item separators, and product list grids on mobile and desktop devices.",
+      "itemIds": [
+        "hotwax/fulfillment#1628",
+        "hotwax/fulfillment#966"
+      ]
+    },
+    {
+      "name": "Picklist Generation",
+      "reason": "Integration of unified PDF generation actions and store settings resolving failure bugs on picking workflows.",
+      "itemIds": [
+        "hotwax/fulfillment#1621",
+        "hotwax/fulfillment#1630"
+      ]
+    },
+    {
+      "name": "Navigation Shortcut",
+      "reason": "Integration of the Fast Travel search utility component inside the Transfers application shell.",
+      "itemIds": [
+        "hotwax/transfers#240"
+      ]
+    },
+    {
+      "name": "Product Selection",
+      "reason": "Filtering product searches during manual inventory transfer setups to retrieve only product variants.",
+      "itemIds": [
+        "hotwax/transfers#248"
+      ]
+    },
+    {
+      "name": "Exchange Order Association",
+      "reason": "API enhancements exposing bidirectional relationships on exchange order item connections via the orders resource.",
+      "itemIds": [
+        "hotwax/oms#776",
+        "hotwax/oms#777"
+      ]
+    },
+    {
+      "name": "Search Indexing Authentication",
+      "reason": "Addition of authorization bypass attributes to background order and item re-indexing processes triggered after database updates.",
+      "itemIds": [
+        "hotwax/oms#812",
+        "hotwax/oms#818"
+      ]
+    },
+    {
+      "name": "Job Monitoring",
+      "reason": "Introduction of visual markers highlighting instances where automated jobs have crashed or failed to restart.",
+      "itemIds": [
+        "hotwax/oms#764"
+      ]
+    },
+    {
+      "name": "Order Item Cancellation",
+      "reason": "Standardization of the response envelope during order item cancellations to return real cancelled items instead of system-level reservations.",
+      "itemIds": [
+        "hotwax/oms#745"
+      ]
+    },
+    {
+      "name": "Security Compliance",
+      "reason": "Removal of broad service execution dumps to prevent sensitive user information leaking into server logging platforms.",
+      "itemIds": [
+        "hotwax/oms#780"
+      ]
+    },
+    {
+      "name": "Purchase Orders",
+      "reason": "Addition of generic setup services and response alignments supporting purchase order details on listings.",
+      "itemIds": [
+        "hotwax/oms#714",
+        "hotwax/oms#696"
+      ]
+    },
+    {
+      "name": "Order Processing",
+      "reason": "Resolution of checkout bugs mapping billing party identifications to order headers unconditionally.",
+      "itemIds": [
+        "hotwax/oms#772"
+      ]
+    },
+    {
+      "name": "Fulfillment Mapping",
+      "reason": "Extension of the ship group database model with identifiers allowing accurate synchronization with external Shopify groups.",
+      "itemIds": [
+        "hotwax/oms#786"
+      ]
+    },
+    {
+      "name": "Inventory Reservation",
+      "reason": "Automation of physical item reservations on order approvals via a system service execution trigger.",
+      "itemIds": [
+        "hotwax/oms#788"
+      ]
+    },
+    {
+      "name": "Inventory History",
+      "reason": "Implementation of manual inventory variance endpoints assisting history lookups.",
+      "itemIds": [
+        "hotwax/oms#744"
+      ]
+    },
+    {
+      "name": "Store Configuration APIs",
+      "reason": "Deployment of REST write and fetch resources representing carrier methods, gateway details, and payment typologies.",
+      "itemIds": [
+        "hotwax/oms#840",
+        "hotwax/oms#841",
+        "hotwax/oms#857"
+      ]
+    }
+  ],
+  "noiseItemIds": [
+    "hotwax/receiving#697",
+    "hotwax/receiving#695",
+    "hotwax/bopis#777",
+    "hotwax/bopis#785",
+    "hotwax/bopis#783",
+    "hotwax/bopis#787",
+    "hotwax/bopis#762",
+    "hotwax/bopis#756",
+    "hotwax/bopis#796",
+    "hotwax/fulfillment#1598",
+    "hotwax/fulfillment#1619",
+    "hotwax/fulfillment#1620",
+    "hotwax/fulfillment#1638",
+    "hotwax/inventory-count#1414",
+    "hotwax/inventory-count#1395",
+    "hotwax/inventory-count#1410",
+    "hotwax/inventory-count#1406",
+    "hotwax/transfers#238",
+    "hotwax/transfers#237",
+    "hotwax/transfers#241",
+    "hotwax/oms#568",
+    "hotwax/oms#268",
+    "hotwax/oms#730",
+    "hotwax/oms#725",
+    "hotwax/oms#808",
+    "hotwax/oms#807",
+    "hotwax/oms#809",
+    "hotwax/oms#839",
+    "hotwax/oms#795",
+    "hotwax/oms#877",
+    "hotwax/oms#878"
+  ],
+  "needClarificationItemIds": [
+    "hotwax/oms#719"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Search Indexing Authentication",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Retailer (enthusiastic, cares about improvements/new features).\n*   Input: A cluster of updates regarding an authentication issue during search indexing.\n*   Format Requirement:\n    *   New Features/Enhancements: Problem, Solution, Impact (3-4 sentences).\n    *   Standalone Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\" (1 sentence).\n*   Style Guide:\n    *   Simpler is better.\n    *   Active voice.\n    *   Granular but concise.\n    *   Professional, utility-focused tone.\n    *   **NO AI SLOP**: No \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   **NO EXCLAMATION POINTS**.\n    *   **NO DEV-TIME BUGS**: For new features, don't use \"fixed\", \"issue\", or \"bug\". (Wait, is this a new feature or a bug fix?)\n    *   **TRUE BUG FIXES**: Use \"Fixed a bug if...\" for standalone bug fixes.\n\n    *   Issue #812: Authentication issue during search indexing trigger. Data isn't indexed. Orders are missing from the fulfillment app.\n    *   PR #818: Fixes the authorization failure during asynchronous search indexing. It allows",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "812",
+      "url": "https://github.com/hotwax/oms/pull/812"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "818",
+      "url": "https://github.com/hotwax/oms/pull/818"
+    }
+  ]
+}

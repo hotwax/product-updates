@@ -1,0 +1,16 @@
+{
+  "name": "Picklist Generation",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Retailer (enthusiastic, cares about improvements/new features).\n    *   Task: Summarize a cluster of updates into a cohesive release note entry.\n    *   Cluster Theme: Integration of unified PDF generation actions and store settings resolving failure bugs on picking workflows.\n\n    *   *Item 1 (#1621):* Changed the endpoint for downloading transfer order picklists to a generic FOP endpoint. Previously, it was hitting a specific API that returned 403 errors. This is more of an architectural change/refactor to support PDF generation.\n    *   *Item 2 (#1630):* Fixed a bug where clicking \"Print Picklist\" did nothing because it was checking the wrong store for the `FF_DOWNLOAD_PICKLIST` setting.\n\n    *   *Feature/Enhancement:* Moving to a unified PDF generation service/endpoint for picklists.\n        *   Problem: PDF generation for transfer order picklists was failing due to access errors.\n        *   Solution: Integrated a unified PDF generation endpoint for picklist actions.\n        *   Impact: Users can reliably download and print transfer order picklists.\n    *   *Bug Fix:* The \"Print Picklist\" button not working.\n        *   Pattern: \"Fixed a bug if [Condition], [Symptom].\"",
+  "prReferences": [
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1621",
+      "url": "https://github.com/hotwax/fulfillment/pull/1621"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1630",
+      "url": "https://github.com/hotwax/fulfillment/pull/1630"
+    }
+  ]
+}

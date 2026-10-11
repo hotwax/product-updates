@@ -154,6 +154,7 @@ Guidelines:
 - Write in short, readable paragraphs with clear transitions between ideas. Avoid cluttered or overly list-driven structure unless it improves clarity.
 - Apply the Context–Action–Benefit (CAB) framework implicitly throughout the narrative. Do not label or surface Context, Action, or Benefit in the output.
 - Use a neutral, factual tone. No marketing language or hype. Minimal bullets and points unless necessary.
+- Never name, link, or attribute an update to a retailer, client instance, client-specific repository, or client-specific implementation. Include a capability only when shared product evidence supports it. Omit client-specific behavior instead of generalizing it into a product feature.
 
 Parsing Rules:
 - Treat the PRFAQ as the primary source of intent and customer value.

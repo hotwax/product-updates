@@ -1,0 +1,31 @@
+{
+  "name": "Performance Optimization",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements/features).\n    *   Task: Summarize a cluster of updates into a single cohesive release note entry.\n    *   Structure (for features/enhancements): Problem, Solution, Impact.\n    *   Structure (for bug fixes): \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide:\n        *   Simple, active voice.\n        *   Granular but concise (3-4 sentences for features, 1 sentence for bug fixes).\n        *   Tone: Professional, utility-focused.\n        *   **No AI Slop**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **No Exclamation Points**: Use only periods.\n        *   **No dev-time bugs**: Synthesize optimizations as polished experiences.\n        *   **True Bug Fixes**: Use \"Fixed a bug...\" pattern.\n\n    *   *Item 1 (receiving#661):* Optimizing PO history item lookup. Problem: O(N*M) rendering bottleneck in PO details page. Solution: Map lookups. Impact: Faster rendering for large orders/history.\n    *   *Item 2 (receiving#668):* Optimizing async map loops in return and shipment actions. Problem",
+  "prReferences": [
+    {
+      "repo": "hotwax/receiving",
+      "number": "661",
+      "url": "https://github.com/hotwax/receiving/pull/661"
+    },
+    {
+      "repo": "hotwax/receiving",
+      "number": "668",
+      "url": "https://github.com/hotwax/receiving/pull/668"
+    },
+    {
+      "repo": "hotwax/bopis",
+      "number": "773",
+      "url": "https://github.com/hotwax/bopis/pull/773"
+    },
+    {
+      "repo": "hotwax/fulfillment",
+      "number": "1600",
+      "url": "https://github.com/hotwax/fulfillment/pull/1600"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "485",
+      "url": "https://github.com/hotwax/oms/pull/485"
+    }
+  ]
+}

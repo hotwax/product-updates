@@ -1,0 +1,26 @@
+{
+  "name": "Customer Communications",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: A Retailer (enthusiastic, cares about improvements/features).\n    *   Task: Summarize a cluster of updates into a single release note entry.\n    *   Structure (Features/Enhancements): Problem, Solution, Impact.\n    *   Structure (Bug Fixes): \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style Guide Constraints:\n        *   Simpler is better.\n        *   Active voice.\n        *   Granular but concise (3-4 sentences for features, 1 sentence for bug fixes).\n        *   Tone: Professional, utility-focused.\n        *   **No AI Slop**: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n        *   **No Exclamation Points**.\n        *   **No dev-time bugs**: For new features, don't mention \"fixed\" or \"bugs\".\n        *   **True Bug Fixes**: Must start with \"Fixed a bug...\".\n    *   Input Data: A cluster of 4 PRs/Issues related to customer notification event payloads, tracking links, fulfillment identifiers, and dynamic URLs.\n\n    *   *PR #741 & #733 (New Feature/Enhancement):*\n        *   Problem: Order completion emails lacked critical data",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "741",
+      "url": "https://github.com/hotwax/oms/pull/741"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "733",
+      "url": "https://github.com/hotwax/oms/pull/733"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "814",
+      "url": "https://github.com/hotwax/oms/pull/814"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "838",
+      "url": "https://github.com/hotwax/oms/pull/838"
+    }
+  ]
+}

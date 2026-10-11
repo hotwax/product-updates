@@ -1,0 +1,26 @@
+{
+  "name": "Hold Queue Management",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer (cares about improvements and new features).\n*   Task: Summarize a cluster of updates into a cohesive release note entry.\n*   Structure for Features/Enhancements: Problem, Solution, Impact.\n*   Structure for Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\"\n*   Style Guide:\n    *   Simpler is better.\n    *   Active voice.\n    *   Granular but concise (3-4 sentences for features, 1 sentence for bug fixes).\n    *   Tone: Professional, utility-focused.\n    *   No AI Slop: Avoid \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   No Exclamation Points: Use periods only.\n    *   No dev-time bugs for new features: Use polished language.\n    *   True Bug Fixes: Start with \"Fixed a bug...\".\n*   Input Data:\n    1.  `hotwax/oms#721`: Unified order hold tasks/lifecycle. (Feature/Enhancement)\n    2.  `hotwax/oms#762`: Auto-resolve open order tasks when order completes/cancels. (Feature/Enhancement - though labeled \"bug\" in one place, the description says it's adding logic",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "721",
+      "url": "https://github.com/hotwax/oms/pull/721"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "762",
+      "url": "https://github.com/hotwax/oms/pull/762"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "763",
+      "url": "https://github.com/hotwax/oms/pull/763"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "790",
+      "url": "https://github.com/hotwax/oms/pull/790"
+    }
+  ]
+}

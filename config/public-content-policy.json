@@ -1,0 +1,42 @@
+{
+  "blockedClientNames": [
+    "Rails",
+    "Gorjana",
+    "Ashley Stewart",
+    "Perry Ellis",
+    "SIMKHAI",
+    "Good American",
+    "Steve Madden",
+    "ADOC"
+  ],
+  "blockedRepositories": [
+    "hotwax/rails",
+    "hotwax/hotwax-ofbiz-oms-usl"
+  ],
+  "allowedSourceRepositories": [
+    "hotwax/OrderRouting",
+    "hotwax/accxui",
+    "hotwax/bopis",
+    "hotwax/company",
+    "hotwax/dxp-components",
+    "hotwax/facilities",
+    "hotwax/fulfillment",
+    "hotwax/hotwax-maarg-util",
+    "hotwax/hotwax-oms",
+    "hotwax/hotwax-poorti",
+    "hotwax/hotwax-shopify-oms-bridge",
+    "hotwax/hotwax-unigate",
+    "hotwax/inventory-count",
+    "hotwax/job-manager",
+    "hotwax/mantle-netsuite-connector",
+    "hotwax/mantle-shopify-connector",
+    "hotwax/oms",
+    "hotwax/order-manager",
+    "hotwax/order-routing",
+    "hotwax/preorder",
+    "hotwax/press-release-faq",
+    "hotwax/products",
+    "hotwax/receiving",
+    "hotwax/transfers"
+  ]
+}

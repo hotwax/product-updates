@@ -13,16 +13,20 @@ sourceFaq: unified-routing-sourcing-workspace.md
 
 Routing decisions depend on ATP rules, facility groups, inventory channels, product-facility settings, and brokering rules. When those controls live in separate apps, teams can change one part without seeing the full fulfillment impact.
 
-### What changed
+The app brings the four parts of a sourcing decision together: rules that make inventory eligible, facility groups that define the network, inventory data that explains the promise, and brokering logic that assigns the order.
 
-Routing, ATP, facility groups, inventory channels, product inventory, and brokering controls are moving into one workspace. The supporting APIs expose richer facility, product-facility, and inventory context.
+### Set the inventory promise with sourcing rules
 
-### How the workflow operates
+Threshold, safety-stock, store-pickup, shipping, and inventory-channel rules now live alongside routing. Teams can define which inventory is available to promise, which locations are eligible for pickup or shipping, which channel publishes availability, and when a facility's capacity limit should protect its team from additional work.
 
-Teams can inspect which inventory can be promised, which facilities participate, which rules protect inventory, and which routing decision should receive the order. Substitute inventory can also be considered when the requested SKU is unavailable.
+### Maintain the fulfillment network through facility groups
 
-### Operational impact
+Facility groups are shared sourcing infrastructure, used by inventory channels, pickup and shipping rules, and brokering filters. The workspace gives users a place to create, edit, review membership and facility counts, and archive those groups where they are actually used, rather than treating them as disconnected routing metadata.
 
-Sourcing changes become easier to reason about because the controls and their fulfillment consequences live in one operating model.
+### Inspect the product-facility data behind availability
 
-*Sources: [oms#578](https://github.com/hotwax/oms/pull/578), [oms#632](https://github.com/hotwax/oms/pull/632), [oms#655](https://github.com/hotwax/oms/pull/655), [oms#659](https://github.com/hotwax/oms/pull/659), [oms#600](https://github.com/hotwax/oms/pull/600), [oms#621](https://github.com/hotwax/oms/pull/621), [oms#667](https://github.com/hotwax/oms/pull/667), [OrderRouting#121](https://github.com/hotwax/OrderRouting/pull/121), [oms#536](https://github.com/hotwax/oms/pull/536)*
+Product inventory makes the reason behind an ATP decision visible. Teams can search a product at a facility, review ATP, QOH, minimum stock, and allow-pickup or allow-brokering status, then edit the product-facility configuration, adjust inventory through variance logging, and review the inventory trail.
+
+### Route only to an eligible, workable facility
+
+Brokering applies the final decision to the eligible network. A rule can include or exclude facility groups, evaluate safety stock, check shipment thresholds and week-of-supply, sort candidate facilities, and apply the facility-order-limit behavior that matches the operating policy. This turns ATP and routing from separate configuration tasks into one sourcing model that a retailer can explain before orders start flowing.

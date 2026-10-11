@@ -1,0 +1,26 @@
+{
+  "name": "User Provisioning",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n    *   Audience: Enthusiastic Retailer (cares about improvements and new features).\n    *   Goal: Summarize a cluster of updates into one cohesive release note entry.\n    *   Structure (New Features/Enhancements): Problem, Solution, Impact.\n    *   Structure (Bug Fixes): \"Fixed a bug if [Condition], [Symptom].\"\n    *   Style: Simple, active voice, granular but concise (3-4 sentences for features, 1 for bugs).\n    *   Tone: Professional, utility-focused.\n    *   Constraints: No \"AI slop\" (enhanced, streamlined, seamless, robust), no exclamation points, no \"dev-time bugs\" (treat as polished features), no \"fixed/issue/bug\" for new features.\n    *   Output: Just the summary text.\n\n    *   *Item 1 & 2 (oms#820, #765):*\n        *   Content: Added Solr indexing for application users, added `PartyContent` entity for user profile images, added APIs for managing party roles.\n        *   Theme: User Management capabilities (searchability and profiles).\n        *   Category: New Feature/Enhancement.\n\n    *   *Item 3 (oms#782):*\n        *   Content: Introduced `",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "820",
+      "url": "https://github.com/hotwax/oms/pull/820"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "765",
+      "url": "https://github.com/hotwax/oms/pull/765"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "782",
+      "url": "https://github.com/hotwax/oms/pull/782"
+    },
+    {
+      "repo": "hotwax/oms",
+      "number": "871",
+      "url": "https://github.com/hotwax/oms/pull/871"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Job Monitoring",
+  "summary": "*   Role: Product Manager at HotWax Commerce.\n*   Audience: Enthusiastic Retailer (cares about improvements/features).\n*   Task: Summarize a cluster of updates into a cohesive release note entry.\n*   Input Data: One PR (hotwax/oms#764) - \"Added conditions to show release icon when jobs are older than system start time i.e. crashed.\"\n*   Target Structure:\n    *   New Features/Enhancements: Problem, Solution, Impact (3-4 sentences).\n    *   Bug Fixes: \"Fixed a bug if [Condition], [Symptom].\" (1 sentence).\n*   Style Guide Constraints:\n    *   Simpler is better.\n    *   Active voice.\n    *   Granular but concise.\n    *   Tone: Professional, utility-focused.\n    *   **No \"AI Slop\"**: No \"enhanced\", \"streamlined\", \"seamless\", \"robust\".\n    *   **No Exclamation Points**: Use only periods.\n    *   **No \"dev-time bugs\"**: Don't mention bugs/fixes for new features.\n    *   **True Bug Fixes**: Start with \"Fixed a bug...\".\n*   Cluster Content: Visual markers (icons) to identify jobs that crashed or failed to restart (based on job age vs. system start time).",
+  "prReferences": [
+    {
+      "repo": "hotwax/oms",
+      "number": "764",
+      "url": "https://github.com/hotwax/oms/pull/764"
+    }
+  ]
+}
