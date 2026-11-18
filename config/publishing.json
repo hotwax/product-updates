@@ -14,6 +14,12 @@
         "Product Update"
       ],
       "slugPattern": "product-updates/{month}/{slug}"
+    },
+    "images": {
+      "folderRoot": "/product-updates",
+      "uploadMaxWidth": 1600,
+      "displayWidth": 760,
+      "webpQuality": 80
     }
   },
   "automation": {

@@ -1,0 +1,6 @@
+{
+  "e99eec3b9d4358b643d9707668c069fe7ea36434ce74c8f4d5101c43ce91ecaf": {
+    "filePath": "assets/product-updates/2026-08/shopify-inventory-publishing-flow.png",
+    "altText": "Shopify inventory publishing flow, from a committed source event through sellable quantity calculation, batching, delivery, and retry."
+  }
+}

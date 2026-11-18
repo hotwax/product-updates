@@ -158,3 +158,39 @@ export async function pushDraftLive(postId) {
         method: "POST"
     });
 }
+
+export async function getFileByPath(filePath) {
+    requireHubSpotToken();
+    const encodedPath = filePath.replace(/^\/+/, "").split("/").map(encodeURIComponent).join("/");
+    const response = await fetch(`${HUBSPOT_API_BASE}/files/v3/files/stat/${encodedPath}`, {
+        headers: { Authorization: `Bearer ${CONFIG.HUBSPOT_PRIVATE_APP_TOKEN}` }
+    });
+    if (response.status === 404) return null;
+    if (!response.ok) {
+        throw new Error(`HubSpot API GET /files/v3/files/stat/${encodedPath} failed (${response.status}): ${await response.text()}`);
+    }
+    const data = await response.json();
+    return data.file || null;
+}
+
+export async function uploadFile({ buffer, fileName, folderPath, contentType }) {
+    requireHubSpotToken();
+    const form = new FormData();
+    form.append("file", new Blob([buffer], { type: contentType }), fileName);
+    form.append("folderPath", folderPath);
+    form.append("options", JSON.stringify({
+        access: "PUBLIC_INDEXABLE",
+        overwrite: false,
+        duplicateValidationStrategy: "NONE",
+        duplicateValidationScope: "EXACT_FOLDER"
+    }));
+    const response = await fetch(`${HUBSPOT_API_BASE}/files/v3/files`, {
+        method: "POST",
+        headers: { Authorization: `Bearer ${CONFIG.HUBSPOT_PRIVATE_APP_TOKEN}` },
+        body: form
+    });
+    if (!response.ok) {
+        throw new Error(`HubSpot API POST /files/v3/files failed (${response.status}): ${await response.text()}`);
+    }
+    return response.json();
+}
