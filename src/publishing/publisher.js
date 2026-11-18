@@ -1,6 +1,7 @@
 import fs from "fs";
 import { CONFIG } from "../config/index.js";
-import { markdownToHtml } from "../services/markdown.js";
+import { findPublishingImages, markdownToHtml } from "../services/markdown.js";
+import { uploadPublishingImages } from "../services/images.js";
 import {
     createDraftPost,
     ensureTag,
@@ -30,7 +31,8 @@ export async function validatePublishingTargets() {
 
 export async function publishManifestItem(manifestItem, stateItem, state, month, mode = "monthly") {
     const markdownContent = fs.readFileSync(manifestItem.filePath, "utf8");
-    const html = markdownToHtml(markdownContent);
+    const imageMap = await uploadPublishingImages(findPublishingImages(markdownContent));
+    const html = markdownToHtml(markdownContent, { imageMap, requireHubSpotImages: true });
     const tagIds = await ensureTagIds(manifestItem.tagNames, CONFIG.PUBLISHING.hubspot.language);
 
     let existingPost = null;
